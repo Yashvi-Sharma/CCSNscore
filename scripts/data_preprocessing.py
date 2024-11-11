@@ -80,7 +80,7 @@ def fix_shape_of_Xtrain(x):
 	newx = [tf.convert_to_tensor(list(x[i])) for i in range(len(x))]
 	return newx
 
-# @jit()
+#### This function needs to be updated later to interpolate different filters simultaneously
 def forecast_interpolation(df,fluxcol='mag',scale=1e16):
 	'''
 	Interpolate lightcurve using Gaussian Process

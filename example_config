@@ -16,7 +16,7 @@
   "LOAD_TUNED_MODELS": False,            # Whether to use the tuned models or not (saved with BC_ prefix)
   "LOAD_WEIGHTS": False,                 # False to just use the tuned architecture, True to load the weights
 
-  "LABELS": {"Ia": ["Ia", "Ia-91bg", "Ia-91T", "Ia-pec", "Ia-02cx"],
+  "LABELS": {"Ia": ["Ia", "Ia-91bg", "Ia-91T", "Ia-pec", "Ia-02cx, "Iax", "Ia-norm"],
              "notIa": ["IIP", "IIL", "IIn", "II", "IIb", "Ib", "Ic", "Ic-BL", "SLSN-I", "SLSN-II", "AGN", "CV"]
             },                           # Transient classes that belong to the positive class of each binary classifier
   "CHANNELS": {"Ia": ["spec", "lcr", "lcg", "lcrdmdt", "lcgdmdt"],
@@ -28,7 +28,7 @@
   "LCPHASE": 200,                        # Number of days for the lightcurve length
   "TYPES_TO_AUGMENT": ["Ib", "Ic"],      # Transient classes to generate augmented samples for
   "AUGLIMIT": 2000,                      # Maximum number of augmented samples per class to generate
-  "AUGMENT": max,                        # Boolean to augment the training set or not
+  "AUGMENT": True,                        # Boolean to augment the training set or not
   "AUGMENT_CONSTANT": 2000,              # Total number of samples per TYPES_TO_AUGMENT
   "OVERWRITE": False,                    # Whether to overwrite traindata.json and testdata.json or not
 
