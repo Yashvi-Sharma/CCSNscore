@@ -1,0 +1,43 @@
+## Example of a configuration file for training a model
+
+{
+  "SPECTRA_DIR": "../data/spectra/",       # Path to the directory containing the raw spectra
+  "LC_DIR": "../data/lightcurves/",        # Path to the directory containing the raw lightcurves
+  "GPLC_DIR": "../data/gp_lightcurves/",   # Path to the directory containing the Gaussian Process interpolated LCs
+
+  "TRAINTABLEPATH": "../data/train.csv",   # Path to table from which training and validation sets will be created
+  "TESTTABLEPATH": "../data/test.csv",     # Path to table from which test set will be created
+  "OUTPUT_DIR": "../workdirs/Binary_Ia/",  # Working directory where model, logs, and results will be saved
+
+  "TASKNAME": "binIa",                       # Prefix for output figures
+  "MODE": train,                         # Mode to run the code (tune, train, test), train will also test the model
+
+  "MODELS": {"Ia", "notIa"},             # Parallel binary classifiers to train
+  "LOAD_TUNED_MODELS": False,            # Whether to use the tuned models or not (saved with BC_ prefix)
+  "LOAD_WEIGHTS": False,                 # False to just use the tuned architecture, True to load the weights
+
+  "LABELS": {"Ia": ["Ia", "Ia-91bg", "Ia-91T", "Ia-pec", "Ia-02cx"],
+             "notIa": ["IIP", "IIL", "IIn", "II", "IIb", "Ib", "Ic", "Ic-BL", "SLSN-I", "SLSN-II", "AGN", "CV"]
+            },                           # Transient classes that belong to the positive class of each binary classifier
+  "CHANNELS": {"Ia": ["spec", "lcr", "lcg", "lcrdmdt", "lcgdmdt"],
+               "notIa": ["spec", "lcr", "lcg", "lcrdmdt", "lcgdmdt"]
+              },                         # Channels to use for each binary classifier
+
+  "DEREDSHIFT": True,                    # Whether to apply redshift correction to the spectra
+  "RESOLUTION": 256,                     # Resolution of the spectra
+  "LCPHASE": 200,                        # Number of days for the lightcurve length
+  "TYPES_TO_AUGMENT": ["Ib", "Ic"],      # Transient classes to generate augmented samples for
+  "AUGLIMIT": 2000,                      # Maximum number of augmented samples per class to generate
+  "AUGMENT": max,                        # Boolean to augment the training set or not
+  "AUGMENT_CONSTANT": 2000,              # Total number of samples per TYPES_TO_AUGMENT
+  "OVERWRITE": False,                    # Whether to overwrite traindata.json and testdata.json or not
+
+  "EPOCHS": 100,                         # Number of epochs to train the model
+  "BATCHSIZE": 32,                       # Batch size for training
+  "LEARNING_RATE": 0.001,                # Learning rate for the optimizer
+  "PATIENCE": 7,                         # Number of epochs to wait before early stopping
+  "NOSHOWPLOTS": False,                  # Whether to show plots or not
+}
+
+
+
