@@ -1,0 +1,35 @@
+{
+  "SPECTRA_DIR": "data/spectra/",
+  "LC_DIR": "data/lightcurves/",
+  "GPLC_DIR": "data/gp_lightcurves/",
+  "TRAINTABLEPATH": "data/sampletable.csv",
+  "TESTTABLEPATH": "data/sampletable.csv",
+  "OUTPUT_DIR": "workdirs/Binary_Ia/",
+  "TASKNAME": "binIa",
+  "MODE": "test",
+  "MODELS": ["Ia", "notIa"],
+  "LOAD_TUNED_MODELS": false,
+  "LOAD_WEIGHTS": false,
+  "LABELS": {
+    "Ia": ["Ia", "Ia-91bg", "Ia-91T", "Ia-pec", "Ia-02cx", "Iax", "Ia-norm"],
+    "notIa": ["IIP", "IIL", "IIn", "II", "IIb", "Ib", "Ic", "Ic-BL", "SLSN-I", "SLSN-II", "AGN", "CV"]
+  },
+  "CHANNELS": {
+    "Ia": ["spec", "lcr", "lcg", "lcrdmdt", "lcgdmdt"],
+    "notIa": ["spec", "lcr", "lcg", "lcrdmdt", "lcgdmdt"]
+  },
+  "DEREDSHIFT": true,
+  "RESOLUTION": 256,
+  "LCPHASE": 200,
+  "MEDIAN_WINDOW": 5,
+  "TYPES_TO_AUGMENT": ["Ia","II","Ib","Ic"],
+  "AUGLIMIT": 1000,
+  "AUGMENT": true,
+  "AUGMENT_CONSTANT": 1000,
+  "OVERWRITE": false,
+  "EPOCHS": 100,
+  "BATCHSIZE": 32,
+  "LEARNING_RATE": 0.001,
+  "PATIENCE": 7,
+  "NOSHOWPLOTS": true
+}
