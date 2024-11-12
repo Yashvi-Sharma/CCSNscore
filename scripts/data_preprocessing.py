@@ -200,34 +200,34 @@ def run_lc_preprocessing(df):
 	print('LC preprocessing failed for',', '.join(failed))
 	return failed
 
-import cudf
-from concurrent.futures import ThreadPoolExecutor, as_completed
-
-def run_lc_preprocessing_parallel(df):
-    failed = []
-    processed = []
-
-    def process_row(row):
-        if row['name'] in np.array(processed):
-            return None
-        print(row.name)
-        res = generate_lc(row['name'], row['lcfilename'], plot=False)
-        return res
-
-    df = cudf.DataFrame.from_pandas(df)
-
-    with ThreadPoolExecutor() as executor:
-        futures = {executor.submit(process_row, df.iloc[i]): i for i in range(len(df))}
-        for future in as_completed(futures):
-            res = future.result()
-            if res:
-                if res['status'] == 0:
-                    failed.append(res['name'])
-                else:
-                    processed.append(res['name'])
-
-    print('LC preprocessing failed for', ', '.join(failed))
-    return failed
+# import cudf
+# from concurrent.futures import ThreadPoolExecutor, as_completed
+#
+# def run_lc_preprocessing_parallel(df):
+#     failed = []
+#     processed = []
+#
+#     def process_row(row):
+#         if row['name'] in np.array(processed):
+#             return None
+#         print(row.name)
+#         res = generate_lc(row['name'], row['lcfilename'], plot=False)
+#         return res
+#
+#     df = cudf.DataFrame.from_pandas(df)
+#
+#     with ThreadPoolExecutor() as executor:
+#         futures = {executor.submit(process_row, df.iloc[i]): i for i in range(len(df))}
+#         for future in as_completed(futures):
+#             res = future.result()
+#             if res:
+#                 if res['status'] == 0:
+#                     failed.append(res['name'])
+#                 else:
+#                     processed.append(res['name'])
+#
+#     print('LC preprocessing failed for', ', '.join(failed))
+#     return failed
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
@@ -238,7 +238,7 @@ if __name__ == '__main__':
 	for tablename in args.tablepaths:
 		df = pd.read_csv(tablename)
 		if args.parallel:
-			failed = run_lc_preprocessing_parallel(df)
+			failed = run_lc_preprocessing(df)
 		else:
 			failed = run_lc_preprocessing(df)
 		print('Failed for',failed)

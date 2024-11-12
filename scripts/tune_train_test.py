@@ -69,14 +69,27 @@ class Source:
             print('Processed light curve missing, trying to generate')
             res = dp.generate_lc(self.sourcedata['name'], self.sourcedata['lcfilename'], plot=False)
             print(res['message'])
-        if res['status'] == 0:
+
+        if glob2.glob(config['GPLC_DIR'] + self.sourcedata['name'] + '.csv') == []:
             phaserange = np.arange(0, lcphase, 1)
             self.lcr = np.zeros([lcphase, 2]).tolist()
             self.lcg = np.zeros([lcphase, 2]).tolist()
             self.lcrdmdt = dp.compute_dmdt(phaserange, np.repeat(20.5, len(phaserange)))[..., tf.newaxis].tolist()
             self.lcgdmdt = dp.compute_dmdt(phaserange, np.repeat(20.5, len(phaserange)))[..., tf.newaxis].tolist()
+            return
         else:
             lc = pd.read_csv(config['GPLC_DIR'] + self.sourcedata['name'] + '.csv')
+            # if 'flam' not in lc.columns:
+            #     res = dp.generate_lc(self.sourcedata['name'], self.sourcedata['lcfilename'], plot=False)
+            #     if res['status'] == 0:
+            #         print(res['message'])
+            #         phaserange = np.arange(0, lcphase, 1)
+            #         self.lcr = np.zeros([lcphase, 2]).tolist()
+            #         self.lcg = np.zeros([lcphase, 2]).tolist()
+            #         self.lcrdmdt = dp.compute_dmdt(phaserange, np.repeat(20.5, len(phaserange)))[..., tf.newaxis].tolist()
+            #         self.lcgdmdt = dp.compute_dmdt(phaserange, np.repeat(20.5, len(phaserange)))[..., tf.newaxis].tolist()
+            #         return
+            # print(self.sourcedata['name'], ' light curve read')
             phaserange = np.arange(0, lcphase + 1, 1)
             lcr = lc[(lc['filter'] == 'r')]
             lcg = lc[(lc['filter'] == 'g')]
@@ -101,6 +114,7 @@ class Source:
 
             self.lcrdmdt = dp.compute_dmdt(list(lcr['phase']), list(lcr['mag']))[..., tf.newaxis].tolist()
             self.lcgdmdt = dp.compute_dmdt(list(lcg['phase']), list(lcg['mag']))[..., tf.newaxis].tolist()
+            return
 
 
 class BaseSet:
@@ -204,16 +218,16 @@ class TrainSet(BaseSet):
                         'lcg': fakelcg, 'lcr': fakelcr, 'lcgdmdt': row0['lcgdmdt'],
                         'lcrdmdt': row0['lcrdmdt'],
                         'type': typename, 'redshift': z, 'specjd': None, 'maxjd': None, 'instrument': None,
-                        'label': row0['label1'], 'sourcetype': 'fake'}
+                        'label': row0['label'], 'sourcetype': 'fake'}
             return fakedict
 
         tdf = traindf[~pd.isnull(traindf['redshift'])].reset_index(drop=True)
         tdf['phase'] = tdf['specjd'] - tdf['maxjd']
         savename = imgpath + typename + '_fakedata.json'
 
-        if (typename == 'Ib') | (typename == 'Ic') | (typename == 'Ic-BL'):
+        if (typename == 'Ib') | (typename == 'Ic') | (typename == 'Ic-BL') | (typename == 'Ia'):
             phasegroups = [[-100, 0], [0, 50]]
-        elif (typename == 'IIP') | (typename == 'IIn'):
+        elif (typename == 'IIP') | (typename == 'IIn') | (typename == 'II'):
             phasegroups = [[-100, 0], [0, 100]]
         elif typename == 'IIb':
             phasegroups = [[-100, -5], [0, 50]]
@@ -222,20 +236,26 @@ class TrainSet(BaseSet):
                 tdf['phase'] <= phasegroups[0][1])].reset_index(drop=True)
         subdf1 = tdf[(tdf['type'] == typename) & (tdf['phase'] >= phasegroups[1][0]) & (
                 tdf['phase'] <= phasegroups[1][1])].reset_index(drop=True)
+        print('Found ', len(subdf0), ' objects in ', phasegroups[0], ' and ', len(subdf1), ' objects in ',
+              phasegroups[1])
         indlist0 = subdf0.index
         indlist1 = subdf1.index
         auglist = []
-
-        for ind in range(0, int(0.3 * auglimit)):
-            rows = subdf0.loc[np.random.choice(indlist0, 2, p=None, replace=False)].reset_index(drop=True)
-            fakedict = make_augmented(ind, rows, self.dered, self.res, self.wavelength)
-            if fakedict != {}:
-                auglist.append(fakedict)
-        for ind in range(int(0.3 * auglimit), auglimit):
-            rows = subdf1.loc[np.random.choice(indlist1, 2, p=None, replace=False)].reset_index(drop=True)
-            fakedict = make_augmented(ind, rows, self.dered, self.res, self.wavelength)
-            if fakedict != {}:
-                auglist.append(fakedict)
+        if len(indlist0) != 0:
+            for ind in range(0, int(0.3 * auglimit)):
+                rows = subdf0.loc[np.random.choice(indlist0, 2, p=None, replace=False)].reset_index(drop=True)
+                fakedict = make_augmented(ind, rows, self.dered, self.res, self.wavelength)
+                if fakedict != {}:
+                    auglist.append(fakedict)
+            augstartind = int(0.3 * auglimit)
+        else:
+            augstartind = 0
+        if len(indlist1) != 0:
+            for ind in range(augstartind, auglimit):
+                rows = subdf1.loc[np.random.choice(indlist1, 2, p=None, replace=False)].reset_index(drop=True)
+                fakedict = make_augmented(ind, rows, self.dered, self.res, self.wavelength)
+                if fakedict != {}:
+                    auglist.append(fakedict)
 
         with open(savename, 'w') as savefile:
             json.dump(auglist, savefile)
@@ -244,7 +264,7 @@ class TrainSet(BaseSet):
 
 class TestSet(BaseSet):
     def __init__(self, tablepath, dered=True, res=256, lcphase=200, median_window=3, overwrite=False):
-        super().__init__(tablepath, imgpath, dered, res, lcphase, median_window)
+        super().__init__(tablepath, dered, res, lcphase, median_window)
         self.sourcetype = 'test'
         if glob2.glob(imgpath + 'testdata.json') == [] or overwrite:
             self.create_set()
@@ -316,6 +336,9 @@ class Training:
             layermodels = None
 
         for num, modelname in enumerate(self.modelnames):
+            print('Training model ', modelname)
+            # if modelname=='Ia':
+            #     continue
             xtrain = traindf[np.array(self.channels[modelname])].transpose().values
 
             bin_ytrain = np.array(traindf['label'] == modelname).astype(float)
@@ -333,7 +356,7 @@ class Training:
                 model = layermodels[modelname]
             earlystop_callback = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=patience,
                                                                   restore_best_weights=True)
-            tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir="logs")
+            tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=f"{imgpath}logs_{modelname}")
             np.random.seed(7)
 
             if len(notclass_inds) >= 0.8 * len(class_inds):
@@ -354,7 +377,7 @@ class Training:
                     count = count + 1
             else:
                 model.fit(dp.fix_shape_of_Xtrain(xtrain), bin_ytrain, epochs=epochs, batch_size=batchsize,
-                          validation_split=0.33,ccallbacks=[earlystop_callback, tensorboard_callback],
+                          validation_split=0.33,callbacks=[earlystop_callback, tensorboard_callback],
                           verbose=1, shuffle=True, use_multiprocessing=True, workers=6)
 
             self.models[modelname] = model
@@ -385,8 +408,8 @@ class Training:
             tuner = kt.BayesianOptimization(model_for_tuner,
                                             objective='val_accuracy',
                                             max_trials=10,
-                                            directory='tuner',
-                                            project_name='sedm')
+                                            directory=f'{imgpath}tuner',
+                                            project_name=f'{modelname}')
             stop_early = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=patience,
                                                           restore_best_weights=True)
             print('Starting tuner')
@@ -448,14 +471,19 @@ class Testing:
             df.loc[i, 'pred_conf'] = ps
         return df
 
-    def plot_cm_and_hist(self, probcut, noshowplot):
+    def plot_cm_and_hist(self, noshowplot):
         conmat, stats = plotter.make_confusion_matrix(self.result, self.modelnames)
-        plotter.plot_confusion_matrix(conmat, self.modelnames,
-                                      imgpath + self.taskname + '_conmat_' + str(probcut), noshowplot=noshowplot)
-        plotter.plot_histograms(self.result, self.modelnames, savename=imgpath, noshowplot=noshowplot)
+        plotter.plot_confusion_matrix(conmat, self.modelnames, savename=f'{imgpath}{taskname}_conmat.png',
+                                      noshowplot=noshowplot)
+        plotter.plot_histograms(self.result, self.modelnames, savename=f'{imgpath}{taskname}_histograms.png',
+                                noshowplot=noshowplot)
+        plotter.plot_roc_curve(self.result, self.modelnames, savename=f'{imgpath}{taskname}_roc.png',
+                               noshowplot=noshowplot)
         return stats
 
-    def test(self, testdf, modelpath=None):
+    def test(self, testdf, modelnames, modelpath=None, noshowplot=False):
+        self.modelnames = modelnames
+
         class_probabs = {}
         if modelpath is None:
             modelpath = imgpath
@@ -471,24 +499,31 @@ class Testing:
         df['id'] = testdf['id']
         df = self.decide_finalclass(df, testdf)
         self.result = df
-        self.stats = self.plot_cm_and_hist(0.5, noshowplot=False)
-        self.result.to_csv(f'{imgpath}{self.taskname}_results.csv')
+        self.stats = self.plot_cm_and_hist(noshowplot=noshowplot)
+        self.result.to_csv(f'{imgpath}{taskname}_results.csv')
 
 
 if __name__ == '__main__':
+
     # Read arguments
     parser = argparse.ArgumentParser(description='Train or test models for SEDM data')
-    parser.add_argument('config', type=str, help='config file')
+    parser.add_argument('config', type=str, help='config file path w.r.t. CCSNscore/')
     args = parser.parse_args()
 
     # Read config file
-    global config, imgpath
+    global config, imgpath, taskname
     config = json.load(open(args.config, 'r'))
     print(config)
     imgpath = config['OUTPUT_DIR']
+    taskname = config['TASKNAME']
 
     if imgpath[-1] != '/':
         imgpath = imgpath + '/'
+    if not os.path.exists(imgpath):
+        os.makedirs(imgpath)
+
+    # Copy config file to output directory
+    os.system(f'cp {args.config} {imgpath}config_{taskname}')
 
     print(f'Begin program, loading data')
     trainobj = Training(config['TRAINTABLEPATH'], dered=config['DEREDSHIFT'], res=config['RESOLUTION'],
@@ -510,14 +545,14 @@ if __name__ == '__main__':
 
     elif config['MODE']=='train':
         trainobj.train(traindf, config['MODELS'], loadmodel=config['LOAD_TUNED_MODELS'],
-                       withweights=config['WITHWEIGHTS'], lr=config['LEARNING_RATE'], patience=config['PATIENCE'],
+                       withweights=config['LOAD_WEIGHTS'], lr=config['LEARNING_RATE'], patience=config['PATIENCE'],
                        epochs=config['EPOCHS'], batchsize=config['BATCHSIZE'])
         print(f'Finished training, now testing')
-        testobj.test(testdf, modelpath=imgpath)
+        testobj.test(testdf, config['MODELS'], modelpath=imgpath, noshowplot=config['NOSHOWPLOT'])
         print(f'Finished testing, exiting')
 
     elif config['MODE']=='test':
-        testobj.test(testdf, modelpath=imgpath)
+        testobj.test(testdf, config['MODELS'], modelpath=imgpath, noshowplot=config['NOSHOWPLOT'])
         print(f'Finished testing, exiting')
     else:
         print('Invalid mode')

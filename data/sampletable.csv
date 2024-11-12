@@ -12,18 +12,18 @@ ZTF18aaylbyr,AGN,0.0724,2458280.5,2458608.79,P60,data/spectra/ZTF18aaylbyr_20180
 ZTF18aaylcgr,AGN,0.069,2458281.5,2458306.64,P60,data/spectra/ZTF18aaylcgr_20180612_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aaylcgr.csv
 ZTF18aazcuno,AGN,0.02,2458287.5,2458329.79,P60,data/spectra/ZTF18aazcuno_20180618_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aazcuno.csv
 ZTF18aazcuno,AGN,0.02,2458289.5,2458329.79,P60,data/spectra/ZTF18aazcuno_20180620_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aazcuno.csv
-ZTF18abcezmh, II,0.057,2458302.5,2458299.83,P60,data/spectra/ZTF18abcezmh_20180703_P60_v1.ascii,data/lightcurves/ZTF18abcezmh_fritz_lightcurves.csv
+ZTF18abcezmh,II,0.057,2458302.5,2458299.83,P60,data/spectra/ZTF18abcezmh_20180703_P60_v1.ascii,data/lightcurves/ZTF18abcezmh_fritz_lightcurves.csv
 ZTF18abcbwnd,AGN,0.062,2458290.5,2458299.86,P60,data/spectra/ZTF18abcbwnd_20180621_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18abcbwnd.csv
-ZTF18abceakp, II,0.03,2458299.5,2458303.66,P60,data/spectra/ZTF18abceakp_20180630_P60_v1.ascii,data/lightcurves/ZTF18abceakp_fritz_lightcurves.csv
-ZTF18abceakp, II,0.03,2458301.5,2458303.66,P60,data/spectra/ZTF18abceakp_20180702_P60_v1.ascii,data/lightcurves/ZTF18abceakp_fritz_lightcurves.csv
-ZTF18abceakp, II,0.03,2458304.5,2458303.66,P60,data/spectra/ZTF18abceakp_20180705_P60_v1.ascii,data/lightcurves/ZTF18abceakp_fritz_lightcurves.csv
+ZTF18abceakp,II,0.03,2458299.5,2458303.66,P60,data/spectra/ZTF18abceakp_20180630_P60_v1.ascii,data/lightcurves/ZTF18abceakp_fritz_lightcurves.csv
+ZTF18abceakp,II,0.03,2458301.5,2458303.66,P60,data/spectra/ZTF18abceakp_20180702_P60_v1.ascii,data/lightcurves/ZTF18abceakp_fritz_lightcurves.csv
+ZTF18abceakp,II,0.03,2458304.5,2458303.66,P60,data/spectra/ZTF18abceakp_20180705_P60_v1.ascii,data/lightcurves/ZTF18abceakp_fritz_lightcurves.csv
 ZTF18aamgcbt,AGN,0.0935,2458332.5,2458311.63,P60,data/spectra/ZTF18aamgcbt_20180802_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aamgcbt.csv
 ZTF18aamgcbt,AGN,0.0935,2458332.5,2458311.63,P60,data/spectra/ZTF18aamgcbt_20180802_P60_v2.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aamgcbt.csv
 ZTF18aavtklk,AGN,0.104,2458335.5,2458872.9,P60,data/spectra/ZTF18aavtklk_20180805_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aavtklk.csv
 ZTF18aavtklk,AGN,0.104,2458335.5,2458872.9,P60,data/spectra/ZTF18aavtklk_20180805_P60_v2.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aavtklk.csv
 ZTF18abjhbss,AGN,0.034,2458342.5,2458364.64,P60,data/spectra/ZTF18abjhbss_20180812_P60_v1.ascii,data/lightcurves/ZTF18abjhbss_fritz_lightcurves.csv
 ZTF18abjhbss,AGN,0.034,2458342.5,2458364.64,P60,data/spectra/ZTF18abjhbss_20180812_P60_v2.ascii,data/lightcurves/ZTF18abjhbss_fritz_lightcurves.csv
-ZTF18aaoxryq, Ia-91T,0.09402,2458337.5,2458336.68,P60,data/spectra/ZTF18aaoxryq_20180807_P60_v1.ascii,data/lightcurves/ZTF18aaoxryq_fritz_lightcurves.csv
+ZTF18aaoxryq,Ia-91T,0.09402,2458337.5,2458336.68,P60,data/spectra/ZTF18aaoxryq_20180807_P60_v1.ascii,data/lightcurves/ZTF18aaoxryq_fritz_lightcurves.csv
 ZTF18abllrvn,CV,0.0,2458334.5,2458333.78,P60,data/spectra/ZTF18abllrvn_20180804_P60_v1.ascii,data/lightcurves/ZTF18abllrvn_fritz_lightcurves.csv
 ZTF18abllrvn,CV,0.0,2458334.5,2458333.78,P60,data/spectra/ZTF18abllrvn_20180804_P60_v2.ascii,data/lightcurves/ZTF18abllrvn_fritz_lightcurves.csv
 ZTF18ablovbj,CV,0.0,2458338.5,2458673.94,P60,data/spectra/ZTF18ablovbj_20180808_P60_v1.ascii,data/lightcurves/ZTF18ablovbj_fritz_lightcurves.csv
@@ -64,7 +64,6 @@ ZTF18abnnnzk,AGN,0.064,2458388.5,2459024.93,P60,data/spectra/ZTF18abnnnzk_201809
 ZTF18abnyktn,CV,0.0,2458353.5,2458349.82,P60,data/spectra/ZTF18abnyktn_20180823_P60_v1.ascii,data/lightcurves/ZTF18abnyktn_fritz_lightcurves.csv
 ZTF18aadnqwz,AGN,0.04,2458361.5,2458359.92,P60,data/spectra/ZTF18aadnqwz_20180831_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aadnqwz.csv
 ZTF18aboerpp,AGN,0.0171,2458377.5,2458894.7,P60,data/spectra/ZTF18aboerpp_20180916_P60_v1.ascii,data/lightcurves/ZTF18aboerpp_fritz_lightcurves.csv
-ZTF17aaaobyl,CV,0.0,2458356.5,2458871.69,P60,data/spectra/ZTF17aaaobyl_20180826_P60_v2.ascii,data/lightcurves/ZTF17aaaobyl_fritz_lightcurves.csv
 ZTF18abojrnv,CV,0.0,2458358.5,2458351.66,P60,data/spectra/ZTF18abojrnv_20180828_P60_v1.ascii,data/lightcurves/ZTF18abojrnv_fritz_lightcurves.csv
 ZTF18abpmwfx,CV,0.0,2458356.5,2458357.66,P60,data/spectra/ZTF18abpmwfx_20180826_P60_v1.ascii,data/lightcurves/ZTF18abpmwfx_fritz_lightcurves.csv
 ZTF18abpmwlt,CV,0.0,2458356.5,2459013.8,P60,data/spectra/ZTF18abpmwlt_20180826_P60_v1.ascii,data/lightcurves/ZTF18abpmwlt_fritz_lightcurves.csv
@@ -78,11 +77,10 @@ ZTF18absmoql,CV,0.0,2458365.5,2458364.68,P60,data/spectra/ZTF18absmoql_20180904_
 ZTF18absnibc,CV,0.0,2458365.5,2458367.73,P60,data/spectra/ZTF18absnibc_20180904_P60_v1.ascii,data/lightcurves/ZTF18absnibc_fritz_lightcurves.csv
 ZTF18abrxrms,CV,0.0,2458367.5,2458360.73,P60,data/spectra/ZTF18abrxrms_20180906_P60_v1.ascii,data/lightcurves/ZTF18abrxrms_fritz_lightcurves.csv
 ZTF18abehrdw,CV,0.0,2458368.5,2458793.56,P60,data/spectra/ZTF18abehrdw_20180907_P60_v1.ascii,data/lightcurves/ZTF18abehrdw_fritz_lightcurves.csv
-ZTF18absnqyo, Ia,0.04,2458369.5,2458379.72,P60,data/spectra/ZTF18absnqyo_20180908_P60_v1.ascii,data/lightcurves/ZTF18absnqyo_fritz_lightcurves.csv
+ZTF18absnqyo,Ia,0.04,2458369.5,2458379.72,P60,data/spectra/ZTF18absnqyo_20180908_P60_v1.ascii,data/lightcurves/ZTF18absnqyo_fritz_lightcurves.csv
 ZTF18abtgnxs,AGN,0.0172,2458368.5,2458867.54,P60,data/spectra/ZTF18abtgnxs_20180907_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18abtgnxs.csv
 ZTF18abmwszl,AGN,0.107,2458369.5,2458367.86,P60,data/spectra/ZTF18abmwszl_20180908_P60_v1.ascii,data/lightcurves/ZTF18abmwszl_fritz_lightcurves.csv
 ZTF18absunxx,CV,0.0,2458369.5,2458757.64,P60,data/spectra/ZTF18absunxx_20180908_P60_v1.ascii,data/lightcurves/ZTF18absunxx_fritz_lightcurves.csv
-ZTF18abokhip,CV,0.0,2458371.5,2458796.54,P60,data/spectra/ZTF18abokhip_20180910_P60_v1.ascii,data/lightcurves/ZTF18abokhip_fritz_lightcurves.csv
 ZTF18abucoyd,CV,0.0,2458372.5,2458369.66,P60,data/spectra/ZTF18abucoyd_20180911_P60_v1.ascii,data/lightcurves/ZTF18abucoyd_fritz_lightcurves.csv
 ZTF18abtuzwc,CV,0.0,2458377.5,2458769.64,P60,data/spectra/ZTF18abtuzwc_20180916_P60_v1.ascii,data/lightcurves/ZTF18abtuzwc_fritz_lightcurves.csv
 ZTF18abthqde,CV,0.0,2458374.5,2458901.01,P60,data/spectra/ZTF18abthqde_20180913_P60_v2.ascii,data/lightcurves/ZTF18abthqde_fritz_lightcurves.csv
@@ -97,7 +95,7 @@ ZTF18abvbesl,CV,0.0,2458380.5,2458375.68,P60,data/spectra/ZTF18abvbesl_20180919_
 ZTF18abvwpnt,CV,0.0,2458382.5,2458378.75,P60,data/spectra/ZTF18abvwpnt_20180921_P60_v1.ascii,data/lightcurves/ZTF18abvwpnt_fritz_lightcurves.csv
 ZTF18abvwqtp,AGN,0.116,2458382.5,2458674.87,P60,data/spectra/ZTF18abvwqtp_20180921_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18abvwqtp.csv
 ZTF18abwjzpq,CV,0.0,2458382.5,2458781.83,P60,data/spectra/ZTF18abwjzpq_20180921_P60_v1.ascii,data/lightcurves/ZTF18abwjzpq_fritz_lightcurves.csv
-ZTF18abwlopg, Ia-91T,0.083,2458386.5,2458387.93,P60,data/spectra/ZTF18abwlopg_20180925_P60_v2.ascii,data/lightcurves/ZTF18abwlopg_fritz_lightcurves.csv
+ZTF18abwlopg,Ia-91T,0.083,2458386.5,2458387.93,P60,data/spectra/ZTF18abwlopg_20180925_P60_v2.ascii,data/lightcurves/ZTF18abwlopg_fritz_lightcurves.csv
 ZTF18aaenfaa,AGN,0.0776,2458383.5,2458900.64,P60,data/spectra/ZTF18aaenfaa_20180922_P60_v1.ascii,data/lightcurves/ZTF18aaenfaa_fritz_lightcurves.csv
 ZTF18abygcwk,CV,0.0,2458385.5,2458385.68,P60,data/spectra/ZTF18abygcwk_20180924_P60_v2.ascii,data/lightcurves/ZTF18abygcwk_fritz_lightcurves.csv
 ZTF18aaakpbx,CV,0.0,2458389.5,2458874.67,P60,data/spectra/ZTF18aaakpbx_20180928_P60_v2.ascii,data/lightcurves/ZTF18aaakpbx_fritz_lightcurves.csv
@@ -105,9 +103,9 @@ ZTF18abyukaz,CV,0.0,2458386.5,2458387.64,P60,data/spectra/ZTF18abyukaz_20180925_
 ZTF18abyzmsb,CV,0.0,2458388.5,2458388.62,P60,data/spectra/ZTF18abyzmsb_20180927_P60_v2.ascii,data/lightcurves/ZTF18abyzmsb_fritz_lightcurves.csv
 ZTF18abcohew,AGN,0.045,2458456.5,2458943.95,P60,data/spectra/ZTF18abcohew_20181204_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18abcohew.csv
 ZTF18acajosk,CV,0.0,2458401.5,2458718.92,P60,data/spectra/ZTF18acajosk_20181010_P60_v1.ascii,data/lightcurves/ZTF18acajosk_fritz_lightcurves.csv
-ZTF18aakfabl, II,0.035,2458427.5,2458423.94,P60,data/spectra/ZTF18aakfabl_20181105_P60_v1.ascii,data/lightcurves/ZTF18aakfabl_fritz_lightcurves.csv
-ZTF18aakfabl, II,0.035,2458437.5,2458423.94,P60,data/spectra/ZTF18aakfabl_20181115_P60_v1.ascii,data/lightcurves/ZTF18aakfabl_fritz_lightcurves.csv
-ZTF18aakfabl, II,0.035,2458437.5,2458423.94,P60,data/spectra/ZTF18aakfabl_20181115_P60_v3.ascii,data/lightcurves/ZTF18aakfabl_fritz_lightcurves.csv
+ZTF18aakfabl,II,0.035,2458427.5,2458423.94,P60,data/spectra/ZTF18aakfabl_20181105_P60_v1.ascii,data/lightcurves/ZTF18aakfabl_fritz_lightcurves.csv
+ZTF18aakfabl,II,0.035,2458437.5,2458423.94,P60,data/spectra/ZTF18aakfabl_20181115_P60_v1.ascii,data/lightcurves/ZTF18aakfabl_fritz_lightcurves.csv
+ZTF18aakfabl,II,0.035,2458437.5,2458423.94,P60,data/spectra/ZTF18aakfabl_20181115_P60_v3.ascii,data/lightcurves/ZTF18aakfabl_fritz_lightcurves.csv
 ZTF18aaaokus,AGN,0.00883,2458432.5,2458955.69,P60,data/spectra/ZTF18aaaokus_20181110_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aaaokus.csv
 ZTF18aabicqe,AGN,0.08,2458425.5,2458862.76,P60,data/spectra/ZTF18aabicqe_20181103_P60_v1.ascii,data/lightcurves/ZTF18aabicqe_fritz_lightcurves.csv
 ZTF18aadkjmo,AGN,0.02499,2458424.5,2458455.72,P60,data/spectra/ZTF18aadkjmo_20181102_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aadkjmo.csv
@@ -131,344 +129,338 @@ ZTF18acbwkso,CV,0.0,2458429.5,2458423.6,P60,data/spectra/ZTF18acbwkso_20181107_P
 ZTF18acfvhko,AGN,0.03158,2458432.5,2458431.69,P60,data/spectra/ZTF18acfvhko_20181110_P60_v1.ascii,data/lightcurves/ZTF18acfvhko_fritz_lightcurves.csv
 ZTF18acfvhko,AGN,0.03158,2458432.5,2458431.69,P60,data/spectra/ZTF18acfvhko_20181110_P60_v2.ascii,data/lightcurves/ZTF18acfvhko_fritz_lightcurves.csv
 ZTF18aceaape,AGN,0.065,2458482.5,2458481.75,P60,data/spectra/ZTF18aceaape_20181230_P60_v1.ascii,data/lightcurves/ZTF18aceaape_fritz_lightcurves.csv
-ZTF18abjlyzc,CV,0.0,2458441.5,2458721.71,P60,data/spectra/ZTF18abjlyzc_20181119_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18abjlyzc.csv
 ZTF17aadcbei,CV,0.0,2458439.5,2458437.89,P60,data/spectra/ZTF17aadcbei_20181117_P60_v1.ascii,data/lightcurves/ZTF17aadcbei_fritz_lightcurves.csv
-ZTF18accngxc, II,0.07,2458581.5,2458575.66,P60,data/spectra/ZTF18accngxc_20190408_P60_v1.ascii,data/lightcurves/ZTF18accngxc_fritz_lightcurves.csv
+ZTF18accngxc,II,0.07,2458581.5,2458575.66,P60,data/spectra/ZTF18accngxc_20190408_P60_v1.ascii,data/lightcurves/ZTF18accngxc_fritz_lightcurves.csv
 ZTF18acgqweq,AGN,0.17,2458443.5,2458449.86,P60,data/spectra/ZTF18acgqweq_20181121_P60_v1.ascii,data/lightcurves/ZTF18acgqweq_fritz_lightcurves.csv
-ZTF18acnbgpw, Ia-91T,0.055,2458471.5,2458450.96,P60,data/spectra/ZTF18acnbgpw_20181219_P60_v1.ascii,data/lightcurves/ZTF18acnbgpw_fritz_lightcurves.csv
-ZTF18acnncve, Ib,0.0445,2458448.5,2458447.9,P60,data/spectra/ZTF18acnncve_20181126_P60_v1.ascii,data/lightcurves/ZTF18acnncve_fritz_lightcurves.csv
+ZTF18acnbgpw,Ia-91T,0.055,2458471.5,2458450.96,P60,data/spectra/ZTF18acnbgpw_20181219_P60_v1.ascii,data/lightcurves/ZTF18acnbgpw_fritz_lightcurves.csv
+ZTF18acnncve,Ib,0.0445,2458448.5,2458447.9,P60,data/spectra/ZTF18acnncve_20181126_P60_v1.ascii,data/lightcurves/ZTF18acnncve_fritz_lightcurves.csv
 ZTF18acgvhxo,AGN,0.01421,2458464.5,2458447.95,P60,data/spectra/ZTF18acgvhxo_20181212_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18acgvhxo.csv
-ZTF18acqpobb, Ia-91T,0.035,2458486.5,2458442.96,P60,data/spectra/ZTF18acqpobb_20190103_P60_v1.ascii,data/lightcurves/ZTF18acqpobb_fritz_lightcurves.csv
-ZTF18acdyypo, Ia,0.0502,2458461.5,2458468.75,P60,data/spectra/ZTF18acdyypo_20181209_P60_v2.ascii,data/lightcurves/ZTF18acdyypo_fritz_lightcurves.csv
-ZTF18acdyypo, Ia,0.0502,2458487.5,2458468.75,P60,data/spectra/ZTF18acdyypo_20190104_P60_v1.ascii,data/lightcurves/ZTF18acdyypo_fritz_lightcurves.csv
-ZTF18acdyypo, Ia,0.0502,2458487.5,2458468.75,P60,data/spectra/ZTF18acdyypo_20190104_P60_v2.ascii,data/lightcurves/ZTF18acdyypo_fritz_lightcurves.csv
-ZTF18acrfklz, Ia,0.12,2458461.5,2458456.62,P60,data/spectra/ZTF18acrfklz_20181209_P60_v1.ascii,data/lightcurves/ZTF18acrfklz_fritz_lightcurves.csv
-ZTF18acsyaye, II,0.05,2458474.5,2458456.71,P60,data/spectra/ZTF18acsyaye_20181222_P60_v1.ascii,data/lightcurves/ZTF18acsyaye_fritz_lightcurves.csv
-ZTF18acslhcq, Ia,0.05,2458462.5,2458457.66,P60,data/spectra/ZTF18acslhcq_20181210_P60_v1.ascii,data/lightcurves/ZTF18acslhcq_fritz_lightcurves.csv
-ZTF18acslhcq, Ia,0.05,2458462.5,2458457.66,P60,data/spectra/ZTF18acslhcq_20181210_P60_v2.ascii,data/lightcurves/ZTF18acslhcq_fritz_lightcurves.csv
-ZTF18acsofdh, Ia,0.08,2458471.5,2458465.67,P60,data/spectra/ZTF18acsofdh_20181219_P60_v1.ascii,data/lightcurves/ZTF18acsofdh_fritz_lightcurves.csv
-ZTF18acsohut, Ia,0.1,2458475.5,2458464.78,P60,data/spectra/ZTF18acsohut_20181223_P60_v1.ascii,data/lightcurves/ZTF18acsohut_fritz_lightcurves.csv
-ZTF18acuimze, Ia,0.056,2458474.5,2458474.76,P60,data/spectra/ZTF18acuimze_20181222_P60_v1.ascii,data/lightcurves/ZTF18acuimze_fritz_lightcurves.csv
-ZTF18acuixmb, Ia,0.057,2458464.5,2458476.75,P60,data/spectra/ZTF18acuixmb_20181212_P60_v1.ascii,data/lightcurves/ZTF18acuixmb_fritz_lightcurves.csv
-ZTF18acuring, II,0.037,2458466.5,2458471.97,P60,data/spectra/ZTF18acuring_20181214_P60_v1.ascii,data/lightcurves/ZTF18acuring_fritz_lightcurves.csv
-ZTF18acuring, II,0.037,2458472.5,2458471.97,P60,data/spectra/ZTF18acuring_20181220_P60_v1.ascii,data/lightcurves/ZTF18acuring_fritz_lightcurves.csv
+ZTF18acqpobb,Ia-91T,0.035,2458486.5,2458442.96,P60,data/spectra/ZTF18acqpobb_20190103_P60_v1.ascii,data/lightcurves/ZTF18acqpobb_fritz_lightcurves.csv
+ZTF18acdyypo,Ia,0.0502,2458461.5,2458468.75,P60,data/spectra/ZTF18acdyypo_20181209_P60_v2.ascii,data/lightcurves/ZTF18acdyypo_fritz_lightcurves.csv
+ZTF18acdyypo,Ia,0.0502,2458487.5,2458468.75,P60,data/spectra/ZTF18acdyypo_20190104_P60_v1.ascii,data/lightcurves/ZTF18acdyypo_fritz_lightcurves.csv
+ZTF18acdyypo,Ia,0.0502,2458487.5,2458468.75,P60,data/spectra/ZTF18acdyypo_20190104_P60_v2.ascii,data/lightcurves/ZTF18acdyypo_fritz_lightcurves.csv
+ZTF18acrfklz,Ia,0.12,2458461.5,2458456.62,P60,data/spectra/ZTF18acrfklz_20181209_P60_v1.ascii,data/lightcurves/ZTF18acrfklz_fritz_lightcurves.csv
+ZTF18acsyaye,II,0.05,2458474.5,2458456.71,P60,data/spectra/ZTF18acsyaye_20181222_P60_v1.ascii,data/lightcurves/ZTF18acsyaye_fritz_lightcurves.csv
+ZTF18acslhcq,Ia,0.05,2458462.5,2458457.66,P60,data/spectra/ZTF18acslhcq_20181210_P60_v1.ascii,data/lightcurves/ZTF18acslhcq_fritz_lightcurves.csv
+ZTF18acslhcq,Ia,0.05,2458462.5,2458457.66,P60,data/spectra/ZTF18acslhcq_20181210_P60_v2.ascii,data/lightcurves/ZTF18acslhcq_fritz_lightcurves.csv
+ZTF18acsofdh,Ia,0.08,2458471.5,2458465.67,P60,data/spectra/ZTF18acsofdh_20181219_P60_v1.ascii,data/lightcurves/ZTF18acsofdh_fritz_lightcurves.csv
+ZTF18acsohut,Ia,0.1,2458475.5,2458464.78,P60,data/spectra/ZTF18acsohut_20181223_P60_v1.ascii,data/lightcurves/ZTF18acsohut_fritz_lightcurves.csv
+ZTF18acuimze,Ia,0.056,2458474.5,2458474.76,P60,data/spectra/ZTF18acuimze_20181222_P60_v1.ascii,data/lightcurves/ZTF18acuimze_fritz_lightcurves.csv
+ZTF18acuixmb,Ia,0.057,2458464.5,2458476.75,P60,data/spectra/ZTF18acuixmb_20181212_P60_v1.ascii,data/lightcurves/ZTF18acuixmb_fritz_lightcurves.csv
+ZTF18acuring,II,0.037,2458466.5,2458471.97,P60,data/spectra/ZTF18acuring_20181214_P60_v1.ascii,data/lightcurves/ZTF18acuring_fritz_lightcurves.csv
+ZTF18acuring,II,0.037,2458472.5,2458471.97,P60,data/spectra/ZTF18acuring_20181220_P60_v1.ascii,data/lightcurves/ZTF18acuring_fritz_lightcurves.csv
 ZTF18acvbpcv,CV,0.0,2458466.5,2458464.74,P60,data/spectra/ZTF18acvbpcv_20181214_P60_v1.ascii,data/lightcurves/ZTF18acvbpcv_fritz_lightcurves.csv
-ZTF18acvilwk, II,0.0154,2458481.5,2458476.98,P60,data/spectra/ZTF18acvilwk_20181229_P60_v1.ascii,data/lightcurves/ZTF18acvilwk_fritz_lightcurves.csv
-ZTF18acsvycn, II,0.05,2458474.5,2458456.58,P60,data/spectra/ZTF18acsvycn_20181222_P60_v1.ascii,data/lightcurves/ZTF18acsvycn_fritz_lightcurves.csv
-ZTF18acyctqi, Ia,0.076,2458481.5,2458472.99,P60,data/spectra/ZTF18acyctqi_20181229_P60_v2.ascii,data/lightcurves/ZTF18acyctqi_fritz_lightcurves.csv
+ZTF18acvilwk,II,0.0154,2458481.5,2458476.98,P60,data/spectra/ZTF18acvilwk_20181229_P60_v1.ascii,data/lightcurves/ZTF18acvilwk_fritz_lightcurves.csv
+ZTF18acsvycn,II,0.05,2458474.5,2458456.58,P60,data/spectra/ZTF18acsvycn_20181222_P60_v1.ascii,data/lightcurves/ZTF18acsvycn_fritz_lightcurves.csv
+ZTF18acyctqi,Ia,0.076,2458481.5,2458472.99,P60,data/spectra/ZTF18acyctqi_20181229_P60_v2.ascii,data/lightcurves/ZTF18acyctqi_fritz_lightcurves.csv
 ZTF18aabfxpw,CV,0.0,2458472.5,2458471.71,P60,data/spectra/ZTF18aabfxpw_20181220_P60_v1.ascii,data/lightcurves/ZTF18aabfxpw_fritz_lightcurves.csv
 ZTF18abwcgrm,AGN,0.025,2458474.5,2458471.71,P60,data/spectra/ZTF18abwcgrm_20181222_P60_v1.ascii,data/lightcurves/ZTF18abwcgrm_fritz_lightcurves.csv
-ZTF18acvwmpw, Ia,0.08,2458474.5,2458482.95,P60,data/spectra/ZTF18acvwmpw_20181222_P60_v1.ascii,data/lightcurves/ZTF18acvwmpw_fritz_lightcurves.csv
+ZTF18acvwmpw,Ia,0.08,2458474.5,2458482.95,P60,data/spectra/ZTF18acvwmpw_20181222_P60_v1.ascii,data/lightcurves/ZTF18acvwmpw_fritz_lightcurves.csv
 ZTF18acwugwx,AGN,0.065,2458472.5,2458510.67,P60,data/spectra/ZTF18acwugwx_20181220_P60_v1.ascii,data/lightcurves/ZTF18acwugwx_fritz_lightcurves.csv
-ZTF18acwutbr, Ia,0.011,2458471.5,2458487.69,P60,data/spectra/ZTF18acwutbr_20181219_P60_v1.ascii,data/lightcurves/ZTF18acwutbr_fritz_lightcurves.csv
-ZTF18acwutbr, Ia,0.011,2458471.5,2458487.69,P60,data/spectra/ZTF18acwutbr_20181219_P60_v2.ascii,data/lightcurves/ZTF18acwutbr_fritz_lightcurves.csv
-ZTF18acyyhgi, Ia,0.037,2458472.5,2458482.0,P60,data/spectra/ZTF18acyyhgi_20181220_P60_v1.ascii,data/lightcurves/ZTF18acyyhgi_fritz_lightcurves.csv
+ZTF18acwutbr,Ia,0.011,2458471.5,2458487.69,P60,data/spectra/ZTF18acwutbr_20181219_P60_v1.ascii,data/lightcurves/ZTF18acwutbr_fritz_lightcurves.csv
+ZTF18acwutbr,Ia,0.011,2458471.5,2458487.69,P60,data/spectra/ZTF18acwutbr_20181219_P60_v2.ascii,data/lightcurves/ZTF18acwutbr_fritz_lightcurves.csv
+ZTF18acyyhgi,Ia,0.037,2458472.5,2458482.0,P60,data/spectra/ZTF18acyyhgi_20181220_P60_v1.ascii,data/lightcurves/ZTF18acyyhgi_fritz_lightcurves.csv
 ZTF18aaflcyp,AGN,0.03075,2458481.5,2458480.87,P60,data/spectra/ZTF18aaflcyp_20181229_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aaflcyp.csv
-ZTF18acvcxnc, Ia,0.05,2458474.5,2458472.88,P60,data/spectra/ZTF18acvcxnc_20181222_P60_v1.ascii,data/lightcurves/ZTF18acvcxnc_fritz_lightcurves.csv
-ZTF18acwyqeg, Ia,0.0599,2458474.5,2458477.0,P60,data/spectra/ZTF18acwyqeg_20181222_P60_v1.ascii,data/lightcurves/ZTF18acwyqeg_fritz_lightcurves.csv
-ZTF18acxijqw, Ia,0.08,2458473.5,2458481.75,P60,data/spectra/ZTF18acxijqw_20181221_P60_v1.ascii,data/lightcurves/ZTF18acxijqw_fritz_lightcurves.csv
-ZTF18acynoro, Ia,0.064,2458475.5,2458482.64,P60,data/spectra/ZTF18acynoro_20181223_P60_v1.ascii,data/lightcurves/ZTF18acynoro_fritz_lightcurves.csv
-ZTF18aczqtpt, Ia,0.069,2458481.5,2458483.59,P60,data/spectra/ZTF18aczqtpt_20181229_P60_v1.ascii,data/lightcurves/ZTF18aczqtpt_fritz_lightcurves.csv
+ZTF18acvcxnc,Ia,0.05,2458474.5,2458472.88,P60,data/spectra/ZTF18acvcxnc_20181222_P60_v1.ascii,data/lightcurves/ZTF18acvcxnc_fritz_lightcurves.csv
+ZTF18acwyqeg,Ia,0.0599,2458474.5,2458477.0,P60,data/spectra/ZTF18acwyqeg_20181222_P60_v1.ascii,data/lightcurves/ZTF18acwyqeg_fritz_lightcurves.csv
+ZTF18acxijqw,Ia,0.08,2458473.5,2458481.75,P60,data/spectra/ZTF18acxijqw_20181221_P60_v1.ascii,data/lightcurves/ZTF18acxijqw_fritz_lightcurves.csv
+ZTF18acynoro,Ia,0.064,2458475.5,2458482.64,P60,data/spectra/ZTF18acynoro_20181223_P60_v1.ascii,data/lightcurves/ZTF18acynoro_fritz_lightcurves.csv
+ZTF18aczqtpt,Ia,0.069,2458481.5,2458483.59,P60,data/spectra/ZTF18aczqtpt_20181229_P60_v1.ascii,data/lightcurves/ZTF18aczqtpt_fritz_lightcurves.csv
 ZTF18acvjhht,AGN,0.044,2458487.5,2458506.99,P60,data/spectra/ZTF18acvjhht_20190104_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18acvjhht.csv
 ZTF18acvjhht,AGN,0.044,2458487.5,2458506.99,P60,data/spectra/ZTF18acvjhht_20190104_P60_v2.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18acvjhht.csv
-ZTF18acwzxhr, II,0.026,2458486.5,2458467.99,P60,data/spectra/ZTF18acwzxhr_20190103_P60_v1.ascii,data/lightcurves/ZTF18acwzxhr_fritz_lightcurves.csv
-ZTF18adachwf, IIP,0.02905,2458482.5,2458488.0,P60,data/spectra/ZTF18adachwf_20181230_P60_v1.ascii,data/lightcurves/ZTF18adachwf_fritz_lightcurves.csv
-ZTF18adachwf, IIP,0.02905,2458486.5,2458488.0,P60,data/spectra/ZTF18adachwf_20190103_P60_v1.ascii,data/lightcurves/ZTF18adachwf_fritz_lightcurves.csv
+ZTF18acwzxhr,II,0.026,2458486.5,2458467.99,P60,data/spectra/ZTF18acwzxhr_20190103_P60_v1.ascii,data/lightcurves/ZTF18acwzxhr_fritz_lightcurves.csv
+ZTF18adachwf,IIP,0.02905,2458482.5,2458488.0,P60,data/spectra/ZTF18adachwf_20181230_P60_v1.ascii,data/lightcurves/ZTF18adachwf_fritz_lightcurves.csv
+ZTF18adachwf,IIP,0.02905,2458486.5,2458488.0,P60,data/spectra/ZTF18adachwf_20190103_P60_v1.ascii,data/lightcurves/ZTF18adachwf_fritz_lightcurves.csv
 ZTF18adalhzq,AGN,0.033,2458487.5,2458492.95,P60,data/spectra/ZTF18adalhzq_20190104_P60_v1.ascii,data/lightcurves/ZTF18adalhzq_fritz_lightcurves.csv
-ZTF18adbcqwv,CV,0.0,2458483.5,2458483.55,P60,data/spectra/ZTF18adbcqwv_20181231_P60_v2.ascii,data/lightcurves/ZTF18adbcqwv_fritz_lightcurves.csv
-ZTF18adasisj, Ic,0.034,2458483.5,2458507.67,P60,data/spectra/ZTF18adasisj_20181231_P60_v1.ascii,data/lightcurves/ZTF18adasisj_fritz_lightcurves.csv
-ZTF18adasopt, Ia,0.04,2458483.5,2458490.66,P60,data/spectra/ZTF18adasopt_20181231_P60_v1.ascii,data/lightcurves/ZTF18adasopt_fritz_lightcurves.csv
-ZTF18adathpb, Ia-91bg,0.03118,2458486.5,2458486.59,P60,data/spectra/ZTF18adathpb_20190103_P60_v1.ascii,data/lightcurves/ZTF18adathpb_fritz_lightcurves.csv
-ZTF18adbmrug, IIn,0.02396,2458486.5,2458493.59,P60,data/spectra/ZTF18adbmrug_20190103_P60_v1.ascii,data/lightcurves/ZTF18adbmrug_fritz_lightcurves.csv
-ZTF18adbntwo, Ia-norm,0.04774,2458486.5,2458495.65,P60,data/spectra/ZTF18adbntwo_20190103_P60_v1.ascii,data/lightcurves/ZTF18adbntwo_fritz_lightcurves.csv
+ZTF18adasisj,Ic,0.034,2458483.5,2458507.67,P60,data/spectra/ZTF18adasisj_20181231_P60_v1.ascii,data/lightcurves/ZTF18adasisj_fritz_lightcurves.csv
+ZTF18adasopt,Ia,0.04,2458483.5,2458490.66,P60,data/spectra/ZTF18adasopt_20181231_P60_v1.ascii,data/lightcurves/ZTF18adasopt_fritz_lightcurves.csv
+ZTF18adathpb,Ia-91bg,0.03118,2458486.5,2458486.59,P60,data/spectra/ZTF18adathpb_20190103_P60_v1.ascii,data/lightcurves/ZTF18adathpb_fritz_lightcurves.csv
+ZTF18adbmrug,IIn,0.02396,2458486.5,2458493.59,P60,data/spectra/ZTF18adbmrug_20190103_P60_v1.ascii,data/lightcurves/ZTF18adbmrug_fritz_lightcurves.csv
+ZTF18adbntwo,Ia-norm,0.04774,2458486.5,2458495.65,P60,data/spectra/ZTF18adbntwo_20190103_P60_v1.ascii,data/lightcurves/ZTF18adbntwo_fritz_lightcurves.csv
 ZTF18aaxryfw,AGN,0.06,2458540.5,2458567.98,P60,data/spectra/ZTF18aaxryfw_20190226_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aaxryfw.csv
 ZTF19aacwjfb,AGN,0.0301,2458597.5,2458586.66,P60,data/spectra/ZTF19aacwjfb_20190424_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF19aacwjfb.csv
-ZTF19aadgimr, IIn,0.035,2458649.5,2458526.96,P60,data/spectra/ZTF19aadgimr_20190615_P60_v1.ascii,data/lightcurves/ZTF19aadgimr_fritz_lightcurves.csv
-ZTF19aadnxnl, IIP,0.0088,2458555.5,2458558.69,P60,data/spectra/ZTF19aadnxnl_20190313_P60_v1.ascii,data/lightcurves/ZTF19aadnxnl_fritz_lightcurves.csv
-ZTF19aadooun, Ia,0.0501,2458523.5,2458511.9,P60,data/spectra/ZTF19aadooun_20190209_P60_v1.ascii,data/lightcurves/ZTF19aadooun_fritz_lightcurves.csv
-ZTF19aadwtoe, Ic,0.0153,2458523.5,2458510.74,P60,data/spectra/ZTF19aadwtoe_20190209_P60_v1.ascii,data/lightcurves/ZTF19aadwtoe_fritz_lightcurves.csv
-ZTF19aadwtoe, Ic,0.0153,2458523.5,2458510.74,P60,data/spectra/ZTF19aadwtoe_20190209_P60_v3.ascii,data/lightcurves/ZTF19aadwtoe_fritz_lightcurves.csv
-ZTF19aadyiao, IIb,0.032,2458557.5,2458512.97,P60,data/spectra/ZTF19aadyiao_20190315_P60_v1.ascii,data/lightcurves/ZTF19aadyiao_fritz_lightcurves.csv
-ZTF19aadyiao, IIb,0.032,2458557.5,2458512.97,P60,data/spectra/ZTF19aadyiao_20190315_P60_v2.ascii,data/lightcurves/ZTF19aadyiao_fritz_lightcurves.csv
-ZTF19aadttht, Ic,0.00638,2458588.5,2458509.94,P60,data/spectra/ZTF19aadttht_20190415_P60_v1.ascii,data/lightcurves/ZTF19aadttht_fritz_lightcurves.csv
-ZTF19aadttht, Ic,0.00638,2458642.5,2458509.94,P60,data/spectra/ZTF19aadttht_20190608_P60_v1.ascii,data/lightcurves/ZTF19aadttht_fritz_lightcurves.csv
-ZTF19aadttht, Ic,0.00638,2458646.5,2458509.94,P60,data/spectra/ZTF19aadttht_20190612_P60_v1.ascii,data/lightcurves/ZTF19aadttht_fritz_lightcurves.csv
-ZTF19aadttht, Ic,0.00638,2458666.5,2458509.94,P60,data/spectra/ZTF19aadttht_20190702_P60_v1.ascii,data/lightcurves/ZTF19aadttht_fritz_lightcurves.csv
-ZTF19aadypig, II,0.03,2458534.5,2458513.01,P60,data/spectra/ZTF19aadypig_20190220_P60_v1.ascii,data/lightcurves/ZTF19aadypig_fritz_lightcurves.csv
-ZTF19aadnmgf, Ia,0.08,2458539.5,2458513.83,P60,data/spectra/ZTF19aadnmgf_20190225_P60_v1.ascii,data/lightcurves/ZTF19aadnmgf_fritz_lightcurves.csv
-ZTF19aafncsv, Ia,0.037,2458556.5,2458526.99,P60,data/spectra/ZTF19aafncsv_20190314_P60_v1.ascii,data/lightcurves/ZTF19aafncsv_fritz_lightcurves.csv
-ZTF19aafnfyc, Ia,0.08,2458546.5,2458522.92,P60,data/spectra/ZTF19aafnfyc_20190304_P60_v1.ascii,data/lightcurves/ZTF19aafnfyc_fritz_lightcurves.csv
+ZTF19aadgimr,IIn,0.035,2458649.5,2458526.96,P60,data/spectra/ZTF19aadgimr_20190615_P60_v1.ascii,data/lightcurves/ZTF19aadgimr_fritz_lightcurves.csv
+ZTF19aadnxnl,IIP,0.0088,2458555.5,2458558.69,P60,data/spectra/ZTF19aadnxnl_20190313_P60_v1.ascii,data/lightcurves/ZTF19aadnxnl_fritz_lightcurves.csv
+ZTF19aadooun,Ia,0.0501,2458523.5,2458511.9,P60,data/spectra/ZTF19aadooun_20190209_P60_v1.ascii,data/lightcurves/ZTF19aadooun_fritz_lightcurves.csv
+ZTF19aadwtoe,Ic,0.0153,2458523.5,2458510.74,P60,data/spectra/ZTF19aadwtoe_20190209_P60_v1.ascii,data/lightcurves/ZTF19aadwtoe_fritz_lightcurves.csv
+ZTF19aadwtoe,Ic,0.0153,2458523.5,2458510.74,P60,data/spectra/ZTF19aadwtoe_20190209_P60_v3.ascii,data/lightcurves/ZTF19aadwtoe_fritz_lightcurves.csv
+ZTF19aadyiao,IIb,0.032,2458557.5,2458512.97,P60,data/spectra/ZTF19aadyiao_20190315_P60_v1.ascii,data/lightcurves/ZTF19aadyiao_fritz_lightcurves.csv
+ZTF19aadyiao,IIb,0.032,2458557.5,2458512.97,P60,data/spectra/ZTF19aadyiao_20190315_P60_v2.ascii,data/lightcurves/ZTF19aadyiao_fritz_lightcurves.csv
+ZTF19aadttht,Ic,0.00638,2458588.5,2458509.94,P60,data/spectra/ZTF19aadttht_20190415_P60_v1.ascii,data/lightcurves/ZTF19aadttht_fritz_lightcurves.csv
+ZTF19aadttht,Ic,0.00638,2458642.5,2458509.94,P60,data/spectra/ZTF19aadttht_20190608_P60_v1.ascii,data/lightcurves/ZTF19aadttht_fritz_lightcurves.csv
+ZTF19aadttht,Ic,0.00638,2458646.5,2458509.94,P60,data/spectra/ZTF19aadttht_20190612_P60_v1.ascii,data/lightcurves/ZTF19aadttht_fritz_lightcurves.csv
+ZTF19aadttht,Ic,0.00638,2458666.5,2458509.94,P60,data/spectra/ZTF19aadttht_20190702_P60_v1.ascii,data/lightcurves/ZTF19aadttht_fritz_lightcurves.csv
+ZTF19aadypig,II,0.03,2458534.5,2458513.01,P60,data/spectra/ZTF19aadypig_20190220_P60_v1.ascii,data/lightcurves/ZTF19aadypig_fritz_lightcurves.csv
+ZTF19aadnmgf,Ia,0.08,2458539.5,2458513.83,P60,data/spectra/ZTF19aadnmgf_20190225_P60_v1.ascii,data/lightcurves/ZTF19aadnmgf_fritz_lightcurves.csv
+ZTF19aafncsv,Ia,0.037,2458556.5,2458526.99,P60,data/spectra/ZTF19aafncsv_20190314_P60_v1.ascii,data/lightcurves/ZTF19aafncsv_fritz_lightcurves.csv
+ZTF19aafnfyc,Ia,0.08,2458546.5,2458522.92,P60,data/spectra/ZTF19aafnfyc_20190304_P60_v1.ascii,data/lightcurves/ZTF19aafnfyc_fritz_lightcurves.csv
 ZTF19aaflcgn,AGN,0.00728,2458558.5,2458556.72,P60,data/spectra/ZTF19aaflcgn_20190316_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF19aaflcgn.csv
-ZTF19aaeuhgo, II,0.0678,2458759.5,2458654.89,P60,data/spectra/ZTF19aaeuhgo_20191003_P60_v1.ascii,data/lightcurves/ZTF19aaeuhgo_fritz_lightcurves.csv
-ZTF19aafmyow, Ic,0.0265,2458592.5,2458538.96,P60,data/spectra/ZTF19aafmyow_20190419_P60_v1.ascii,data/lightcurves/ZTF19aafmyow_fritz_lightcurves.csv
-ZTF19aafmyow, Ic,0.0265,2458633.5,2458538.96,P60,data/spectra/ZTF19aafmyow_20190530_P60_v1.ascii,data/lightcurves/ZTF19aafmyow_fritz_lightcurves.csv
-ZTF19aafmyow, Ic,0.0265,2458633.5,2458538.96,P60,data/spectra/ZTF19aafmyow_20190530_P60_v2.ascii,data/lightcurves/ZTF19aafmyow_fritz_lightcurves.csv
-ZTF19aahsgka, Ia,0.01745,2458538.5,2458526.63,P60,data/spectra/ZTF19aahsgka_20190224_P60_v1.ascii,data/lightcurves/ZTF19aahsgka_fritz_lightcurves.csv
-ZTF19aahuian, Ia,0.06912,2458525.5,2458526.67,P60,data/spectra/ZTF19aahuian_20190211_P60_v1.ascii,data/lightcurves/ZTF19aahuian_fritz_lightcurves.csv
-ZTF19aailvhf, II,0.029,2458557.5,2458543.91,P60,data/spectra/ZTF19aailvhf_20190315_P60_v1.ascii,data/lightcurves/ZTF19aailvhf_fritz_lightcurves.csv
-ZTF19aafmhcl, Ia,0.068,2458523.5,2458526.66,P60,data/spectra/ZTF19aafmhcl_20190209_P60_v3.ascii,data/lightcurves/ZTF19aafmhcl_fritz_lightcurves.csv
-ZTF19aahulyd, Ia,0.04092,2458525.5,2458540.68,P60,data/spectra/ZTF19aahulyd_20190211_P60_v1.ascii,data/lightcurves/ZTF19aahulyd_fritz_lightcurves.csv
-ZTF19aainjqn, Ia,0.0315,2458525.5,2458534.62,P60,data/spectra/ZTF19aainjqn_20190211_P60_v1.ascii,data/lightcurves/ZTF19aainjqn_fritz_lightcurves.csv
+ZTF19aaeuhgo,II,0.0678,2458759.5,2458654.89,P60,data/spectra/ZTF19aaeuhgo_20191003_P60_v1.ascii,data/lightcurves/ZTF19aaeuhgo_fritz_lightcurves.csv
+ZTF19aafmyow,Ic,0.0265,2458592.5,2458538.96,P60,data/spectra/ZTF19aafmyow_20190419_P60_v1.ascii,data/lightcurves/ZTF19aafmyow_fritz_lightcurves.csv
+ZTF19aafmyow,Ic,0.0265,2458633.5,2458538.96,P60,data/spectra/ZTF19aafmyow_20190530_P60_v1.ascii,data/lightcurves/ZTF19aafmyow_fritz_lightcurves.csv
+ZTF19aafmyow,Ic,0.0265,2458633.5,2458538.96,P60,data/spectra/ZTF19aafmyow_20190530_P60_v2.ascii,data/lightcurves/ZTF19aafmyow_fritz_lightcurves.csv
+ZTF19aahsgka,Ia,0.01745,2458538.5,2458526.63,P60,data/spectra/ZTF19aahsgka_20190224_P60_v1.ascii,data/lightcurves/ZTF19aahsgka_fritz_lightcurves.csv
+ZTF19aahuian,Ia,0.06912,2458525.5,2458526.67,P60,data/spectra/ZTF19aahuian_20190211_P60_v1.ascii,data/lightcurves/ZTF19aahuian_fritz_lightcurves.csv
+ZTF19aailvhf,II,0.029,2458557.5,2458543.91,P60,data/spectra/ZTF19aailvhf_20190315_P60_v1.ascii,data/lightcurves/ZTF19aailvhf_fritz_lightcurves.csv
+ZTF19aafmhcl,Ia,0.068,2458523.5,2458526.66,P60,data/spectra/ZTF19aafmhcl_20190209_P60_v3.ascii,data/lightcurves/ZTF19aafmhcl_fritz_lightcurves.csv
+ZTF19aahulyd,Ia,0.04092,2458525.5,2458540.68,P60,data/spectra/ZTF19aahulyd_20190211_P60_v1.ascii,data/lightcurves/ZTF19aahulyd_fritz_lightcurves.csv
+ZTF19aainjqn,Ia,0.0315,2458525.5,2458534.62,P60,data/spectra/ZTF19aainjqn_20190211_P60_v1.ascii,data/lightcurves/ZTF19aainjqn_fritz_lightcurves.csv
 ZTF19aafltef,AGN,0.04798,2458543.5,2458561.79,P60,data/spectra/ZTF19aafltef_20190301_P60_v1.ascii,data/lightcurves/ZTF19aafltef_fritz_lightcurves.csv
 ZTF19aaciohh,AGN,0.09,2458547.5,2458513.0,P60,data/spectra/ZTF19aaciohh_20190305_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF19aaciohh.csv
-ZTF19aaduufr, IIP,0.035,2458591.5,2458617.67,P60,data/spectra/ZTF19aaduufr_20190418_P60_v2.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF19aaduufr.csv
-ZTF19aaduufr, IIP,0.035,2458593.5,2458617.67,P60,data/spectra/ZTF19aaduufr_20190420_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF19aaduufr.csv
-ZTF19aahsnmq, Ia,0.06,2458534.5,2458538.74,P60,data/spectra/ZTF19aahsnmq_20190220_P60_v1.ascii,data/lightcurves/ZTF19aahsnmq_fritz_lightcurves.csv
-ZTF19aailltc, Ia,0.088,2458539.5,2458538.81,P60,data/spectra/ZTF19aailltc_20190225_P60_v1.ascii,data/lightcurves/ZTF19aailltc_fritz_lightcurves.csv
-ZTF19aailqli, Ia,0.058,2458547.5,2458538.94,P60,data/spectra/ZTF19aailqli_20190305_P60_v1.ascii,data/lightcurves/ZTF19aailqli_fritz_lightcurves.csv
-ZTF19aajxhwa, Ia,0.033,2458539.5,2458538.6,P60,data/spectra/ZTF19aajxhwa_20190225_P60_v1.ascii,data/lightcurves/ZTF19aajxhwa_fritz_lightcurves.csv
-ZTF19aakiwxx, Ia,0.04109,2458543.5,2458538.87,P60,data/spectra/ZTF19aakiwxx_20190301_P60_v1.ascii,data/lightcurves/ZTF19aakiwxx_fritz_lightcurves.csv
-ZTF19aakiyly, Ia,0.07,2458539.5,2458541.87,P60,data/spectra/ZTF19aakiyly_20190225_P60_v1.ascii,data/lightcurves/ZTF19aakiyly_fritz_lightcurves.csv
-ZTF19aaezwmr, Ia,0.064,2458539.5,2458526.66,P60,data/spectra/ZTF19aaezwmr_20190225_P60_v1.ascii,data/lightcurves/ZTF19aaezwmr_fritz_lightcurves.csv
-ZTF19aajwhbc, Ia,0.1,2458557.5,2458538.8,P60,data/spectra/ZTF19aajwhbc_20190315_P60_v1.ascii,data/lightcurves/ZTF19aajwhbc_fritz_lightcurves.csv
-ZTF19aajxwnz, Ia,0.015,2458538.5,2458547.62,P60,data/spectra/ZTF19aajxwnz_20190224_P60_v1.ascii,data/lightcurves/ZTF19aajxwnz_fritz_lightcurves.csv
-ZTF19aakkrqu, II,0.03574,2458538.5,2458540.57,P60,data/spectra/ZTF19aakkrqu_20190224_P60_v1.ascii,data/lightcurves/ZTF19aakkrqu_fritz_lightcurves.csv
-ZTF19aakkrqu, II,0.03574,2458538.5,2458540.57,P60,data/spectra/ZTF19aakkrqu_20190224_P60_v2.ascii,data/lightcurves/ZTF19aakkrqu_fritz_lightcurves.csv
-ZTF19aafnend, IIn,0.1203,2458588.5,2458574.78,P60,data/spectra/ZTF19aafnend_20190415_P60_v1.ascii,data/lightcurves/ZTF19aafnend_fritz_lightcurves.csv
-ZTF19aafnend, IIn,0.1203,2458590.5,2458574.78,P60,data/spectra/ZTF19aafnend_20190417_P60_v1.ascii,data/lightcurves/ZTF19aafnend_fritz_lightcurves.csv
-ZTF19aakirwj, Ib,0.03165,2458538.5,2458580.72,P60,data/spectra/ZTF19aakirwj_20190224_P60_v1.ascii,data/lightcurves/ZTF19aakirwj_fritz_lightcurves.csv
-ZTF19aakirwj, Ib,0.03165,2458538.5,2458580.72,P60,data/spectra/ZTF19aakirwj_20190224_P60_v2.ascii,data/lightcurves/ZTF19aakirwj_fritz_lightcurves.csv
-ZTF19aakirwj, Ib,0.03165,2458592.5,2458580.72,P60,data/spectra/ZTF19aakirwj_20190419_P60_v1.ascii,data/lightcurves/ZTF19aakirwj_fritz_lightcurves.csv
-ZTF19aakkths, IIb,0.0124,2458538.5,2458538.57,P60,data/spectra/ZTF19aakkths_20190224_P60_v1.ascii,data/lightcurves/ZTF19aakkths_fritz_lightcurves.csv
-ZTF19aaklbok, Ia,0.08,2458539.5,2458538.74,P60,data/spectra/ZTF19aaklbok_20190225_P60_v1.ascii,data/lightcurves/ZTF19aaklbok_fritz_lightcurves.csv
-ZTF19aaklbok, Ia,0.08,2458547.5,2458538.74,P60,data/spectra/ZTF19aaklbok_20190305_P60_v1.ascii,data/lightcurves/ZTF19aaklbok_fritz_lightcurves.csv
-ZTF19aaklquv, Ia,0.0486,2458538.5,2458538.73,P60,data/spectra/ZTF19aaklquv_20190224_P60_v1.ascii,data/lightcurves/ZTF19aaklquv_fritz_lightcurves.csv
-ZTF19aaknate, IIb,0.01188,2458538.5,2458559.66,P60,data/spectra/ZTF19aaknate_20190224_P60_v1.ascii,data/lightcurves/ZTF19aaknate_fritz_lightcurves.csv
-ZTF19aaknate, IIb,0.01188,2458538.5,2458559.66,P60,data/spectra/ZTF19aaknate_20190224_P60_v2.ascii,data/lightcurves/ZTF19aaknate_fritz_lightcurves.csv
-ZTF19aaknate, IIb,0.01188,2458547.5,2458559.66,P60,data/spectra/ZTF19aaknate_20190305_P60_v2.ascii,data/lightcurves/ZTF19aaknate_fritz_lightcurves.csv
-ZTF19aaknate, IIb,0.01188,2458575.5,2458559.66,P60,data/spectra/ZTF19aaknate_20190402_P60_v1.ascii,data/lightcurves/ZTF19aaknate_fritz_lightcurves.csv
-ZTF19aaknate, IIb,0.01188,2458587.5,2458559.66,P60,data/spectra/ZTF19aaknate_20190414_P60_v1.ascii,data/lightcurves/ZTF19aaknate_fritz_lightcurves.csv
-ZTF19aakoasy, Ia,0.022,2458538.5,2458546.74,P60,data/spectra/ZTF19aakoasy_20190224_P60_v1.ascii,data/lightcurves/ZTF19aakoasy_fritz_lightcurves.csv
-ZTF19aakoasy, Ia,0.022,2458540.5,2458546.74,P60,data/spectra/ZTF19aakoasy_20190226_P60_v1.ascii,data/lightcurves/ZTF19aakoasy_fritz_lightcurves.csv
-ZTF19aakpcfi, Ia,0.06322,2458547.5,2458543.97,P60,data/spectra/ZTF19aakpcfi_20190305_P60_v1.ascii,data/lightcurves/ZTF19aakpcfi_fritz_lightcurves.csv
-ZTF19aajwdqt, Ia,0.088,2458539.5,2458539.76,P60,data/spectra/ZTF19aajwdqt_20190225_P60_v1.ascii,data/lightcurves/ZTF19aajwdqt_fritz_lightcurves.csv
+ZTF19aaduufr,IIP,0.035,2458591.5,2458617.67,P60,data/spectra/ZTF19aaduufr_20190418_P60_v2.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF19aaduufr.csv
+ZTF19aaduufr,IIP,0.035,2458593.5,2458617.67,P60,data/spectra/ZTF19aaduufr_20190420_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF19aaduufr.csv
+ZTF19aahsnmq,Ia,0.06,2458534.5,2458538.74,P60,data/spectra/ZTF19aahsnmq_20190220_P60_v1.ascii,data/lightcurves/ZTF19aahsnmq_fritz_lightcurves.csv
+ZTF19aailltc,Ia,0.088,2458539.5,2458538.81,P60,data/spectra/ZTF19aailltc_20190225_P60_v1.ascii,data/lightcurves/ZTF19aailltc_fritz_lightcurves.csv
+ZTF19aailqli,Ia,0.058,2458547.5,2458538.94,P60,data/spectra/ZTF19aailqli_20190305_P60_v1.ascii,data/lightcurves/ZTF19aailqli_fritz_lightcurves.csv
+ZTF19aajxhwa,Ia,0.033,2458539.5,2458538.6,P60,data/spectra/ZTF19aajxhwa_20190225_P60_v1.ascii,data/lightcurves/ZTF19aajxhwa_fritz_lightcurves.csv
+ZTF19aakiwxx,Ia,0.04109,2458543.5,2458538.87,P60,data/spectra/ZTF19aakiwxx_20190301_P60_v1.ascii,data/lightcurves/ZTF19aakiwxx_fritz_lightcurves.csv
+ZTF19aakiyly,Ia,0.07,2458539.5,2458541.87,P60,data/spectra/ZTF19aakiyly_20190225_P60_v1.ascii,data/lightcurves/ZTF19aakiyly_fritz_lightcurves.csv
+ZTF19aaezwmr,Ia,0.064,2458539.5,2458526.66,P60,data/spectra/ZTF19aaezwmr_20190225_P60_v1.ascii,data/lightcurves/ZTF19aaezwmr_fritz_lightcurves.csv
+ZTF19aajwhbc,Ia,0.1,2458557.5,2458538.8,P60,data/spectra/ZTF19aajwhbc_20190315_P60_v1.ascii,data/lightcurves/ZTF19aajwhbc_fritz_lightcurves.csv
+ZTF19aajxwnz,Ia,0.015,2458538.5,2458547.62,P60,data/spectra/ZTF19aajxwnz_20190224_P60_v1.ascii,data/lightcurves/ZTF19aajxwnz_fritz_lightcurves.csv
+ZTF19aafnend,IIn,0.1203,2458588.5,2458574.78,P60,data/spectra/ZTF19aafnend_20190415_P60_v1.ascii,data/lightcurves/ZTF19aafnend_fritz_lightcurves.csv
+ZTF19aafnend,IIn,0.1203,2458590.5,2458574.78,P60,data/spectra/ZTF19aafnend_20190417_P60_v1.ascii,data/lightcurves/ZTF19aafnend_fritz_lightcurves.csv
+ZTF19aakirwj,Ib,0.03165,2458538.5,2458580.72,P60,data/spectra/ZTF19aakirwj_20190224_P60_v1.ascii,data/lightcurves/ZTF19aakirwj_fritz_lightcurves.csv
+ZTF19aakirwj,Ib,0.03165,2458538.5,2458580.72,P60,data/spectra/ZTF19aakirwj_20190224_P60_v2.ascii,data/lightcurves/ZTF19aakirwj_fritz_lightcurves.csv
+ZTF19aakirwj,Ib,0.03165,2458592.5,2458580.72,P60,data/spectra/ZTF19aakirwj_20190419_P60_v1.ascii,data/lightcurves/ZTF19aakirwj_fritz_lightcurves.csv
+ZTF19aakkths,IIb,0.0124,2458538.5,2458538.57,P60,data/spectra/ZTF19aakkths_20190224_P60_v1.ascii,data/lightcurves/ZTF19aakkths_fritz_lightcurves.csv
+ZTF19aaklbok,Ia,0.08,2458539.5,2458538.74,P60,data/spectra/ZTF19aaklbok_20190225_P60_v1.ascii,data/lightcurves/ZTF19aaklbok_fritz_lightcurves.csv
+ZTF19aaklbok,Ia,0.08,2458547.5,2458538.74,P60,data/spectra/ZTF19aaklbok_20190305_P60_v1.ascii,data/lightcurves/ZTF19aaklbok_fritz_lightcurves.csv
+ZTF19aaklquv,Ia,0.0486,2458538.5,2458538.73,P60,data/spectra/ZTF19aaklquv_20190224_P60_v1.ascii,data/lightcurves/ZTF19aaklquv_fritz_lightcurves.csv
+ZTF19aaknate,IIb,0.01188,2458538.5,2458559.66,P60,data/spectra/ZTF19aaknate_20190224_P60_v1.ascii,data/lightcurves/ZTF19aaknate_fritz_lightcurves.csv
+ZTF19aaknate,IIb,0.01188,2458538.5,2458559.66,P60,data/spectra/ZTF19aaknate_20190224_P60_v2.ascii,data/lightcurves/ZTF19aaknate_fritz_lightcurves.csv
+ZTF19aaknate,IIb,0.01188,2458547.5,2458559.66,P60,data/spectra/ZTF19aaknate_20190305_P60_v2.ascii,data/lightcurves/ZTF19aaknate_fritz_lightcurves.csv
+ZTF19aaknate,IIb,0.01188,2458575.5,2458559.66,P60,data/spectra/ZTF19aaknate_20190402_P60_v1.ascii,data/lightcurves/ZTF19aaknate_fritz_lightcurves.csv
+ZTF19aaknate,IIb,0.01188,2458587.5,2458559.66,P60,data/spectra/ZTF19aaknate_20190414_P60_v1.ascii,data/lightcurves/ZTF19aaknate_fritz_lightcurves.csv
+ZTF19aakoasy,Ia,0.022,2458538.5,2458546.74,P60,data/spectra/ZTF19aakoasy_20190224_P60_v1.ascii,data/lightcurves/ZTF19aakoasy_fritz_lightcurves.csv
+ZTF19aakoasy,Ia,0.022,2458540.5,2458546.74,P60,data/spectra/ZTF19aakoasy_20190226_P60_v1.ascii,data/lightcurves/ZTF19aakoasy_fritz_lightcurves.csv
+ZTF19aakpcfi,Ia,0.06322,2458547.5,2458543.97,P60,data/spectra/ZTF19aakpcfi_20190305_P60_v1.ascii,data/lightcurves/ZTF19aakpcfi_fritz_lightcurves.csv
+ZTF19aajwdqt,Ia,0.088,2458539.5,2458539.76,P60,data/spectra/ZTF19aajwdqt_20190225_P60_v1.ascii,data/lightcurves/ZTF19aajwdqt_fritz_lightcurves.csv
 ZTF19aakpkto,CV,0.0,2458765.5,2458760.82,P60,data/spectra/ZTF19aakpkto_20191009_P60_v1.ascii,data/lightcurves/ZTF19aakpkto_fritz_lightcurves.csv
-ZTF19aakpmoy, Ia,0.03773,2458539.5,2458539.6,P60,data/spectra/ZTF19aakpmoy_20190225_P60_v1.ascii,data/lightcurves/ZTF19aakpmoy_fritz_lightcurves.csv
-ZTF19aakpmry, Ia,0.02742,2458539.5,2458539.62,P60,data/spectra/ZTF19aakpmry_20190225_P60_v1.ascii,data/lightcurves/ZTF19aakpmry_fritz_lightcurves.csv
-ZTF19aakrnqh, Ia,0.111,2458556.5,2458547.92,P60,data/spectra/ZTF19aakrnqh_20190314_P60_v1.ascii,data/lightcurves/ZTF19aakrnqh_fritz_lightcurves.csv
-ZTF19aaksrgj, Ia,0.0859,2458547.5,2458547.79,P60,data/spectra/ZTF19aaksrgj_20190305_P60_v1.ascii,data/lightcurves/ZTF19aaksrgj_fritz_lightcurves.csv
-ZTF19aaksxgp, IIn,0.0467,2458556.5,2458560.7,P60,data/spectra/ZTF19aaksxgp_20190314_P60_v1.ascii,data/lightcurves/ZTF19aaksxgp_fritz_lightcurves.csv
-ZTF19aaktdid, Ia,0.048,2458542.5,2458539.83,P60,data/spectra/ZTF19aaktdid_20190228_P60_v1.ascii,data/lightcurves/ZTF19aaktdid_fritz_lightcurves.csv
-ZTF18aaiiigm, Ia,0.0782,2458556.5,2458558.7,P60,data/spectra/ZTF18aaiiigm_20190314_P60_v1.ascii,data/lightcurves/ZTF18aaiiigm_fritz_lightcurves.csv
-ZTF18abixrei, Ia,0.113,2458556.5,2458547.84,P60,data/spectra/ZTF18abixrei_20190314_P60_v1.ascii,data/lightcurves/ZTF18abixrei_fritz_lightcurves.csv
-ZTF18abixrei, Ia,0.113,2458559.5,2458547.84,P60,data/spectra/ZTF18abixrei_20190317_P60_v1.ascii,data/lightcurves/ZTF18abixrei_fritz_lightcurves.csv
-ZTF19aaknign, Ia,0.09575,2458558.5,2458547.64,P60,data/spectra/ZTF19aaknign_20190316_P60_v1.ascii,data/lightcurves/ZTF19aaknign_fritz_lightcurves.csv
+ZTF19aakpmoy,Ia,0.03773,2458539.5,2458539.6,P60,data/spectra/ZTF19aakpmoy_20190225_P60_v1.ascii,data/lightcurves/ZTF19aakpmoy_fritz_lightcurves.csv
+ZTF19aakpmry,Ia,0.02742,2458539.5,2458539.62,P60,data/spectra/ZTF19aakpmry_20190225_P60_v1.ascii,data/lightcurves/ZTF19aakpmry_fritz_lightcurves.csv
+ZTF19aakrnqh,Ia,0.111,2458556.5,2458547.92,P60,data/spectra/ZTF19aakrnqh_20190314_P60_v1.ascii,data/lightcurves/ZTF19aakrnqh_fritz_lightcurves.csv
+ZTF19aaksrgj,Ia,0.0859,2458547.5,2458547.79,P60,data/spectra/ZTF19aaksrgj_20190305_P60_v1.ascii,data/lightcurves/ZTF19aaksrgj_fritz_lightcurves.csv
+ZTF19aaksxgp,IIn,0.0467,2458556.5,2458560.7,P60,data/spectra/ZTF19aaksxgp_20190314_P60_v1.ascii,data/lightcurves/ZTF19aaksxgp_fritz_lightcurves.csv
+ZTF19aaktdid,Ia,0.048,2458542.5,2458539.83,P60,data/spectra/ZTF19aaktdid_20190228_P60_v1.ascii,data/lightcurves/ZTF19aaktdid_fritz_lightcurves.csv
+ZTF18aaiiigm,Ia,0.0782,2458556.5,2458558.7,P60,data/spectra/ZTF18aaiiigm_20190314_P60_v1.ascii,data/lightcurves/ZTF18aaiiigm_fritz_lightcurves.csv
+ZTF18abixrei,Ia,0.113,2458556.5,2458547.84,P60,data/spectra/ZTF18abixrei_20190314_P60_v1.ascii,data/lightcurves/ZTF18abixrei_fritz_lightcurves.csv
+ZTF18abixrei,Ia,0.113,2458559.5,2458547.84,P60,data/spectra/ZTF18abixrei_20190317_P60_v1.ascii,data/lightcurves/ZTF18abixrei_fritz_lightcurves.csv
+ZTF19aaknign,Ia,0.09575,2458558.5,2458547.64,P60,data/spectra/ZTF19aaknign_20190316_P60_v1.ascii,data/lightcurves/ZTF19aaknign_fritz_lightcurves.csv
 ZTF19aakxogv,AGN,0.103,2458559.5,2458556.65,P60,data/spectra/ZTF19aakxogv_20190317_P60_v1.ascii,data/lightcurves/ZTF19aakxogv_fritz_lightcurves.csv
-ZTF19aalahqa, Ib,0.0439,2458543.5,2458543.91,P60,data/spectra/ZTF19aalahqa_20190301_P60_v1.ascii,data/lightcurves/ZTF19aalahqa_fritz_lightcurves.csv
-ZTF19aalahqa, Ib,0.0439,2458557.5,2458543.91,P60,data/spectra/ZTF19aalahqa_20190315_P60_v1.ascii,data/lightcurves/ZTF19aalahqa_fritz_lightcurves.csv
+ZTF19aalahqa,Ib,0.0439,2458543.5,2458543.91,P60,data/spectra/ZTF19aalahqa_20190301_P60_v1.ascii,data/lightcurves/ZTF19aalahqa_fritz_lightcurves.csv
+ZTF19aalahqa,Ib,0.0439,2458557.5,2458543.91,P60,data/spectra/ZTF19aalahqa_20190315_P60_v1.ascii,data/lightcurves/ZTF19aalahqa_fritz_lightcurves.csv
 ZTF19aalbaff,AGN,0.0552,2458547.5,2458546.73,P60,data/spectra/ZTF19aalbaff_20190305_P60_v2.ascii,data/lightcurves/ZTF19aalbaff_fritz_lightcurves.csv
-ZTF19aalckuo, Ia,0.039,2458558.5,2458560.87,P60,data/spectra/ZTF19aalckuo_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalckuo_fritz_lightcurves.csv
+ZTF19aalckuo,Ia,0.039,2458558.5,2458560.87,P60,data/spectra/ZTF19aalckuo_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalckuo_fritz_lightcurves.csv
 ZTF18aczexlh,AGN,0.0238,2458543.5,2458581.85,P60,data/spectra/ZTF18aczexlh_20190301_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18aczexlh.csv
-ZTF19aakocxy, Ia,0.067,2458547.5,2458538.78,P60,data/spectra/ZTF19aakocxy_20190305_P60_v2.ascii,data/lightcurves/ZTF19aakocxy_fritz_lightcurves.csv
-ZTF19aalemmz, Ia,0.07,2458558.5,2458547.81,P60,data/spectra/ZTF19aalemmz_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalemmz_fritz_lightcurves.csv
-ZTF19aakisjl, Ia,0.06,2458557.5,2458526.87,P60,data/spectra/ZTF19aakisjl_20190315_P60_v1.ascii,data/lightcurves/ZTF19aakisjl_fritz_lightcurves.csv
-ZTF19aaknemm, Ia,0.07,2458555.5,2458534.68,P60,data/spectra/ZTF19aaknemm_20190313_P60_v1.ascii,data/lightcurves/ZTF19aaknemm_fritz_lightcurves.csv
-ZTF19aaknemm, Ia,0.07,2458555.5,2458534.68,P60,data/spectra/ZTF19aaknemm_20190313_P60_v2.ascii,data/lightcurves/ZTF19aaknemm_fritz_lightcurves.csv
-ZTF19aaknvlv, Ia,0.0777,2458546.5,2458546.74,P60,data/spectra/ZTF19aaknvlv_20190304_P60_v1.ascii,data/lightcurves/ZTF19aaknvlv_fritz_lightcurves.csv
-ZTF19aakrhzj, Ia,0.09,2458556.5,2458543.74,P60,data/spectra/ZTF19aakrhzj_20190314_P60_v1.ascii,data/lightcurves/ZTF19aakrhzj_fritz_lightcurves.csv
-ZTF19aakrsuo, II,0.03112,2458546.5,2458543.7,P60,data/spectra/ZTF19aakrsuo_20190304_P60_v1.ascii,data/lightcurves/ZTF19aakrsuo_fritz_lightcurves.csv
+ZTF19aakocxy,Ia,0.067,2458547.5,2458538.78,P60,data/spectra/ZTF19aakocxy_20190305_P60_v2.ascii,data/lightcurves/ZTF19aakocxy_fritz_lightcurves.csv
+ZTF19aalemmz,Ia,0.07,2458558.5,2458547.81,P60,data/spectra/ZTF19aalemmz_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalemmz_fritz_lightcurves.csv
+ZTF19aakisjl,Ia,0.06,2458557.5,2458526.87,P60,data/spectra/ZTF19aakisjl_20190315_P60_v1.ascii,data/lightcurves/ZTF19aakisjl_fritz_lightcurves.csv
+ZTF19aaknemm,Ia,0.07,2458555.5,2458534.68,P60,data/spectra/ZTF19aaknemm_20190313_P60_v1.ascii,data/lightcurves/ZTF19aaknemm_fritz_lightcurves.csv
+ZTF19aaknemm,Ia,0.07,2458555.5,2458534.68,P60,data/spectra/ZTF19aaknemm_20190313_P60_v2.ascii,data/lightcurves/ZTF19aaknemm_fritz_lightcurves.csv
+ZTF19aaknvlv,Ia,0.0777,2458546.5,2458546.74,P60,data/spectra/ZTF19aaknvlv_20190304_P60_v1.ascii,data/lightcurves/ZTF19aaknvlv_fritz_lightcurves.csv
+ZTF19aakrhzj,Ia,0.09,2458556.5,2458543.74,P60,data/spectra/ZTF19aakrhzj_20190314_P60_v1.ascii,data/lightcurves/ZTF19aakrhzj_fritz_lightcurves.csv
+ZTF19aakrsuo,II,0.03112,2458546.5,2458543.7,P60,data/spectra/ZTF19aakrsuo_20190304_P60_v1.ascii,data/lightcurves/ZTF19aakrsuo_fritz_lightcurves.csv
 ZTF19aaktorq,AGN,0.175,2458556.5,2458637.66,P60,data/spectra/ZTF19aaktorq_20190314_P60_v1.ascii,data/lightcurves/ZTF19aaktorq_fritz_lightcurves.csv
-ZTF19aakxwqu, Ia,0.07159,2458546.5,2458543.72,P60,data/spectra/ZTF19aakxwqu_20190304_P60_v1.ascii,data/lightcurves/ZTF19aakxwqu_fritz_lightcurves.csv
-ZTF19aakzash, II,0.0365,2458546.5,2458558.67,P60,data/spectra/ZTF19aakzash_20190304_P60_v1.ascii,data/lightcurves/ZTF19aakzash_fritz_lightcurves.csv
-ZTF19aalafip, Ia,0.088,2458558.5,2458557.72,P60,data/spectra/ZTF19aalafip_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalafip_fritz_lightcurves.csv
-ZTF19aallimd, II,0.03,2458571.5,2458568.72,P60,data/spectra/ZTF19aallimd_20190329_P60_v1.ascii,data/lightcurves/ZTF19aallimd_fritz_lightcurves.csv
-ZTF19aalouag, Ib,0.0549,2458573.5,2458587.71,P60,data/spectra/ZTF19aalouag_20190331_P60_v1.ascii,data/lightcurves/ZTF19aalouag_fritz_lightcurves.csv
-ZTF19aalouag, Ib,0.0549,2458588.5,2458587.71,P60,data/spectra/ZTF19aalouag_20190415_P60_v1.ascii,data/lightcurves/ZTF19aalouag_fritz_lightcurves.csv
-ZTF19aalouag, Ib,0.0549,2458596.5,2458587.71,P60,data/spectra/ZTF19aalouag_20190423_P60_v1.ascii,data/lightcurves/ZTF19aalouag_fritz_lightcurves.csv
-ZTF19aalouag, Ib,0.0549,2458597.5,2458587.71,P60,data/spectra/ZTF19aalouag_20190424_P60_v1.ascii,data/lightcurves/ZTF19aalouag_fritz_lightcurves.csv
-ZTF19aalouag, Ib,0.0549,2458633.5,2458587.71,P60,data/spectra/ZTF19aalouag_20190530_P60_v1.ascii,data/lightcurves/ZTF19aalouag_fritz_lightcurves.csv
-ZTF19aalrtfm, Ia,0.046,2458556.5,2458543.93,P60,data/spectra/ZTF19aalrtfm_20190314_P60_v1.ascii,data/lightcurves/ZTF19aalrtfm_fritz_lightcurves.csv
-ZTF19aalryov, Ia,0.0501,2458547.5,2458543.93,P60,data/spectra/ZTF19aalryov_20190305_P60_v1.ascii,data/lightcurves/ZTF19aalryov_fritz_lightcurves.csv
-ZTF19aalcwjt, Ia,0.067,2458546.5,2458556.66,P60,data/spectra/ZTF19aalcwjt_20190304_P60_v1.ascii,data/lightcurves/ZTF19aalcwjt_fritz_lightcurves.csv
+ZTF19aakxwqu,Ia,0.07159,2458546.5,2458543.72,P60,data/spectra/ZTF19aakxwqu_20190304_P60_v1.ascii,data/lightcurves/ZTF19aakxwqu_fritz_lightcurves.csv
+ZTF19aakzash,II,0.0365,2458546.5,2458558.67,P60,data/spectra/ZTF19aakzash_20190304_P60_v1.ascii,data/lightcurves/ZTF19aakzash_fritz_lightcurves.csv
+ZTF19aalafip,Ia,0.088,2458558.5,2458557.72,P60,data/spectra/ZTF19aalafip_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalafip_fritz_lightcurves.csv
+ZTF19aallimd,II,0.03,2458571.5,2458568.72,P60,data/spectra/ZTF19aallimd_20190329_P60_v1.ascii,data/lightcurves/ZTF19aallimd_fritz_lightcurves.csv
+ZTF19aalouag,Ib,0.0549,2458573.5,2458587.71,P60,data/spectra/ZTF19aalouag_20190331_P60_v1.ascii,data/lightcurves/ZTF19aalouag_fritz_lightcurves.csv
+ZTF19aalouag,Ib,0.0549,2458588.5,2458587.71,P60,data/spectra/ZTF19aalouag_20190415_P60_v1.ascii,data/lightcurves/ZTF19aalouag_fritz_lightcurves.csv
+ZTF19aalouag,Ib,0.0549,2458596.5,2458587.71,P60,data/spectra/ZTF19aalouag_20190423_P60_v1.ascii,data/lightcurves/ZTF19aalouag_fritz_lightcurves.csv
+ZTF19aalouag,Ib,0.0549,2458597.5,2458587.71,P60,data/spectra/ZTF19aalouag_20190424_P60_v1.ascii,data/lightcurves/ZTF19aalouag_fritz_lightcurves.csv
+ZTF19aalouag,Ib,0.0549,2458633.5,2458587.71,P60,data/spectra/ZTF19aalouag_20190530_P60_v1.ascii,data/lightcurves/ZTF19aalouag_fritz_lightcurves.csv
+ZTF19aalrtfm,Ia,0.046,2458556.5,2458543.93,P60,data/spectra/ZTF19aalrtfm_20190314_P60_v1.ascii,data/lightcurves/ZTF19aalrtfm_fritz_lightcurves.csv
+ZTF19aalryov,Ia,0.0501,2458547.5,2458543.93,P60,data/spectra/ZTF19aalryov_20190305_P60_v1.ascii,data/lightcurves/ZTF19aalryov_fritz_lightcurves.csv
+ZTF19aalcwjt,Ia,0.067,2458546.5,2458556.66,P60,data/spectra/ZTF19aalcwjt_20190304_P60_v1.ascii,data/lightcurves/ZTF19aalcwjt_fritz_lightcurves.csv
 ZTF19aaiohcc,AGN,0.0386,2458559.5,2458557.57,P60,data/spectra/ZTF19aaiohcc_20190317_P60_v1.ascii,data/lightcurves/ZTF19aaiohcc_fritz_lightcurves.csv
-ZTF19aakssnv, II,0.029,2458558.5,2458557.83,P60,data/spectra/ZTF19aakssnv_20190316_P60_v1.ascii,data/lightcurves/ZTF19aakssnv_fritz_lightcurves.csv
-ZTF19aakthjl, Ia,0.06075,2458560.5,2458547.81,P60,data/spectra/ZTF19aakthjl_20190318_P60_v1.ascii,data/lightcurves/ZTF19aakthjl_fritz_lightcurves.csv
-ZTF19aaleptm, Ia,0.079,2458556.5,2458556.9,P60,data/spectra/ZTF19aaleptm_20190314_P60_v1.ascii,data/lightcurves/ZTF19aaleptm_fritz_lightcurves.csv
-ZTF19aaleptm, Ia,0.079,2458556.5,2458556.9,P60,data/spectra/ZTF19aaleptm_20190314_P60_v2.ascii,data/lightcurves/ZTF19aaleptm_fritz_lightcurves.csv
-ZTF19aalfsqm, Ic,0.0305,2458557.5,2458547.97,P60,data/spectra/ZTF19aalfsqm_20190315_P60_v1.ascii,data/lightcurves/ZTF19aalfsqm_fritz_lightcurves.csv
-ZTF19aalrfoi, Ia,0.0736,2458557.5,2458547.87,P60,data/spectra/ZTF19aalrfoi_20190315_P60_v1.ascii,data/lightcurves/ZTF19aalrfoi_fritz_lightcurves.csv
-ZTF19aalrfoi, Ia,0.0736,2458557.5,2458547.87,P60,data/spectra/ZTF19aalrfoi_20190315_P60_v2.ascii,data/lightcurves/ZTF19aalrfoi_fritz_lightcurves.csv
-ZTF19aalsnbp, II,0.05,2458557.5,2458547.86,P60,data/spectra/ZTF19aalsnbp_20190315_P60_v1.ascii,data/lightcurves/ZTF19aalsnbp_fritz_lightcurves.csv
-ZTF19aalsnbp, II,0.05,2458557.5,2458547.86,P60,data/spectra/ZTF19aalsnbp_20190315_P60_v2.ascii,data/lightcurves/ZTF19aalsnbp_fritz_lightcurves.csv
-ZTF19aalubxw, II,0.0931,2458558.5,2458547.84,P60,data/spectra/ZTF19aalubxw_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalubxw_fritz_lightcurves.csv
-ZTF19aalxcyo, Ia,0.0802,2458560.5,2458556.64,P60,data/spectra/ZTF19aalxcyo_20190318_P60_v1.ascii,data/lightcurves/ZTF19aalxcyo_fritz_lightcurves.csv
-ZTF19aalxlpp, Ia,0.086,2458559.5,2458560.64,P60,data/spectra/ZTF19aalxlpp_20190317_P60_v1.ascii,data/lightcurves/ZTF19aalxlpp_fritz_lightcurves.csv
-ZTF19aalzmiu, Ia,0.11,2458560.5,2458556.92,P60,data/spectra/ZTF19aalzmiu_20190318_P60_v1.ascii,data/lightcurves/ZTF19aalzmiu_fritz_lightcurves.csv
-ZTF19aalzrrz, Ia,0.0564,2458567.5,2458558.69,P60,data/spectra/ZTF19aalzrrz_20190325_P60_v1.ascii,data/lightcurves/ZTF19aalzrrz_fritz_lightcurves.csv
-ZTF19aalzrrz, Ia,0.0564,2458567.5,2458558.69,P60,data/spectra/ZTF19aalzrrz_20190325_P60_v2.ascii,data/lightcurves/ZTF19aalzrrz_fritz_lightcurves.csv
-ZTF19aalzrrz, Ia,0.0564,2458567.5,2458558.69,P60,data/spectra/ZTF19aalzrrz_20190325_P60_v3.ascii,data/lightcurves/ZTF19aalzrrz_fritz_lightcurves.csv
-ZTF18abhhxcp, Ia,0.06,2458558.5,2458560.84,P60,data/spectra/ZTF18abhhxcp_20190316_P60_v1.ascii,data/lightcurves/ZTF18abhhxcp_fritz_lightcurves.csv
-ZTF18abhhxcp, Ia,0.06,2458558.5,2458560.84,P60,data/spectra/ZTF18abhhxcp_20190316_P60_v2.ascii,data/lightcurves/ZTF18abhhxcp_fritz_lightcurves.csv
+ZTF19aakssnv,II,0.029,2458558.5,2458557.83,P60,data/spectra/ZTF19aakssnv_20190316_P60_v1.ascii,data/lightcurves/ZTF19aakssnv_fritz_lightcurves.csv
+ZTF19aakthjl,Ia,0.06075,2458560.5,2458547.81,P60,data/spectra/ZTF19aakthjl_20190318_P60_v1.ascii,data/lightcurves/ZTF19aakthjl_fritz_lightcurves.csv
+ZTF19aaleptm,Ia,0.079,2458556.5,2458556.9,P60,data/spectra/ZTF19aaleptm_20190314_P60_v1.ascii,data/lightcurves/ZTF19aaleptm_fritz_lightcurves.csv
+ZTF19aaleptm,Ia,0.079,2458556.5,2458556.9,P60,data/spectra/ZTF19aaleptm_20190314_P60_v2.ascii,data/lightcurves/ZTF19aaleptm_fritz_lightcurves.csv
+ZTF19aalfsqm,Ic,0.0305,2458557.5,2458547.97,P60,data/spectra/ZTF19aalfsqm_20190315_P60_v1.ascii,data/lightcurves/ZTF19aalfsqm_fritz_lightcurves.csv
+ZTF19aalrfoi,Ia,0.0736,2458557.5,2458547.87,P60,data/spectra/ZTF19aalrfoi_20190315_P60_v1.ascii,data/lightcurves/ZTF19aalrfoi_fritz_lightcurves.csv
+ZTF19aalrfoi,Ia,0.0736,2458557.5,2458547.87,P60,data/spectra/ZTF19aalrfoi_20190315_P60_v2.ascii,data/lightcurves/ZTF19aalrfoi_fritz_lightcurves.csv
+ZTF19aalsnbp,II,0.05,2458557.5,2458547.86,P60,data/spectra/ZTF19aalsnbp_20190315_P60_v1.ascii,data/lightcurves/ZTF19aalsnbp_fritz_lightcurves.csv
+ZTF19aalsnbp,II,0.05,2458557.5,2458547.86,P60,data/spectra/ZTF19aalsnbp_20190315_P60_v2.ascii,data/lightcurves/ZTF19aalsnbp_fritz_lightcurves.csv
+ZTF19aalxcyo,Ia,0.0802,2458560.5,2458556.64,P60,data/spectra/ZTF19aalxcyo_20190318_P60_v1.ascii,data/lightcurves/ZTF19aalxcyo_fritz_lightcurves.csv
+ZTF19aalxlpp,Ia,0.086,2458559.5,2458560.64,P60,data/spectra/ZTF19aalxlpp_20190317_P60_v1.ascii,data/lightcurves/ZTF19aalxlpp_fritz_lightcurves.csv
+ZTF19aalzmiu,Ia,0.11,2458560.5,2458556.92,P60,data/spectra/ZTF19aalzmiu_20190318_P60_v1.ascii,data/lightcurves/ZTF19aalzmiu_fritz_lightcurves.csv
+ZTF19aalzrrz,Ia,0.0564,2458567.5,2458558.69,P60,data/spectra/ZTF19aalzrrz_20190325_P60_v1.ascii,data/lightcurves/ZTF19aalzrrz_fritz_lightcurves.csv
+ZTF19aalzrrz,Ia,0.0564,2458567.5,2458558.69,P60,data/spectra/ZTF19aalzrrz_20190325_P60_v2.ascii,data/lightcurves/ZTF19aalzrrz_fritz_lightcurves.csv
+ZTF19aalzrrz,Ia,0.0564,2458567.5,2458558.69,P60,data/spectra/ZTF19aalzrrz_20190325_P60_v3.ascii,data/lightcurves/ZTF19aalzrrz_fritz_lightcurves.csv
+ZTF18abhhxcp,Ia,0.06,2458558.5,2458560.84,P60,data/spectra/ZTF18abhhxcp_20190316_P60_v1.ascii,data/lightcurves/ZTF18abhhxcp_fritz_lightcurves.csv
+ZTF18abhhxcp,Ia,0.06,2458558.5,2458560.84,P60,data/spectra/ZTF18abhhxcp_20190316_P60_v2.ascii,data/lightcurves/ZTF18abhhxcp_fritz_lightcurves.csv
 ZTF18abuqkdh,AGN,0.124,2458559.5,2458559.65,P60,data/spectra/ZTF18abuqkdh_20190317_P60_v1.ascii,data/lightcurves/ZTF18abuqkdh_fritz_lightcurves.csv
-ZTF19aakpmqg, II,0.03,2458559.5,2458539.6,P60,data/spectra/ZTF19aakpmqg_20190317_P60_v1.ascii,data/lightcurves/ZTF19aakpmqg_fritz_lightcurves.csv
-ZTF19aakrawk, Ia,0.063,2458558.5,2458557.7,P60,data/spectra/ZTF19aakrawk_20190316_P60_v1.ascii,data/lightcurves/ZTF19aakrawk_fritz_lightcurves.csv
-ZTF19aalfxyi, Ia,0.064,2458558.5,2458557.66,P60,data/spectra/ZTF19aalfxyi_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalfxyi_fritz_lightcurves.csv
-ZTF19aaluprf, Ia,0.06,2458558.5,2458559.6,P60,data/spectra/ZTF19aaluprf_20190316_P60_v1.ascii,data/lightcurves/ZTF19aaluprf_fritz_lightcurves.csv
-ZTF19aalveag, Ia,0.05,2458558.5,2458559.77,P60,data/spectra/ZTF19aalveag_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalveag_fritz_lightcurves.csv
-ZTF19aalyleg, Ia,0.071,2458559.5,2458559.65,P60,data/spectra/ZTF19aalyleg_20190317_P60_v1.ascii,data/lightcurves/ZTF19aalyleg_fritz_lightcurves.csv
-ZTF19aalzmio, Ia,0.075,2458571.5,2458559.81,P60,data/spectra/ZTF19aalzmio_20190329_P60_v1.ascii,data/lightcurves/ZTF19aalzmio_fritz_lightcurves.csv
-ZTF19aalztms, II,0.04,2458574.5,2458560.92,P60,data/spectra/ZTF19aalztms_20190401_P60_v1.ascii,data/lightcurves/ZTF19aalztms_fritz_lightcurves.csv
-ZTF19aamfxby, Ia-91T,0.07,2458566.5,2458575.67,P60,data/spectra/ZTF19aamfxby_20190324_P60_v1.ascii,data/lightcurves/ZTF19aamfxby_fritz_lightcurves.csv
-ZTF19aamgjtz, Ia,0.1,2458558.5,2458562.68,P60,data/spectra/ZTF19aamgjtz_20190316_P60_v1.ascii,data/lightcurves/ZTF19aamgjtz_fritz_lightcurves.csv
-ZTF19aamgokq, Ia,0.08,2458558.5,2458567.66,P60,data/spectra/ZTF19aamgokq_20190316_P60_v1.ascii,data/lightcurves/ZTF19aamgokq_fritz_lightcurves.csv
-ZTF19aamhhae, Ia,0.04,2458568.5,2458567.86,P60,data/spectra/ZTF19aamhhae_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamhhae_fritz_lightcurves.csv
-ZTF19aamhhey, Ia-91T,0.045,2458557.5,2458567.86,P60,data/spectra/ZTF19aamhhey_20190315_P60_v1.ascii,data/lightcurves/ZTF19aamhhey_fritz_lightcurves.csv
-ZTF19aamhhgu, Ia,0.0382,2458566.5,2458567.85,P60,data/spectra/ZTF19aamhhgu_20190324_P60_v1.ascii,data/lightcurves/ZTF19aamhhgu_fritz_lightcurves.csv
-ZTF19aamjvie, Ia,0.042,2458558.5,2458567.65,P60,data/spectra/ZTF19aamjvie_20190316_P60_v1.ascii,data/lightcurves/ZTF19aamjvie_fritz_lightcurves.csv
-ZTF19aamoqxy, Ia,0.08099,2458558.5,2458560.74,P60,data/spectra/ZTF19aamoqxy_20190316_P60_v1.ascii,data/lightcurves/ZTF19aamoqxy_fritz_lightcurves.csv
-ZTF19aamkmxv, IIn,0.014,2458565.5,2458573.87,P60,data/spectra/ZTF19aamkmxv_20190323_P60_v1.ascii,data/lightcurves/ZTF19aamkmxv_fritz_lightcurves.csv
-ZTF19aampyum, Ia,0.028,2458574.5,2458574.65,P60,data/spectra/ZTF19aampyum_20190401_P60_v1.ascii,data/lightcurves/ZTF19aampyum_fritz_lightcurves.csv
-ZTF19aamggnw, II,0.037,2458560.5,2458567.67,P60,data/spectra/ZTF19aamggnw_20190318_P60_v1.ascii,data/lightcurves/ZTF19aamggnw_fritz_lightcurves.csv
-ZTF19aamhgwm, II,0.03422,2458560.5,2458572.81,P60,data/spectra/ZTF19aamhgwm_20190318_P60_v1.ascii,data/lightcurves/ZTF19aamhgwm_fritz_lightcurves.csv
-ZTF18achxcsh, Ia,0.07,2458568.5,2458562.65,P60,data/spectra/ZTF18achxcsh_20190326_P60_v1.ascii,data/lightcurves/ZTF18achxcsh_fritz_lightcurves.csv
-ZTF19aamgghn, Ib,0.02968,2458560.5,2458572.67,P60,data/spectra/ZTF19aamgghn_20190318_P60_v1.ascii,data/lightcurves/ZTF19aamgghn_fritz_lightcurves.csv
-ZTF19aamgghn, Ib,0.02968,2458568.5,2458572.67,P60,data/spectra/ZTF19aamgghn_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamgghn_fritz_lightcurves.csv
-ZTF19aamggmk, II,0.03271,2458560.5,2458567.69,P60,data/spectra/ZTF19aamggmk_20190318_P60_v1.ascii,data/lightcurves/ZTF19aamggmk_fritz_lightcurves.csv
-ZTF19aamhlnl, Ia,0.076,2458568.5,2458568.85,P60,data/spectra/ZTF19aamhlnl_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamhlnl_fritz_lightcurves.csv
-ZTF19aamhqow, Ia,0.0575,2458568.5,2458560.91,P60,data/spectra/ZTF19aamhqow_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamhqow_fritz_lightcurves.csv
-ZTF19aamkfvy, II,0.03,2458559.5,2458572.74,P60,data/spectra/ZTF19aamkfvy_20190317_P60_v1.ascii,data/lightcurves/ZTF19aamkfvy_fritz_lightcurves.csv
-ZTF19aamkfvy, II,0.03,2458567.5,2458572.74,P60,data/spectra/ZTF19aamkfvy_20190325_P60_v1.ascii,data/lightcurves/ZTF19aamkfvy_fritz_lightcurves.csv
-ZTF19aamkfxb, Ia,0.095,2458561.5,2458561.69,P60,data/spectra/ZTF19aamkfxb_20190319_P60_v1.ascii,data/lightcurves/ZTF19aamkfxb_fritz_lightcurves.csv
-ZTF19aamkfxb, Ia,0.095,2458561.5,2458561.69,P60,data/spectra/ZTF19aamkfxb_20190319_P60_v2.ascii,data/lightcurves/ZTF19aamkfxb_fritz_lightcurves.csv
-ZTF19aamkywr, Ia,0.03034,2458593.5,2458568.89,P60,data/spectra/ZTF19aamkywr_20190420_P60_v1.ascii,data/lightcurves/ZTF19aamkywr_fritz_lightcurves.csv
-ZTF19aamljom, II,0.02,2458568.5,2458568.88,P60,data/spectra/ZTF19aamljom_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamljom_fritz_lightcurves.csv
-ZTF19aamljom, II,0.02,2458572.5,2458568.88,P60,data/spectra/ZTF19aamljom_20190330_P60_v1.ascii,data/lightcurves/ZTF19aamljom_fritz_lightcurves.csv
-ZTF19aamljom, II,0.02,2458592.5,2458568.88,P60,data/spectra/ZTF19aamljom_20190419_P60_v1.ascii,data/lightcurves/ZTF19aamljom_fritz_lightcurves.csv
-ZTF19aamljom, II,0.02,2458633.5,2458568.88,P60,data/spectra/ZTF19aamljom_20190530_P60_v1.ascii,data/lightcurves/ZTF19aamljom_fritz_lightcurves.csv
-ZTF19aamljom, II,0.02,2458678.5,2458568.88,P60,data/spectra/ZTF19aamljom_20190714_P60_v1.ascii,data/lightcurves/ZTF19aamljom_fritz_lightcurves.csv
-ZTF19aamoidt, Ia,0.05875,2458572.5,2458560.7,P60,data/spectra/ZTF19aamoidt_20190330_P60_v1.ascii,data/lightcurves/ZTF19aamoidt_fritz_lightcurves.csv
-ZTF19aampqcq, Ia,0.01895,2458561.5,2458572.61,P60,data/spectra/ZTF19aampqcq_20190319_P60_v1.ascii,data/lightcurves/ZTF19aampqcq_fritz_lightcurves.csv
-ZTF19aamsnhu, Ia,0.1,2458571.5,2458567.94,P60,data/spectra/ZTF19aamsnhu_20190329_P60_v1.ascii,data/lightcurves/ZTF19aamsnhu_fritz_lightcurves.csv
-ZTF19aamtima, Ia,0.04602,2458561.5,2458560.58,P60,data/spectra/ZTF19aamtima_20190319_P60_v1.ascii,data/lightcurves/ZTF19aamtima_fritz_lightcurves.csv
-ZTF19aamtwiz, II,0.04468,2458564.5,2458567.73,P60,data/spectra/ZTF19aamtwiz_20190322_P60_v1.ascii,data/lightcurves/ZTF19aamtwiz_fritz_lightcurves.csv
-ZTF19aamtwiz, II,0.04468,2458567.5,2458567.73,P60,data/spectra/ZTF19aamtwiz_20190325_P60_v1.ascii,data/lightcurves/ZTF19aamtwiz_fritz_lightcurves.csv
-ZTF19aamtwiz, II,0.04468,2458568.5,2458567.73,P60,data/spectra/ZTF19aamtwiz_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamtwiz_fritz_lightcurves.csv
-ZTF19aamtwiz, II,0.04468,2458601.5,2458567.73,P60,data/spectra/ZTF19aamtwiz_20190428_P60_v1.ascii,data/lightcurves/ZTF19aamtwiz_fritz_lightcurves.csv
-ZTF19aamvape, II,0.03,2458579.5,2458580.93,P60,data/spectra/ZTF19aamvape_20190406_P60_v1.ascii,data/lightcurves/ZTF19aamvape_fritz_lightcurves.csv
+ZTF19aakpmqg,II,0.03,2458559.5,2458539.6,P60,data/spectra/ZTF19aakpmqg_20190317_P60_v1.ascii,data/lightcurves/ZTF19aakpmqg_fritz_lightcurves.csv
+ZTF19aakrawk,Ia,0.063,2458558.5,2458557.7,P60,data/spectra/ZTF19aakrawk_20190316_P60_v1.ascii,data/lightcurves/ZTF19aakrawk_fritz_lightcurves.csv
+ZTF19aalfxyi,Ia,0.064,2458558.5,2458557.66,P60,data/spectra/ZTF19aalfxyi_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalfxyi_fritz_lightcurves.csv
+ZTF19aaluprf,Ia,0.06,2458558.5,2458559.6,P60,data/spectra/ZTF19aaluprf_20190316_P60_v1.ascii,data/lightcurves/ZTF19aaluprf_fritz_lightcurves.csv
+ZTF19aalveag,Ia,0.05,2458558.5,2458559.77,P60,data/spectra/ZTF19aalveag_20190316_P60_v1.ascii,data/lightcurves/ZTF19aalveag_fritz_lightcurves.csv
+ZTF19aalyleg,Ia,0.071,2458559.5,2458559.65,P60,data/spectra/ZTF19aalyleg_20190317_P60_v1.ascii,data/lightcurves/ZTF19aalyleg_fritz_lightcurves.csv
+ZTF19aalzmio,Ia,0.075,2458571.5,2458559.81,P60,data/spectra/ZTF19aalzmio_20190329_P60_v1.ascii,data/lightcurves/ZTF19aalzmio_fritz_lightcurves.csv
+ZTF19aalztms,II,0.04,2458574.5,2458560.92,P60,data/spectra/ZTF19aalztms_20190401_P60_v1.ascii,data/lightcurves/ZTF19aalztms_fritz_lightcurves.csv
+ZTF19aamfxby,Ia-91T,0.07,2458566.5,2458575.67,P60,data/spectra/ZTF19aamfxby_20190324_P60_v1.ascii,data/lightcurves/ZTF19aamfxby_fritz_lightcurves.csv
+ZTF19aamgjtz,Ia,0.1,2458558.5,2458562.68,P60,data/spectra/ZTF19aamgjtz_20190316_P60_v1.ascii,data/lightcurves/ZTF19aamgjtz_fritz_lightcurves.csv
+ZTF19aamgokq,Ia,0.08,2458558.5,2458567.66,P60,data/spectra/ZTF19aamgokq_20190316_P60_v1.ascii,data/lightcurves/ZTF19aamgokq_fritz_lightcurves.csv
+ZTF19aamhhae,Ia,0.04,2458568.5,2458567.86,P60,data/spectra/ZTF19aamhhae_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamhhae_fritz_lightcurves.csv
+ZTF19aamhhey,Ia-91T,0.045,2458557.5,2458567.86,P60,data/spectra/ZTF19aamhhey_20190315_P60_v1.ascii,data/lightcurves/ZTF19aamhhey_fritz_lightcurves.csv
+ZTF19aamhhgu,Ia,0.0382,2458566.5,2458567.85,P60,data/spectra/ZTF19aamhhgu_20190324_P60_v1.ascii,data/lightcurves/ZTF19aamhhgu_fritz_lightcurves.csv
+ZTF19aamjvie,Ia,0.042,2458558.5,2458567.65,P60,data/spectra/ZTF19aamjvie_20190316_P60_v1.ascii,data/lightcurves/ZTF19aamjvie_fritz_lightcurves.csv
+ZTF19aamoqxy,Ia,0.08099,2458558.5,2458560.74,P60,data/spectra/ZTF19aamoqxy_20190316_P60_v1.ascii,data/lightcurves/ZTF19aamoqxy_fritz_lightcurves.csv
+ZTF19aamkmxv,IIn,0.014,2458565.5,2458573.87,P60,data/spectra/ZTF19aamkmxv_20190323_P60_v1.ascii,data/lightcurves/ZTF19aamkmxv_fritz_lightcurves.csv
+ZTF19aampyum,Ia,0.028,2458574.5,2458574.65,P60,data/spectra/ZTF19aampyum_20190401_P60_v1.ascii,data/lightcurves/ZTF19aampyum_fritz_lightcurves.csv
+ZTF19aamggnw,II,0.037,2458560.5,2458567.67,P60,data/spectra/ZTF19aamggnw_20190318_P60_v1.ascii,data/lightcurves/ZTF19aamggnw_fritz_lightcurves.csv
+ZTF19aamhgwm,II,0.03422,2458560.5,2458572.81,P60,data/spectra/ZTF19aamhgwm_20190318_P60_v1.ascii,data/lightcurves/ZTF19aamhgwm_fritz_lightcurves.csv
+ZTF18achxcsh,Ia,0.07,2458568.5,2458562.65,P60,data/spectra/ZTF18achxcsh_20190326_P60_v1.ascii,data/lightcurves/ZTF18achxcsh_fritz_lightcurves.csv
+ZTF19aamgghn,Ib,0.02968,2458560.5,2458572.67,P60,data/spectra/ZTF19aamgghn_20190318_P60_v1.ascii,data/lightcurves/ZTF19aamgghn_fritz_lightcurves.csv
+ZTF19aamgghn,Ib,0.02968,2458568.5,2458572.67,P60,data/spectra/ZTF19aamgghn_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamgghn_fritz_lightcurves.csv
+ZTF19aamggmk,II,0.03271,2458560.5,2458567.69,P60,data/spectra/ZTF19aamggmk_20190318_P60_v1.ascii,data/lightcurves/ZTF19aamggmk_fritz_lightcurves.csv
+ZTF19aamhlnl,Ia,0.076,2458568.5,2458568.85,P60,data/spectra/ZTF19aamhlnl_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamhlnl_fritz_lightcurves.csv
+ZTF19aamhqow,Ia,0.0575,2458568.5,2458560.91,P60,data/spectra/ZTF19aamhqow_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamhqow_fritz_lightcurves.csv
+ZTF19aamkfvy,II,0.03,2458559.5,2458572.74,P60,data/spectra/ZTF19aamkfvy_20190317_P60_v1.ascii,data/lightcurves/ZTF19aamkfvy_fritz_lightcurves.csv
+ZTF19aamkfvy,II,0.03,2458567.5,2458572.74,P60,data/spectra/ZTF19aamkfvy_20190325_P60_v1.ascii,data/lightcurves/ZTF19aamkfvy_fritz_lightcurves.csv
+ZTF19aamkfxb,Ia,0.095,2458561.5,2458561.69,P60,data/spectra/ZTF19aamkfxb_20190319_P60_v1.ascii,data/lightcurves/ZTF19aamkfxb_fritz_lightcurves.csv
+ZTF19aamkfxb,Ia,0.095,2458561.5,2458561.69,P60,data/spectra/ZTF19aamkfxb_20190319_P60_v2.ascii,data/lightcurves/ZTF19aamkfxb_fritz_lightcurves.csv
+ZTF19aamkywr,Ia,0.03034,2458593.5,2458568.89,P60,data/spectra/ZTF19aamkywr_20190420_P60_v1.ascii,data/lightcurves/ZTF19aamkywr_fritz_lightcurves.csv
+ZTF19aamljom,II,0.02,2458568.5,2458568.88,P60,data/spectra/ZTF19aamljom_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamljom_fritz_lightcurves.csv
+ZTF19aamljom,II,0.02,2458572.5,2458568.88,P60,data/spectra/ZTF19aamljom_20190330_P60_v1.ascii,data/lightcurves/ZTF19aamljom_fritz_lightcurves.csv
+ZTF19aamljom,II,0.02,2458592.5,2458568.88,P60,data/spectra/ZTF19aamljom_20190419_P60_v1.ascii,data/lightcurves/ZTF19aamljom_fritz_lightcurves.csv
+ZTF19aamljom,II,0.02,2458633.5,2458568.88,P60,data/spectra/ZTF19aamljom_20190530_P60_v1.ascii,data/lightcurves/ZTF19aamljom_fritz_lightcurves.csv
+ZTF19aamljom,II,0.02,2458678.5,2458568.88,P60,data/spectra/ZTF19aamljom_20190714_P60_v1.ascii,data/lightcurves/ZTF19aamljom_fritz_lightcurves.csv
+ZTF19aamoidt,Ia,0.05875,2458572.5,2458560.7,P60,data/spectra/ZTF19aamoidt_20190330_P60_v1.ascii,data/lightcurves/ZTF19aamoidt_fritz_lightcurves.csv
+ZTF19aampqcq,Ia,0.01895,2458561.5,2458572.61,P60,data/spectra/ZTF19aampqcq_20190319_P60_v1.ascii,data/lightcurves/ZTF19aampqcq_fritz_lightcurves.csv
+ZTF19aamsnhu,Ia,0.1,2458571.5,2458567.94,P60,data/spectra/ZTF19aamsnhu_20190329_P60_v1.ascii,data/lightcurves/ZTF19aamsnhu_fritz_lightcurves.csv
+ZTF19aamtima,Ia,0.04602,2458561.5,2458560.58,P60,data/spectra/ZTF19aamtima_20190319_P60_v1.ascii,data/lightcurves/ZTF19aamtima_fritz_lightcurves.csv
+ZTF19aamtwiz,II,0.04468,2458564.5,2458567.73,P60,data/spectra/ZTF19aamtwiz_20190322_P60_v1.ascii,data/lightcurves/ZTF19aamtwiz_fritz_lightcurves.csv
+ZTF19aamtwiz,II,0.04468,2458567.5,2458567.73,P60,data/spectra/ZTF19aamtwiz_20190325_P60_v1.ascii,data/lightcurves/ZTF19aamtwiz_fritz_lightcurves.csv
+ZTF19aamtwiz,II,0.04468,2458568.5,2458567.73,P60,data/spectra/ZTF19aamtwiz_20190326_P60_v1.ascii,data/lightcurves/ZTF19aamtwiz_fritz_lightcurves.csv
+ZTF19aamtwiz,II,0.04468,2458601.5,2458567.73,P60,data/spectra/ZTF19aamtwiz_20190428_P60_v1.ascii,data/lightcurves/ZTF19aamtwiz_fritz_lightcurves.csv
+ZTF19aamvape,II,0.03,2458579.5,2458580.93,P60,data/spectra/ZTF19aamvape_20190406_P60_v1.ascii,data/lightcurves/ZTF19aamvape_fritz_lightcurves.csv
 ZTF18abvnsmh,AGN,0.02959,2458567.5,2458591.89,P60,data/spectra/ZTF18abvnsmh_20190325_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF18abvnsmh.csv
-ZTF19aamowaf, II,0.025,2458572.5,2458569.83,P60,data/spectra/ZTF19aamowaf_20190330_P60_v1.ascii,data/lightcurves/ZTF19aamowaf_fritz_lightcurves.csv
-ZTF19aamowaf, II,0.025,2458572.5,2458569.83,P60,data/spectra/ZTF19aamowaf_20190330_P60_v2.ascii,data/lightcurves/ZTF19aamowaf_fritz_lightcurves.csv
-ZTF19aamowaf, II,0.025,2458572.5,2458569.83,P60,data/spectra/ZTF19aamowaf_20190330_P60_v3.ascii,data/lightcurves/ZTF19aamowaf_fritz_lightcurves.csv
-ZTF19aamqlyl, Ia,0.03,2458580.5,2458568.76,P60,data/spectra/ZTF19aamqlyl_20190407_P60_v1.ascii,data/lightcurves/ZTF19aamqlyl_fritz_lightcurves.csv
-ZTF19aamsetj, Ic,0.02751,2458567.5,2458593.78,P60,data/spectra/ZTF19aamsetj_20190325_P60_v1.ascii,data/lightcurves/ZTF19aamsetj_fritz_lightcurves.csv
-ZTF19aamsetj, Ic,0.02751,2458591.5,2458593.78,P60,data/spectra/ZTF19aamsetj_20190418_P60_v1.ascii,data/lightcurves/ZTF19aamsetj_fritz_lightcurves.csv
-ZTF19aamsetj, Ic,0.02751,2458596.5,2458593.78,P60,data/spectra/ZTF19aamsetj_20190423_P60_v1.ascii,data/lightcurves/ZTF19aamsetj_fritz_lightcurves.csv
-ZTF19aanbfaw, Ia,0.06,2458571.5,2458575.65,P60,data/spectra/ZTF19aanbfaw_20190329_P60_v1.ascii,data/lightcurves/ZTF19aanbfaw_fritz_lightcurves.csv
-ZTF18aahtjsc, Ia,0.0529,2458574.5,2458575.69,P60,data/spectra/ZTF18aahtjsc_20190401_P60_v1.ascii,data/lightcurves/ZTF18aahtjsc_fritz_lightcurves.csv
-ZTF19aamgttu, Ia,0.0308,2458572.5,2458567.64,P60,data/spectra/ZTF19aamgttu_20190330_P60_v1.ascii,data/lightcurves/ZTF19aamgttu_fritz_lightcurves.csv
-ZTF19aamhhyo, Ia,0.08,2458569.5,2458567.73,P60,data/spectra/ZTF19aamhhyo_20190327_P60_v1.ascii,data/lightcurves/ZTF19aamhhyo_fritz_lightcurves.csv
-ZTF19aamqebl, Ia,0.09,2458573.5,2458567.68,P60,data/spectra/ZTF19aamqebl_20190331_P60_v1.ascii,data/lightcurves/ZTF19aamqebl_fritz_lightcurves.csv
-ZTF19aanbojt, Ia,0.048,2458567.5,2458572.65,P60,data/spectra/ZTF19aanbojt_20190325_P60_v1.ascii,data/lightcurves/ZTF19aanbojt_fritz_lightcurves.csv
-ZTF19aanejfr, Ia,0.0428,2458566.5,2458575.65,P60,data/spectra/ZTF19aanejfr_20190324_P60_v1.ascii,data/lightcurves/ZTF19aanejfr_fritz_lightcurves.csv
-ZTF19aanfnvl, II,0.03167,2458567.5,2458594.6,P60,data/spectra/ZTF19aanfnvl_20190325_P60_v1.ascii,data/lightcurves/ZTF19aanfnvl_fritz_lightcurves.csv
-ZTF19aanfnvl, II,0.03167,2458568.5,2458594.6,P60,data/spectra/ZTF19aanfnvl_20190326_P60_v1.ascii,data/lightcurves/ZTF19aanfnvl_fritz_lightcurves.csv
-ZTF19aanfqug, IIn,0.046,2458581.5,2458591.64,P60,data/spectra/ZTF19aanfqug_20190408_P60_v1.ascii,data/lightcurves/ZTF19aanfqug_fritz_lightcurves.csv
-ZTF19aanfqug, IIn,0.046,2458595.5,2458591.64,P60,data/spectra/ZTF19aanfqug_20190422_P60_v1.ascii,data/lightcurves/ZTF19aanfqug_fritz_lightcurves.csv
-ZTF19aanfukh, Ic,0.02765,2458567.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190325_P60_v1.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
-ZTF19aanfukh, Ic,0.02765,2458567.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190325_P60_v2.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
-ZTF19aanfukh, Ic,0.02765,2458568.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190326_P60_v1.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
-ZTF19aanfukh, Ic,0.02765,2458572.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190330_P60_v1.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
-ZTF19aanfukh, Ic,0.02765,2458594.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190421_P60_v1.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
-ZTF19aanfukh, Ic,0.02765,2458594.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190421_P60_v2.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
-ZTF19aanfyey, Ia,0.0849,2458575.5,2458575.68,P60,data/spectra/ZTF19aanfyey_20190402_P60_v1.ascii,data/lightcurves/ZTF19aanfyey_fritz_lightcurves.csv
-ZTF19aangier, Ia,0.0604,2458573.5,2458575.76,P60,data/spectra/ZTF19aangier_20190331_P60_v1.ascii,data/lightcurves/ZTF19aangier_fritz_lightcurves.csv
-ZTF19aanhgqg, Ia,0.02777,2458567.5,2458575.81,P60,data/spectra/ZTF19aanhgqg_20190325_P60_v1.ascii,data/lightcurves/ZTF19aanhgqg_fritz_lightcurves.csv
-ZTF19aanhgqg, Ia,0.02777,2458567.5,2458575.81,P60,data/spectra/ZTF19aanhgqg_20190325_P60_v2.ascii,data/lightcurves/ZTF19aanhgqg_fritz_lightcurves.csv
-ZTF19aanhhal, IIP,0.02597,2458567.5,2458583.76,P60,data/spectra/ZTF19aanhhal_20190325_P60_v1.ascii,data/lightcurves/ZTF19aanhhal_fritz_lightcurves.csv
-ZTF19aanhhal, IIP,0.02597,2458567.5,2458583.76,P60,data/spectra/ZTF19aanhhal_20190325_P60_v2.ascii,data/lightcurves/ZTF19aanhhal_fritz_lightcurves.csv
-ZTF19aanhlxe, Ia,0.069,2458581.5,2458575.77,P60,data/spectra/ZTF19aanhlxe_20190408_P60_v1.ascii,data/lightcurves/ZTF19aanhlxe_fritz_lightcurves.csv
-ZTF19aanhlzi, Ia,0.0544,2458568.5,2458580.76,P60,data/spectra/ZTF19aanhlzi_20190326_P60_v1.ascii,data/lightcurves/ZTF19aanhlzi_fritz_lightcurves.csv
-ZTF19aanhlzn, Ia,0.083,2458581.5,2458572.79,P60,data/spectra/ZTF19aanhlzn_20190408_P60_v1.ascii,data/lightcurves/ZTF19aanhlzn_fritz_lightcurves.csv
-ZTF19aaniore, II,0.03,2458573.5,2458586.8,P60,data/spectra/ZTF19aaniore_20190331_P60_v1.ascii,data/lightcurves/ZTF19aaniore_fritz_lightcurves.csv
+ZTF19aamowaf,II,0.025,2458572.5,2458569.83,P60,data/spectra/ZTF19aamowaf_20190330_P60_v1.ascii,data/lightcurves/ZTF19aamowaf_fritz_lightcurves.csv
+ZTF19aamowaf,II,0.025,2458572.5,2458569.83,P60,data/spectra/ZTF19aamowaf_20190330_P60_v2.ascii,data/lightcurves/ZTF19aamowaf_fritz_lightcurves.csv
+ZTF19aamowaf,II,0.025,2458572.5,2458569.83,P60,data/spectra/ZTF19aamowaf_20190330_P60_v3.ascii,data/lightcurves/ZTF19aamowaf_fritz_lightcurves.csv
+ZTF19aamqlyl,Ia,0.03,2458580.5,2458568.76,P60,data/spectra/ZTF19aamqlyl_20190407_P60_v1.ascii,data/lightcurves/ZTF19aamqlyl_fritz_lightcurves.csv
+ZTF19aamsetj,Ic,0.02751,2458567.5,2458593.78,P60,data/spectra/ZTF19aamsetj_20190325_P60_v1.ascii,data/lightcurves/ZTF19aamsetj_fritz_lightcurves.csv
+ZTF19aamsetj,Ic,0.02751,2458591.5,2458593.78,P60,data/spectra/ZTF19aamsetj_20190418_P60_v1.ascii,data/lightcurves/ZTF19aamsetj_fritz_lightcurves.csv
+ZTF19aamsetj,Ic,0.02751,2458596.5,2458593.78,P60,data/spectra/ZTF19aamsetj_20190423_P60_v1.ascii,data/lightcurves/ZTF19aamsetj_fritz_lightcurves.csv
+ZTF19aanbfaw,Ia,0.06,2458571.5,2458575.65,P60,data/spectra/ZTF19aanbfaw_20190329_P60_v1.ascii,data/lightcurves/ZTF19aanbfaw_fritz_lightcurves.csv
+ZTF18aahtjsc,Ia,0.0529,2458574.5,2458575.69,P60,data/spectra/ZTF18aahtjsc_20190401_P60_v1.ascii,data/lightcurves/ZTF18aahtjsc_fritz_lightcurves.csv
+ZTF19aamgttu,Ia,0.0308,2458572.5,2458567.64,P60,data/spectra/ZTF19aamgttu_20190330_P60_v1.ascii,data/lightcurves/ZTF19aamgttu_fritz_lightcurves.csv
+ZTF19aamhhyo,Ia,0.08,2458569.5,2458567.73,P60,data/spectra/ZTF19aamhhyo_20190327_P60_v1.ascii,data/lightcurves/ZTF19aamhhyo_fritz_lightcurves.csv
+ZTF19aamqebl,Ia,0.09,2458573.5,2458567.68,P60,data/spectra/ZTF19aamqebl_20190331_P60_v1.ascii,data/lightcurves/ZTF19aamqebl_fritz_lightcurves.csv
+ZTF19aanbojt,Ia,0.048,2458567.5,2458572.65,P60,data/spectra/ZTF19aanbojt_20190325_P60_v1.ascii,data/lightcurves/ZTF19aanbojt_fritz_lightcurves.csv
+ZTF19aanejfr,Ia,0.0428,2458566.5,2458575.65,P60,data/spectra/ZTF19aanejfr_20190324_P60_v1.ascii,data/lightcurves/ZTF19aanejfr_fritz_lightcurves.csv
+ZTF19aanfnvl,II,0.03167,2458567.5,2458594.6,P60,data/spectra/ZTF19aanfnvl_20190325_P60_v1.ascii,data/lightcurves/ZTF19aanfnvl_fritz_lightcurves.csv
+ZTF19aanfnvl,II,0.03167,2458568.5,2458594.6,P60,data/spectra/ZTF19aanfnvl_20190326_P60_v1.ascii,data/lightcurves/ZTF19aanfnvl_fritz_lightcurves.csv
+ZTF19aanfqug,IIn,0.046,2458581.5,2458591.64,P60,data/spectra/ZTF19aanfqug_20190408_P60_v1.ascii,data/lightcurves/ZTF19aanfqug_fritz_lightcurves.csv
+ZTF19aanfqug,IIn,0.046,2458595.5,2458591.64,P60,data/spectra/ZTF19aanfqug_20190422_P60_v1.ascii,data/lightcurves/ZTF19aanfqug_fritz_lightcurves.csv
+ZTF19aanfukh,Ic,0.02765,2458567.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190325_P60_v1.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
+ZTF19aanfukh,Ic,0.02765,2458567.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190325_P60_v2.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
+ZTF19aanfukh,Ic,0.02765,2458568.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190326_P60_v1.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
+ZTF19aanfukh,Ic,0.02765,2458572.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190330_P60_v1.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
+ZTF19aanfukh,Ic,0.02765,2458594.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190421_P60_v1.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
+ZTF19aanfukh,Ic,0.02765,2458594.5,2458575.68,P60,data/spectra/ZTF19aanfukh_20190421_P60_v2.ascii,data/lightcurves/ZTF19aanfukh_fritz_lightcurves.csv
+ZTF19aanfyey,Ia,0.0849,2458575.5,2458575.68,P60,data/spectra/ZTF19aanfyey_20190402_P60_v1.ascii,data/lightcurves/ZTF19aanfyey_fritz_lightcurves.csv
+ZTF19aangier,Ia,0.0604,2458573.5,2458575.76,P60,data/spectra/ZTF19aangier_20190331_P60_v1.ascii,data/lightcurves/ZTF19aangier_fritz_lightcurves.csv
+ZTF19aanhgqg,Ia,0.02777,2458567.5,2458575.81,P60,data/spectra/ZTF19aanhgqg_20190325_P60_v1.ascii,data/lightcurves/ZTF19aanhgqg_fritz_lightcurves.csv
+ZTF19aanhgqg,Ia,0.02777,2458567.5,2458575.81,P60,data/spectra/ZTF19aanhgqg_20190325_P60_v2.ascii,data/lightcurves/ZTF19aanhgqg_fritz_lightcurves.csv
+ZTF19aanhhal,IIP,0.02597,2458567.5,2458583.76,P60,data/spectra/ZTF19aanhhal_20190325_P60_v1.ascii,data/lightcurves/ZTF19aanhhal_fritz_lightcurves.csv
+ZTF19aanhhal,IIP,0.02597,2458567.5,2458583.76,P60,data/spectra/ZTF19aanhhal_20190325_P60_v2.ascii,data/lightcurves/ZTF19aanhhal_fritz_lightcurves.csv
+ZTF19aanhlxe,Ia,0.069,2458581.5,2458575.77,P60,data/spectra/ZTF19aanhlxe_20190408_P60_v1.ascii,data/lightcurves/ZTF19aanhlxe_fritz_lightcurves.csv
+ZTF19aanhlzi,Ia,0.0544,2458568.5,2458580.76,P60,data/spectra/ZTF19aanhlzi_20190326_P60_v1.ascii,data/lightcurves/ZTF19aanhlzi_fritz_lightcurves.csv
+ZTF19aanhlzn,Ia,0.083,2458581.5,2458572.79,P60,data/spectra/ZTF19aanhlzn_20190408_P60_v1.ascii,data/lightcurves/ZTF19aanhlzn_fritz_lightcurves.csv
+ZTF19aaniore,II,0.03,2458573.5,2458586.8,P60,data/spectra/ZTF19aaniore_20190331_P60_v1.ascii,data/lightcurves/ZTF19aaniore_fritz_lightcurves.csv
 ZTF19aadggnt,AGN,0.139,2458573.5,2458642.64,P60,data/spectra/ZTF19aadggnt_20190331_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF19aadggnt.csv
-ZTF19aambixl, Ia,0.07356,2458569.5,2458547.87,P60,data/spectra/ZTF19aambixl_20190327_P60_v1.ascii,data/lightcurves/ZTF19aambixl_fritz_lightcurves.csv
-ZTF19aanesxt, Ia,0.048,2458568.5,2458575.71,P60,data/spectra/ZTF19aanesxt_20190326_P60_v1.ascii,data/lightcurves/ZTF19aanesxt_fritz_lightcurves.csv
-ZTF19aanjjgr, Ia,0.095,2458584.5,2458587.7,P60,data/spectra/ZTF19aanjjgr_20190411_P60_v1.ascii,data/lightcurves/ZTF19aanjjgr_fritz_lightcurves.csv
-ZTF19aanjjhk, Ia,0.07,2458580.5,2458573.67,P60,data/spectra/ZTF19aanjjhk_20190407_P60_v1.ascii,data/lightcurves/ZTF19aanjjhk_fritz_lightcurves.csv
-ZTF19aanjlwx, Ia,0.05,2458572.5,2458573.67,P60,data/spectra/ZTF19aanjlwx_20190330_P60_v1.ascii,data/lightcurves/ZTF19aanjlwx_fritz_lightcurves.csv
-ZTF19aanjlwx, Ia,0.05,2458574.5,2458573.67,P60,data/spectra/ZTF19aanjlwx_20190401_P60_v1.ascii,data/lightcurves/ZTF19aanjlwx_fritz_lightcurves.csv
-ZTF19aanlekq, II,0.03677,2458568.5,2458572.9,P60,data/spectra/ZTF19aanlekq_20190326_P60_v1.ascii,data/lightcurves/ZTF19aanlekq_fritz_lightcurves.csv
-ZTF19aanlekq, II,0.03677,2458574.5,2458572.9,P60,data/spectra/ZTF19aanlekq_20190401_P60_v1.ascii,data/lightcurves/ZTF19aanlekq_fritz_lightcurves.csv
-ZTF19aanlekq, II,0.03677,2458585.5,2458572.9,P60,data/spectra/ZTF19aanlekq_20190412_P60_v1.ascii,data/lightcurves/ZTF19aanlekq_fritz_lightcurves.csv
-ZTF19aanirdx, Ia,0.092,2458582.5,2458580.9,P60,data/spectra/ZTF19aanirdx_20190409_P60_v1.ascii,data/lightcurves/ZTF19aanirdx_fritz_lightcurves.csv
-ZTF19aanirdx, Ia,0.092,2458582.5,2458580.9,P60,data/spectra/ZTF19aanirdx_20190409_P60_v2.ascii,data/lightcurves/ZTF19aanirdx_fritz_lightcurves.csv
-ZTF19aanovps, II,0.035,2458575.5,2458584.82,P60,data/spectra/ZTF19aanovps_20190402_P60_v1.ascii,data/lightcurves/ZTF19aanovps_fritz_lightcurves.csv
-ZTF19aanpcep, II,0.0314,2458571.5,2458575.8,P60,data/spectra/ZTF19aanpcep_20190329_P60_v1.ascii,data/lightcurves/ZTF19aanpcep_fritz_lightcurves.csv
-ZTF19aanpcep, II,0.0314,2458572.5,2458575.8,P60,data/spectra/ZTF19aanpcep_20190330_P60_v1.ascii,data/lightcurves/ZTF19aanpcep_fritz_lightcurves.csv
-ZTF19aanpcep, II,0.0314,2458572.5,2458575.8,P60,data/spectra/ZTF19aanpcep_20190330_P60_v2.ascii,data/lightcurves/ZTF19aanpcep_fritz_lightcurves.csv
-ZTF19aanpcep, II,0.0314,2458573.5,2458575.8,P60,data/spectra/ZTF19aanpcep_20190331_P60_v1.ascii,data/lightcurves/ZTF19aanpcep_fritz_lightcurves.csv
-ZTF19aamtwwv, Ia,0.0686,2458573.5,2458572.72,P60,data/spectra/ZTF19aamtwwv_20190331_P60_v1.ascii,data/lightcurves/ZTF19aamtwwv_fritz_lightcurves.csv
-ZTF19aamwyzl, Ia,0.09,2458573.5,2458567.83,P60,data/spectra/ZTF19aamwyzl_20190331_P60_v1.ascii,data/lightcurves/ZTF19aamwyzl_fritz_lightcurves.csv
-ZTF19aanetjx, Ia,0.0531,2458573.5,2458580.65,P60,data/spectra/ZTF19aanetjx_20190331_P60_v1.ascii,data/lightcurves/ZTF19aanetjx_fritz_lightcurves.csv
-ZTF19aaneugz, Ia,0.0545,2458575.5,2458574.66,P60,data/spectra/ZTF19aaneugz_20190402_P60_v1.ascii,data/lightcurves/ZTF19aaneugz_fritz_lightcurves.csv
-ZTF19aanircs, Ia,0.06,2458573.5,2458583.86,P60,data/spectra/ZTF19aanircs_20190331_P60_v1.ascii,data/lightcurves/ZTF19aanircs_fritz_lightcurves.csv
-ZTF19aanmclt, Ia,0.045,2458572.5,2458572.91,P60,data/spectra/ZTF19aanmclt_20190330_P60_v1.ascii,data/lightcurves/ZTF19aanmclt_fritz_lightcurves.csv
-ZTF19aanmdsr, Ia,0.125,2458585.5,2458587.88,P60,data/spectra/ZTF19aanmdsr_20190412_P60_v1.ascii,data/lightcurves/ZTF19aanmdsr_fritz_lightcurves.csv
-ZTF19aanramr, Ia,0.04529,2458574.5,2458586.64,P60,data/spectra/ZTF19aanramr_20190401_P60_v1.ascii,data/lightcurves/ZTF19aanramr_fritz_lightcurves.csv
-ZTF19aanrrqu, II,0.02377,2458572.5,2458580.8,P60,data/spectra/ZTF19aanrrqu_20190330_P60_v1.ascii,data/lightcurves/ZTF19aanrrqu_fritz_lightcurves.csv
-ZTF19aanrrqu, II,0.02377,2458573.5,2458580.8,P60,data/spectra/ZTF19aanrrqu_20190331_P60_v1.ascii,data/lightcurves/ZTF19aanrrqu_fritz_lightcurves.csv
-ZTF19aanrrqu, II,0.02377,2458580.5,2458580.8,P60,data/spectra/ZTF19aanrrqu_20190407_P60_v1.ascii,data/lightcurves/ZTF19aanrrqu_fritz_lightcurves.csv
-ZTF19aansyyn, Ia,0.078,2458572.5,2458583.81,P60,data/spectra/ZTF19aansyyn_20190330_P60_v1.ascii,data/lightcurves/ZTF19aansyyn_fritz_lightcurves.csv
-ZTF19aansyyn, Ia,0.078,2458581.5,2458583.81,P60,data/spectra/ZTF19aansyyn_20190408_P60_v1.ascii,data/lightcurves/ZTF19aansyyn_fritz_lightcurves.csv
-ZTF19aanuhox, Ia,0.06,2458580.5,2458584.91,P60,data/spectra/ZTF19aanuhox_20190407_P60_v1.ascii,data/lightcurves/ZTF19aanuhox_fritz_lightcurves.csv
-ZTF19aanuipj, Ia,0.06,2458612.5,2458584.92,P60,data/spectra/ZTF19aanuipj_20190509_P60_v1.ascii,data/lightcurves/ZTF19aanuipj_fritz_lightcurves.csv
-ZTF19aanuipr, Ia,0.07,2458587.5,2458584.97,P60,data/spectra/ZTF19aanuipr_20190414_P60_v1.ascii,data/lightcurves/ZTF19aanuipr_fritz_lightcurves.csv
-ZTF19aanijpu, Ic,0.041,2458584.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190411_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
-ZTF19aanijpu, Ic,0.041,2458586.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190413_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
-ZTF19aanijpu, Ic,0.041,2458597.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190424_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
-ZTF19aanijpu, Ic,0.041,2458632.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190529_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
-ZTF19aanijpu, Ic,0.041,2458633.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190530_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
-ZTF19aanijpu, Ic,0.041,2458650.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190616_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
-ZTF19aanijpu, Ic,0.041,2458650.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190616_P60_v2.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
-ZTF19aanijpu, Ic,0.041,2458685.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190721_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
-ZTF19aanonjt, Ia,0.054,2458574.5,2458584.68,P60,data/spectra/ZTF19aanonjt_20190401_P60_v1.ascii,data/lightcurves/ZTF19aanonjt_fritz_lightcurves.csv
-ZTF19aanwwlo, Ia,0.07911,2458575.5,2458580.75,P60,data/spectra/ZTF19aanwwlo_20190402_P60_v1.ascii,data/lightcurves/ZTF19aanwwlo_fritz_lightcurves.csv
-ZTF19aanxgrz, Ia-91bg,0.02708,2458584.5,2458584.86,P60,data/spectra/ZTF19aanxgrz_20190411_P60_v1.ascii,data/lightcurves/ZTF19aanxgrz_fritz_lightcurves.csv
-ZTF19aanxnkd, Ia,0.1002,2458586.5,2458584.72,P60,data/spectra/ZTF19aanxnkd_20190413_P60_v1.ascii,data/lightcurves/ZTF19aanxnkd_fritz_lightcurves.csv
-ZTF19aanxosu, Ia,0.08,2458591.5,2458592.9,P60,data/spectra/ZTF19aanxosu_20190418_P60_v1.ascii,data/lightcurves/ZTF19aanxosu_fritz_lightcurves.csv
-ZTF19aanxrkt, Ia,0.09,2458582.5,2458591.83,P60,data/spectra/ZTF19aanxrkt_20190409_P60_v1.ascii,data/lightcurves/ZTF19aanxrkt_fritz_lightcurves.csv
-ZTF19aanydko, Ia,0.07,2458581.5,2458581.91,P60,data/spectra/ZTF19aanydko_20190408_P60_v1.ascii,data/lightcurves/ZTF19aanydko_fritz_lightcurves.csv
-ZTF19aakykjl, Ia,0.03,2458574.5,2458558.63,P60,data/spectra/ZTF19aakykjl_20190401_P60_v1.ascii,data/lightcurves/ZTF19aakykjl_fritz_lightcurves.csv
-ZTF19aakykjl, Ia,0.03,2458581.5,2458558.63,P60,data/spectra/ZTF19aakykjl_20190408_P60_v1.ascii,data/lightcurves/ZTF19aakykjl_fritz_lightcurves.csv
-ZTF19aaocejx,CV,0.0,2458575.5,2458574.89,P60,data/spectra/ZTF19aaocejx_20190402_P60_v1.ascii,data/lightcurves/ZTF19aaocejx_fritz_lightcurves.csv
+ZTF19aambixl,Ia,0.07356,2458569.5,2458547.87,P60,data/spectra/ZTF19aambixl_20190327_P60_v1.ascii,data/lightcurves/ZTF19aambixl_fritz_lightcurves.csv
+ZTF19aanesxt,Ia,0.048,2458568.5,2458575.71,P60,data/spectra/ZTF19aanesxt_20190326_P60_v1.ascii,data/lightcurves/ZTF19aanesxt_fritz_lightcurves.csv
+ZTF19aanjjgr,Ia,0.095,2458584.5,2458587.7,P60,data/spectra/ZTF19aanjjgr_20190411_P60_v1.ascii,data/lightcurves/ZTF19aanjjgr_fritz_lightcurves.csv
+ZTF19aanjjhk,Ia,0.07,2458580.5,2458573.67,P60,data/spectra/ZTF19aanjjhk_20190407_P60_v1.ascii,data/lightcurves/ZTF19aanjjhk_fritz_lightcurves.csv
+ZTF19aanjlwx,Ia,0.05,2458572.5,2458573.67,P60,data/spectra/ZTF19aanjlwx_20190330_P60_v1.ascii,data/lightcurves/ZTF19aanjlwx_fritz_lightcurves.csv
+ZTF19aanjlwx,Ia,0.05,2458574.5,2458573.67,P60,data/spectra/ZTF19aanjlwx_20190401_P60_v1.ascii,data/lightcurves/ZTF19aanjlwx_fritz_lightcurves.csv
+ZTF19aanlekq,II,0.03677,2458568.5,2458572.9,P60,data/spectra/ZTF19aanlekq_20190326_P60_v1.ascii,data/lightcurves/ZTF19aanlekq_fritz_lightcurves.csv
+ZTF19aanlekq,II,0.03677,2458574.5,2458572.9,P60,data/spectra/ZTF19aanlekq_20190401_P60_v1.ascii,data/lightcurves/ZTF19aanlekq_fritz_lightcurves.csv
+ZTF19aanlekq,II,0.03677,2458585.5,2458572.9,P60,data/spectra/ZTF19aanlekq_20190412_P60_v1.ascii,data/lightcurves/ZTF19aanlekq_fritz_lightcurves.csv
+ZTF19aanirdx,Ia,0.092,2458582.5,2458580.9,P60,data/spectra/ZTF19aanirdx_20190409_P60_v1.ascii,data/lightcurves/ZTF19aanirdx_fritz_lightcurves.csv
+ZTF19aanirdx,Ia,0.092,2458582.5,2458580.9,P60,data/spectra/ZTF19aanirdx_20190409_P60_v2.ascii,data/lightcurves/ZTF19aanirdx_fritz_lightcurves.csv
+ZTF19aanovps,II,0.035,2458575.5,2458584.82,P60,data/spectra/ZTF19aanovps_20190402_P60_v1.ascii,data/lightcurves/ZTF19aanovps_fritz_lightcurves.csv
+ZTF19aanpcep,II,0.0314,2458571.5,2458575.8,P60,data/spectra/ZTF19aanpcep_20190329_P60_v1.ascii,data/lightcurves/ZTF19aanpcep_fritz_lightcurves.csv
+ZTF19aanpcep,II,0.0314,2458572.5,2458575.8,P60,data/spectra/ZTF19aanpcep_20190330_P60_v1.ascii,data/lightcurves/ZTF19aanpcep_fritz_lightcurves.csv
+ZTF19aanpcep,II,0.0314,2458572.5,2458575.8,P60,data/spectra/ZTF19aanpcep_20190330_P60_v2.ascii,data/lightcurves/ZTF19aanpcep_fritz_lightcurves.csv
+ZTF19aanpcep,II,0.0314,2458573.5,2458575.8,P60,data/spectra/ZTF19aanpcep_20190331_P60_v1.ascii,data/lightcurves/ZTF19aanpcep_fritz_lightcurves.csv
+ZTF19aamtwwv,Ia,0.0686,2458573.5,2458572.72,P60,data/spectra/ZTF19aamtwwv_20190331_P60_v1.ascii,data/lightcurves/ZTF19aamtwwv_fritz_lightcurves.csv
+ZTF19aamwyzl,Ia,0.09,2458573.5,2458567.83,P60,data/spectra/ZTF19aamwyzl_20190331_P60_v1.ascii,data/lightcurves/ZTF19aamwyzl_fritz_lightcurves.csv
+ZTF19aanetjx,Ia,0.0531,2458573.5,2458580.65,P60,data/spectra/ZTF19aanetjx_20190331_P60_v1.ascii,data/lightcurves/ZTF19aanetjx_fritz_lightcurves.csv
+ZTF19aaneugz,Ia,0.0545,2458575.5,2458574.66,P60,data/spectra/ZTF19aaneugz_20190402_P60_v1.ascii,data/lightcurves/ZTF19aaneugz_fritz_lightcurves.csv
+ZTF19aanircs,Ia,0.06,2458573.5,2458583.86,P60,data/spectra/ZTF19aanircs_20190331_P60_v1.ascii,data/lightcurves/ZTF19aanircs_fritz_lightcurves.csv
+ZTF19aanmclt,Ia,0.045,2458572.5,2458572.91,P60,data/spectra/ZTF19aanmclt_20190330_P60_v1.ascii,data/lightcurves/ZTF19aanmclt_fritz_lightcurves.csv
+ZTF19aanmdsr,Ia,0.125,2458585.5,2458587.88,P60,data/spectra/ZTF19aanmdsr_20190412_P60_v1.ascii,data/lightcurves/ZTF19aanmdsr_fritz_lightcurves.csv
+ZTF19aanramr,Ia,0.04529,2458574.5,2458586.64,P60,data/spectra/ZTF19aanramr_20190401_P60_v1.ascii,data/lightcurves/ZTF19aanramr_fritz_lightcurves.csv
+ZTF19aanrrqu,II,0.02377,2458572.5,2458580.8,P60,data/spectra/ZTF19aanrrqu_20190330_P60_v1.ascii,data/lightcurves/ZTF19aanrrqu_fritz_lightcurves.csv
+ZTF19aanrrqu,II,0.02377,2458573.5,2458580.8,P60,data/spectra/ZTF19aanrrqu_20190331_P60_v1.ascii,data/lightcurves/ZTF19aanrrqu_fritz_lightcurves.csv
+ZTF19aanrrqu,II,0.02377,2458580.5,2458580.8,P60,data/spectra/ZTF19aanrrqu_20190407_P60_v1.ascii,data/lightcurves/ZTF19aanrrqu_fritz_lightcurves.csv
+ZTF19aansyyn,Ia,0.078,2458572.5,2458583.81,P60,data/spectra/ZTF19aansyyn_20190330_P60_v1.ascii,data/lightcurves/ZTF19aansyyn_fritz_lightcurves.csv
+ZTF19aansyyn,Ia,0.078,2458581.5,2458583.81,P60,data/spectra/ZTF19aansyyn_20190408_P60_v1.ascii,data/lightcurves/ZTF19aansyyn_fritz_lightcurves.csv
+ZTF19aanuhox,Ia,0.06,2458580.5,2458584.91,P60,data/spectra/ZTF19aanuhox_20190407_P60_v1.ascii,data/lightcurves/ZTF19aanuhox_fritz_lightcurves.csv
+ZTF19aanuipj,Ia,0.06,2458612.5,2458584.92,P60,data/spectra/ZTF19aanuipj_20190509_P60_v1.ascii,data/lightcurves/ZTF19aanuipj_fritz_lightcurves.csv
+ZTF19aanuipr,Ia,0.07,2458587.5,2458584.97,P60,data/spectra/ZTF19aanuipr_20190414_P60_v1.ascii,data/lightcurves/ZTF19aanuipr_fritz_lightcurves.csv
+ZTF19aanijpu,Ic,0.041,2458584.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190411_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
+ZTF19aanijpu,Ic,0.041,2458586.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190413_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
+ZTF19aanijpu,Ic,0.041,2458597.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190424_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
+ZTF19aanijpu,Ic,0.041,2458632.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190529_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
+ZTF19aanijpu,Ic,0.041,2458633.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190530_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
+ZTF19aanijpu,Ic,0.041,2458650.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190616_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
+ZTF19aanijpu,Ic,0.041,2458650.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190616_P60_v2.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
+ZTF19aanijpu,Ic,0.041,2458685.5,2458616.75,P60,data/spectra/ZTF19aanijpu_20190721_P60_v1.ascii,data/lightcurves/ZTF19aanijpu_fritz_lightcurves.csv
+ZTF19aanonjt,Ia,0.054,2458574.5,2458584.68,P60,data/spectra/ZTF19aanonjt_20190401_P60_v1.ascii,data/lightcurves/ZTF19aanonjt_fritz_lightcurves.csv
+ZTF19aanwwlo,Ia,0.07911,2458575.5,2458580.75,P60,data/spectra/ZTF19aanwwlo_20190402_P60_v1.ascii,data/lightcurves/ZTF19aanwwlo_fritz_lightcurves.csv
+ZTF19aanxgrz,Ia-91bg,0.02708,2458584.5,2458584.86,P60,data/spectra/ZTF19aanxgrz_20190411_P60_v1.ascii,data/lightcurves/ZTF19aanxgrz_fritz_lightcurves.csv
+ZTF19aanxnkd,Ia,0.1002,2458586.5,2458584.72,P60,data/spectra/ZTF19aanxnkd_20190413_P60_v1.ascii,data/lightcurves/ZTF19aanxnkd_fritz_lightcurves.csv
+ZTF19aanxosu,Ia,0.08,2458591.5,2458592.9,P60,data/spectra/ZTF19aanxosu_20190418_P60_v1.ascii,data/lightcurves/ZTF19aanxosu_fritz_lightcurves.csv
+ZTF19aanxrkt,Ia,0.09,2458582.5,2458591.83,P60,data/spectra/ZTF19aanxrkt_20190409_P60_v1.ascii,data/lightcurves/ZTF19aanxrkt_fritz_lightcurves.csv
+ZTF19aanydko,Ia,0.07,2458581.5,2458581.91,P60,data/spectra/ZTF19aanydko_20190408_P60_v1.ascii,data/lightcurves/ZTF19aanydko_fritz_lightcurves.csv
+ZTF19aakykjl,Ia,0.03,2458574.5,2458558.63,P60,data/spectra/ZTF19aakykjl_20190401_P60_v1.ascii,data/lightcurves/ZTF19aakykjl_fritz_lightcurves.csv
+ZTF19aakykjl,Ia,0.03,2458581.5,2458558.63,P60,data/spectra/ZTF19aakykjl_20190408_P60_v1.ascii,data/lightcurves/ZTF19aakykjl_fritz_lightcurves.csv
 ZTF19aaodojg,CV,0.0,2458575.5,2458582.92,P60,data/spectra/ZTF19aaodojg_20190402_P60_v1.ascii,data/lightcurves/ZTF19aaodojg_fritz_lightcurves.csv
 ZTF19aaodsna,CV,0.0,2458575.5,2458574.95,P60,data/spectra/ZTF19aaodsna_20190402_P60_v1.ascii,data/lightcurves/ZTF19aaodsna_fritz_lightcurves.csv
-ZTF19aaoaaap, Ia,0.1,2458587.5,2458587.64,P60,data/spectra/ZTF19aaoaaap_20190414_P60_v1.ascii,data/lightcurves/ZTF19aaoaaap_fritz_lightcurves.csv
-ZTF19aaoaaap, Ia,0.1,2458599.5,2458587.64,P60,data/spectra/ZTF19aaoaaap_20190426_P60_v1.ascii,data/lightcurves/ZTF19aaoaaap_fritz_lightcurves.csv
-ZTF19aaokist, Ia,0.07459,2458616.5,2458586.85,P60,data/spectra/ZTF19aaokist_20190513_P60_v1.ascii,data/lightcurves/ZTF19aaokist_fritz_lightcurves.csv
-ZTF19aaokist, Ia,0.07459,2458616.5,2458586.85,P60,data/spectra/ZTF19aaokist_20190513_P60_v2.ascii,data/lightcurves/ZTF19aaokist_fritz_lightcurves.csv
-ZTF19aaomkvl, Ia,0.03961,2458583.5,2458586.83,P60,data/spectra/ZTF19aaomkvl_20190410_P60_v1.ascii,data/lightcurves/ZTF19aaomkvl_fritz_lightcurves.csv
-ZTF19aaomkvl, Ia,0.03961,2458585.5,2458586.83,P60,data/spectra/ZTF19aaomkvl_20190412_P60_v1.ascii,data/lightcurves/ZTF19aaomkvl_fritz_lightcurves.csv
+ZTF19aaoaaap,Ia,0.1,2458587.5,2458587.64,P60,data/spectra/ZTF19aaoaaap_20190414_P60_v1.ascii,data/lightcurves/ZTF19aaoaaap_fritz_lightcurves.csv
+ZTF19aaoaaap,Ia,0.1,2458599.5,2458587.64,P60,data/spectra/ZTF19aaoaaap_20190426_P60_v1.ascii,data/lightcurves/ZTF19aaoaaap_fritz_lightcurves.csv
+ZTF19aaokist,Ia,0.07459,2458616.5,2458586.85,P60,data/spectra/ZTF19aaokist_20190513_P60_v1.ascii,data/lightcurves/ZTF19aaokist_fritz_lightcurves.csv
+ZTF19aaokist,Ia,0.07459,2458616.5,2458586.85,P60,data/spectra/ZTF19aaokist_20190513_P60_v2.ascii,data/lightcurves/ZTF19aaokist_fritz_lightcurves.csv
+ZTF19aaomkvl,Ia,0.03961,2458583.5,2458586.83,P60,data/spectra/ZTF19aaomkvl_20190410_P60_v1.ascii,data/lightcurves/ZTF19aaomkvl_fritz_lightcurves.csv
+ZTF19aaomkvl,Ia,0.03961,2458585.5,2458586.83,P60,data/spectra/ZTF19aaomkvl_20190412_P60_v1.ascii,data/lightcurves/ZTF19aaomkvl_fritz_lightcurves.csv
 ZTF19aanfrmq,AGN,0.135,2458587.5,2458888.71,P60,data/spectra/ZTF19aanfrmq_20190414_P60_v1.ascii,data/lightcurves/marshal_plot_lc_lightcurve_ZTF19aanfrmq.csv
-ZTF19aaohyqj, Ia,0.1,2458586.5,2458586.62,P60,data/spectra/ZTF19aaohyqj_20190413_P60_v1.ascii,data/lightcurves/ZTF19aaohyqj_fritz_lightcurves.csv
-ZTF19aaojnrx, Ia,0.0508,2458592.5,2458586.78,P60,data/spectra/ZTF19aaojnrx_20190419_P60_v1.ascii,data/lightcurves/ZTF19aaojnrx_fritz_lightcurves.csv
-ZTF19aaoxvfe, Ib,0.0364,2458580.5,2458594.77,P60,data/spectra/ZTF19aaoxvfe_20190407_P60_v1.ascii,data/lightcurves/ZTF19aaoxvfe_fritz_lightcurves.csv
-ZTF19aaoxvfe, Ib,0.0364,2458592.5,2458594.77,P60,data/spectra/ZTF19aaoxvfe_20190419_P60_v1.ascii,data/lightcurves/ZTF19aaoxvfe_fritz_lightcurves.csv
-ZTF19aaoyjoz, Ia,0.0615,2458583.5,2458596.7,P60,data/spectra/ZTF19aaoyjoz_20190410_P60_v1.ascii,data/lightcurves/ZTF19aaoyjoz_fritz_lightcurves.csv
-ZTF19aapadxs, IIb,0.035,2458597.5,2458592.71,P60,data/spectra/ZTF19aapadxs_20190424_P60_v1.ascii,data/lightcurves/ZTF19aapadxs_fritz_lightcurves.csv
-ZTF19aapadxs, IIb,0.035,2458597.5,2458592.71,P60,data/spectra/ZTF19aapadxs_20190424_P60_v2.ascii,data/lightcurves/ZTF19aapadxs_fritz_lightcurves.csv
-ZTF19aapafit, IIP,0.0186,2458581.5,2458605.83,P60,data/spectra/ZTF19aapafit_20190408_P60_v1.ascii,data/lightcurves/ZTF19aapafit_fritz_lightcurves.csv
-ZTF19aandjiw, II,0.025,2458581.5,2458581.59,P60,data/spectra/ZTF19aandjiw_20190408_P60_v1.ascii,data/lightcurves/ZTF19aandjiw_fritz_lightcurves.csv
-ZTF19aaocbes, Ia-91T,0.08,2458584.5,2458585.88,P60,data/spectra/ZTF19aaocbes_20190411_P60_v1.ascii,data/lightcurves/ZTF19aaocbes_fritz_lightcurves.csv
-ZTF19aaoyech, Ia,0.06,2458601.5,2458592.64,P60,data/spectra/ZTF19aaoyech_20190428_P60_v1.ascii,data/lightcurves/ZTF19aaoyech_fritz_lightcurves.csv
-ZTF19aaozpew, Ia,0.0506,2458584.5,2458592.87,P60,data/spectra/ZTF19aaozpew_20190411_P60_v1.ascii,data/lightcurves/ZTF19aaozpew_fritz_lightcurves.csv
-ZTF19aaozpew, Ia,0.0506,2458596.5,2458592.87,P60,data/spectra/ZTF19aaozpew_20190423_P60_v1.ascii,data/lightcurves/ZTF19aaozpew_fritz_lightcurves.csv
-ZTF19aaozplq, Ia,0.1,2458587.5,2458592.87,P60,data/spectra/ZTF19aaozplq_20190414_P60_v1.ascii,data/lightcurves/ZTF19aaozplq_fritz_lightcurves.csv
-ZTF19aapbgty, Ia,0.075,2458581.5,2458592.94,P60,data/spectra/ZTF19aapbgty_20190408_P60_v1.ascii,data/lightcurves/ZTF19aapbgty_fritz_lightcurves.csv
-ZTF19aapcvxi, Ia,0.06,2458583.5,2458584.68,P60,data/spectra/ZTF19aapcvxi_20190410_P60_v1.ascii,data/lightcurves/ZTF19aapcvxi_fritz_lightcurves.csv
-ZTF19aapcwdq, Ia,0.1,2458590.5,2458591.63,P60,data/spectra/ZTF19aapcwdq_20190417_P60_v1.ascii,data/lightcurves/ZTF19aapcwdq_fritz_lightcurves.csv
-ZTF19aapcxiy, Ia,0.09,2458595.5,2458592.68,P60,data/spectra/ZTF19aapcxiy_20190422_P60_v1.ascii,data/lightcurves/ZTF19aapcxiy_fritz_lightcurves.csv
-ZTF19aapeime, Ia,0.02789,2458581.5,2458587.74,P60,data/spectra/ZTF19aapeime_20190408_P60_v1.ascii,data/lightcurves/ZTF19aapeime_fritz_lightcurves.csv
-ZTF19aapeime, Ia,0.02789,2458581.5,2458587.74,P60,data/spectra/ZTF19aapeime_20190408_P60_v2.ascii,data/lightcurves/ZTF19aapeime_fritz_lightcurves.csv
-ZTF19aapeime, Ia,0.02789,2458585.5,2458587.74,P60,data/spectra/ZTF19aapeime_20190412_P60_v1.ascii,data/lightcurves/ZTF19aapeime_fritz_lightcurves.csv
-ZTF19aapeime, Ia,0.02789,2458585.5,2458587.74,P60,data/spectra/ZTF19aapeime_20190412_P60_v2.ascii,data/lightcurves/ZTF19aapeime_fritz_lightcurves.csv
-ZTF19aapemqu, Iax,0.043,2458584.5,2458593.76,P60,data/spectra/ZTF19aapemqu_20190411_P60_v2.ascii,data/lightcurves/ZTF19aapemqu_fritz_lightcurves.csv
-ZTF19aaphifl, Ia,0.02855,2458594.5,2458591.89,P60,data/spectra/ZTF19aaphifl_20190421_P60_v1.ascii,data/lightcurves/ZTF19aaphifl_fritz_lightcurves.csv
-ZTF19aaphifl, Ia,0.02855,2458598.5,2458591.89,P60,data/spectra/ZTF19aaphifl_20190425_P60_v1.ascii,data/lightcurves/ZTF19aaphifl_fritz_lightcurves.csv
-ZTF19aaphifl, Ia,0.02855,2458599.5,2458591.89,P60,data/spectra/ZTF19aaphifl_20190426_P60_v1.ascii,data/lightcurves/ZTF19aaphifl_fritz_lightcurves.csv
-ZTF19aaphifl, Ia,0.02855,2458608.5,2458591.89,P60,data/spectra/ZTF19aaphifl_20190505_P60_v1.ascii,data/lightcurves/ZTF19aaphifl_fritz_lightcurves.csv
-ZTF19aanyubf, Ia,0.05,2458584.5,2458582.92,P60,data/spectra/ZTF19aanyubf_20190411_P60_v1.ascii,data/lightcurves/ZTF19aanyubf_fritz_lightcurves.csv
-ZTF19aaozsuh, IIn,0.056,2458587.5,2458597.81,P60,data/spectra/ZTF19aaozsuh_20190414_P60_v1.ascii,data/lightcurves/ZTF19aaozsuh_fritz_lightcurves.csv
-ZTF19aapnzde, Ia,0.07087,2458586.5,2458596.91,P60,data/spectra/ZTF19aapnzde_20190413_P60_v1.ascii,data/lightcurves/ZTF19aapnzde_fritz_lightcurves.csv
-ZTF19aapnzde, Ia,0.07087,2458586.5,2458596.91,P60,data/spectra/ZTF19aapnzde_20190413_P60_v2.ascii,data/lightcurves/ZTF19aapnzde_fritz_lightcurves.csv
-ZTF19aapbfot, II,0.03,2458584.5,2458605.83,P60,data/spectra/ZTF19aapbfot_20190411_P60_v1.ascii,data/lightcurves/ZTF19aapbfot_fritz_lightcurves.csv
+ZTF19aaohyqj,Ia,0.1,2458586.5,2458586.62,P60,data/spectra/ZTF19aaohyqj_20190413_P60_v1.ascii,data/lightcurves/ZTF19aaohyqj_fritz_lightcurves.csv
+ZTF19aaojnrx,Ia,0.0508,2458592.5,2458586.78,P60,data/spectra/ZTF19aaojnrx_20190419_P60_v1.ascii,data/lightcurves/ZTF19aaojnrx_fritz_lightcurves.csv
+ZTF19aaoxvfe,Ib,0.0364,2458580.5,2458594.77,P60,data/spectra/ZTF19aaoxvfe_20190407_P60_v1.ascii,data/lightcurves/ZTF19aaoxvfe_fritz_lightcurves.csv
+ZTF19aaoxvfe,Ib,0.0364,2458592.5,2458594.77,P60,data/spectra/ZTF19aaoxvfe_20190419_P60_v1.ascii,data/lightcurves/ZTF19aaoxvfe_fritz_lightcurves.csv
+ZTF19aaoyjoz,Ia,0.0615,2458583.5,2458596.7,P60,data/spectra/ZTF19aaoyjoz_20190410_P60_v1.ascii,data/lightcurves/ZTF19aaoyjoz_fritz_lightcurves.csv
+ZTF19aapadxs,IIb,0.035,2458597.5,2458592.71,P60,data/spectra/ZTF19aapadxs_20190424_P60_v1.ascii,data/lightcurves/ZTF19aapadxs_fritz_lightcurves.csv
+ZTF19aapadxs,IIb,0.035,2458597.5,2458592.71,P60,data/spectra/ZTF19aapadxs_20190424_P60_v2.ascii,data/lightcurves/ZTF19aapadxs_fritz_lightcurves.csv
+ZTF19aapafit,IIP,0.0186,2458581.5,2458605.83,P60,data/spectra/ZTF19aapafit_20190408_P60_v1.ascii,data/lightcurves/ZTF19aapafit_fritz_lightcurves.csv
+ZTF19aandjiw,II,0.025,2458581.5,2458581.59,P60,data/spectra/ZTF19aandjiw_20190408_P60_v1.ascii,data/lightcurves/ZTF19aandjiw_fritz_lightcurves.csv
+ZTF19aaocbes,Ia-91T,0.08,2458584.5,2458585.88,P60,data/spectra/ZTF19aaocbes_20190411_P60_v1.ascii,data/lightcurves/ZTF19aaocbes_fritz_lightcurves.csv
+ZTF19aaoyech,Ia,0.06,2458601.5,2458592.64,P60,data/spectra/ZTF19aaoyech_20190428_P60_v1.ascii,data/lightcurves/ZTF19aaoyech_fritz_lightcurves.csv
+ZTF19aaozpew,Ia,0.0506,2458584.5,2458592.87,P60,data/spectra/ZTF19aaozpew_20190411_P60_v1.ascii,data/lightcurves/ZTF19aaozpew_fritz_lightcurves.csv
+ZTF19aaozpew,Ia,0.0506,2458596.5,2458592.87,P60,data/spectra/ZTF19aaozpew_20190423_P60_v1.ascii,data/lightcurves/ZTF19aaozpew_fritz_lightcurves.csv
+ZTF19aaozplq,Ia,0.1,2458587.5,2458592.87,P60,data/spectra/ZTF19aaozplq_20190414_P60_v1.ascii,data/lightcurves/ZTF19aaozplq_fritz_lightcurves.csv
+ZTF19aapbgty,Ia,0.075,2458581.5,2458592.94,P60,data/spectra/ZTF19aapbgty_20190408_P60_v1.ascii,data/lightcurves/ZTF19aapbgty_fritz_lightcurves.csv
+ZTF19aapcvxi,Ia,0.06,2458583.5,2458584.68,P60,data/spectra/ZTF19aapcvxi_20190410_P60_v1.ascii,data/lightcurves/ZTF19aapcvxi_fritz_lightcurves.csv
+ZTF19aapcwdq,Ia,0.1,2458590.5,2458591.63,P60,data/spectra/ZTF19aapcwdq_20190417_P60_v1.ascii,data/lightcurves/ZTF19aapcwdq_fritz_lightcurves.csv
+ZTF19aapcxiy,Ia,0.09,2458595.5,2458592.68,P60,data/spectra/ZTF19aapcxiy_20190422_P60_v1.ascii,data/lightcurves/ZTF19aapcxiy_fritz_lightcurves.csv
+ZTF19aapeime,Ia,0.02789,2458581.5,2458587.74,P60,data/spectra/ZTF19aapeime_20190408_P60_v1.ascii,data/lightcurves/ZTF19aapeime_fritz_lightcurves.csv
+ZTF19aapeime,Ia,0.02789,2458581.5,2458587.74,P60,data/spectra/ZTF19aapeime_20190408_P60_v2.ascii,data/lightcurves/ZTF19aapeime_fritz_lightcurves.csv
+ZTF19aapeime,Ia,0.02789,2458585.5,2458587.74,P60,data/spectra/ZTF19aapeime_20190412_P60_v1.ascii,data/lightcurves/ZTF19aapeime_fritz_lightcurves.csv
+ZTF19aapeime,Ia,0.02789,2458585.5,2458587.74,P60,data/spectra/ZTF19aapeime_20190412_P60_v2.ascii,data/lightcurves/ZTF19aapeime_fritz_lightcurves.csv
+ZTF19aapemqu,Iax,0.043,2458584.5,2458593.76,P60,data/spectra/ZTF19aapemqu_20190411_P60_v2.ascii,data/lightcurves/ZTF19aapemqu_fritz_lightcurves.csv
+ZTF19aaphifl,Ia,0.02855,2458594.5,2458591.89,P60,data/spectra/ZTF19aaphifl_20190421_P60_v1.ascii,data/lightcurves/ZTF19aaphifl_fritz_lightcurves.csv
+ZTF19aaphifl,Ia,0.02855,2458598.5,2458591.89,P60,data/spectra/ZTF19aaphifl_20190425_P60_v1.ascii,data/lightcurves/ZTF19aaphifl_fritz_lightcurves.csv
+ZTF19aaphifl,Ia,0.02855,2458599.5,2458591.89,P60,data/spectra/ZTF19aaphifl_20190426_P60_v1.ascii,data/lightcurves/ZTF19aaphifl_fritz_lightcurves.csv
+ZTF19aaphifl,Ia,0.02855,2458608.5,2458591.89,P60,data/spectra/ZTF19aaphifl_20190505_P60_v1.ascii,data/lightcurves/ZTF19aaphifl_fritz_lightcurves.csv
+ZTF19aanyubf,Ia,0.05,2458584.5,2458582.92,P60,data/spectra/ZTF19aanyubf_20190411_P60_v1.ascii,data/lightcurves/ZTF19aanyubf_fritz_lightcurves.csv
+ZTF19aaozsuh,IIn,0.056,2458587.5,2458597.81,P60,data/spectra/ZTF19aaozsuh_20190414_P60_v1.ascii,data/lightcurves/ZTF19aaozsuh_fritz_lightcurves.csv
+ZTF19aapnzde,Ia,0.07087,2458586.5,2458596.91,P60,data/spectra/ZTF19aapnzde_20190413_P60_v1.ascii,data/lightcurves/ZTF19aapnzde_fritz_lightcurves.csv
+ZTF19aapnzde,Ia,0.07087,2458586.5,2458596.91,P60,data/spectra/ZTF19aapnzde_20190413_P60_v2.ascii,data/lightcurves/ZTF19aapnzde_fritz_lightcurves.csv
+ZTF19aapbfot,II,0.03,2458584.5,2458605.83,P60,data/spectra/ZTF19aapbfot_20190411_P60_v1.ascii,data/lightcurves/ZTF19aapbfot_fritz_lightcurves.csv

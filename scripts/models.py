@@ -16,8 +16,8 @@ from tensorflow.keras.layers import (
 import numpy as np 
 
 class Model:
-	def __init__(self,inp_shapes, num_classes, channels, mc):
-		self.inp_shape_spec, self.inp_shape_spec_dmdt, self.inp_shape_lcr, self.inp_shape_lcg, self.inp_shape_dmdtr, self.inp_shape_dmdtg = inp_shapes
+	def __init__(self, inp_shapes, num_classes, channels, mc):
+		self.inp_shape_spec, self.inp_shape_lcr, self.inp_shape_lcg, self.inp_shape_dmdtr, self.inp_shape_dmdtg = inp_shapes
 		self.num_classes = num_classes
 		self.channels = channels
 		self.mc = mc
