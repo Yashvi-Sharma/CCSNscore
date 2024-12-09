@@ -7,6 +7,7 @@ import warnings
 from sklearn.preprocessing import MinMaxScaler
 from scipy.interpolate import CubicSpline
 from scipy.ndimage import median_filter
+from sdapy import snerun
 import tensorflow as tf
 
 warnings.filterwarnings('ignore')
@@ -47,7 +48,7 @@ def cont_removal(img,npoints=32,res=256):
 	selinds = np.arange(0,res,npoints)
 	cs = CubicSpline(x[selinds],y[selinds])
 	ycont = cs(x)
-	return y/ycont - 1.0
+	return y/ycont - 1.0, ycont
 
 def spectrum_preproc(img,median_window=3):
 	'''
@@ -114,8 +115,32 @@ def forecast_interpolation(df,fluxcol='mag',scale=1e16):
 
 	return ndf
 
-def plot_lc(interpdf, rawdf, objname, save=False):
+def forecast_interpolation_multifilter(df,objname,plot=False):
+	sncls = snerun.snobject(objid=objname)
+	df['jdobs'] = df['phase']
+	filts = df['filter'].unique()
+	sncls.add_lc(df, source='test')
+	sncls.add_flux(zp=23.9, source='test')
+	sncls.run_gp(gp_bands=filts)
 
+	xp = np.arange(min(df['phase']),max(df['phase'])+0.5,0.5)
+	xp, yp, ype, filts = sncls.gpcls.predict(xp,returnv=True)
+	ndf = pd.DataFrame({'phase':xp.flatten(),'mag':yp.flatten(),'emag':ype.flatten(),'filter':filts.flatten()})
+	ndf = ndf[(ndf['mag']/ndf['emag']>=5)].reset_index(drop=True)
+	ndfg = ndf[(ndf['filter']=='g')]
+	ndfr = ndf[(ndf['filter']=='r')]
+
+	if plot:
+		plt.figure()
+		plt.errorbar(sncls.gpcls.x,sncls.gpcls.y,sncls.gpcls.yerr,color='black',marker='o',mfc='none',ls='')
+		plt.errorbar(ndfg['phase'],ndfg['mag'],ndfg['emag'],color='darkgreen',marker='.',elinewidth=0.3,ls='')
+		plt.errorbar(ndfr['phase'],ndfr['mag'],ndfr['emag'],color='darkred',marker='.',elinewidth=0.3,ls='')
+		plt.title(objname)
+		plt.savefig(f'../data/interpolation_figures/{objname}.png',dpi=200)
+		plt.close()
+	return ndf
+
+def plot_lc(interpdf, rawdf, objname, save=False):
 	intdfr = interpdf[(interpdf['filter']=='r') & (interpdf['mag']/interpdf['emag']>=3)]
 	intdfg = interpdf[(interpdf['filter']=='g') & (interpdf['mag']/interpdf['emag']>=3)]
 	dfr = rawdf[rawdf['filter']=='r']
@@ -146,43 +171,30 @@ def generate_lc(objname, lcpath, plot=False):
 		return {'status':0,'name':objname,'message':'Failed, required columns do not exist'}
 	else:
 		df = tbl[(~pd.isnull(tbl['mag'])) & (tbl['mag']!=99.00)].reset_index(drop=True)
-		df = df[(df['mag']/df['emag']>=3)].reset_index(drop=True)
-		if len(df)<2:
+		df = df[(df['mag']/df['emag']>=5)].reset_index(drop=True)
+		if len(df)<4:
 			return {'status':0,'name':objname,'message':'Failed, not enough detections in LC'}
 		else:
-			minmjd = min(df['mjd'])
-			df['phase'] = df['mjd'] - minmjd
+			if ('phase' not in df.columns) & ('mjd' in df.columns):
+				minmjd = min(df['mjd'])
+				df['phase'] = df['mjd'] - minmjd
 			## Setting up datafrane for GP forecast
-			dfg = df[df['filter']=='g'].reset_index(drop=True)
-			fluxg, efluxg = magtoflam(np.array(dfg['mag']),np.array(dfg['emag']),4805.0)
-			dfg['flam'] = fluxg
-			dfg['eflam'] = efluxg
+			dfg = df[(df['filter']=='g') | (df['filter']=='G') | (df['filter']=="g'") | (df['filter']=='V')]
+			dfr = df[(df['filter'] == 'r') | (df['filter'] == "r'") | (df['filter'] == 'R') | (df['filter'] == 'w')]
 
-			dfr = df[df['filter']=='r'].reset_index(drop=True)
-			fluxr, efluxr = magtoflam(np.array(dfr['mag']),np.array(dfr['emag']),6390.0)
-			dfr['flam'] = fluxr
-			dfr['eflam'] = efluxr
+			dfg['filter'] = 'g'
+			dfr['filter'] = 'r'
+
 			dfsave = pd.concat([dfg,dfr]).sort_values(by='phase').reset_index(drop=True)
-			dfsave = dfsave[['phase','mag','emag','filter','flam','eflam']]
+			dfsave = dfsave[['phase','mag','emag','filter']]
 			dfsave.to_csv(f'../data/semiprocessed_lightcurves/{objname}.csv',index=False)
 
-			ndfg = forecast_interpolation(dfg,fluxcol='mag',scale=1)
-			ndfr = forecast_interpolation(dfr,fluxcol='mag',scale=1)
-
-			# Convert mag to flam for dfg and dfr
-			fluxg, efluxg = magtoflam(np.array(ndfg['mag']),np.array(ndfg['emag']),4805.0)
-			fluxr, efluxr = magtoflam(np.array(ndfr['mag']),np.array(ndfr['emag']),6390.0)
-			ndfg['flam'] = fluxg
-			ndfg['eflam'] = efluxg
-			ndfr['flam'] = fluxr
-			ndfr['eflam'] = efluxr
-
-			ndf = pd.concat([ndfg,ndfr])
-			ndf = ndf[ndf['flam']/ndf['eflam']>=3].reset_index(drop=True)
-			ndf.to_csv(f'{gplc_path}{objname}.csv',index=False)
-			if plot:
-				plot_lc(ndf, dfsave, objname, save=True)
-			return {'status':1,'name':objname,'message':'Successfully saved processed LC'}
+			try:
+				ndf = forecast_interpolation_multifilter(dfsave, objname, plot=plot)
+				ndf.to_csv(f'../data/gp_lightcurves/{objname}.csv',index=False)
+				return {'status': 1, 'name': objname, 'message': 'Successfully saved processed LC'}
+			except:
+				return {'status': 0, 'name': objname, 'message': 'Failed at interpolation'}
 
 def run_lc_preprocessing(df):
 	failed = []

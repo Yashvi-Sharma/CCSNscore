@@ -30,18 +30,24 @@ class Source:
         self.lcr = None
         self.lcgdmdt = None
         self.lcrdmdt = None
-        self.type = self.sourcedata['type']
         self.redshift = self.sourcedata['z']
-        self.specjd = self.sourcedata['specjd']
-        self.maxjd = self.sourcedata['maxjd']
-        self.instrument = self.sourcedata['instrument']
+        self.type = None
         self.label = None
         self.sourcetype = sourcetype
 
-        for key, value in config['LABELS'].items():
-            if self.type in value:
-                self.label = key
-                break
+        if 'TYPE_COLUMN' in config.keys():
+            if config['TYPE_COLUMN'] in self.sourcedata.keys():
+                self.type = self.sourcedata[config['TYPE_COLUMN']]
+                for key, value in config['LABELS'].items():
+                    if self.type in value:
+                        self.label = key
+                        break
+        if 'specjd' in self.sourcedata.keys():
+            self.specjd = self.sourcedata['specjd']
+        if 'maxjd' in self.sourcedata.keys():
+            self.maxjd = self.sourcedata['maxjd']
+        if 'instrument' in self.sourcedata.keys():
+            self.instrument = self.sourcedata['instrument']
 
 
     def get_spectrum(self, dered=True, res=256, median_window=3):
@@ -67,8 +73,13 @@ class Source:
     def get_lightcurve(self, lcphase):
         if glob2.glob(config['GPLC_DIR'] + self.sourcedata['name'] + '.csv') == []:
             print('Processed light curve missing, trying to generate')
-            res = dp.generate_lc(self.sourcedata['name'], self.sourcedata['lcfilename'], plot=False)
-            print(res['message'])
+            if 'lcfilename' not in self.sourcedata.keys():
+                print('No light curve file names exist, not using light curves')
+            elif self.sourcedata['lcfilename'] is None:
+                print(f'No light curve file names exist for {self.sourcedata["name"]}, not using light curves')
+            else:
+                res = dp.generate_lc(self.sourcedata['name'], self.sourcedata['lcfilename'], plot=False)
+                print(res['message'])
 
         if glob2.glob(config['GPLC_DIR'] + self.sourcedata['name'] + '.csv') == []:
             phaserange = np.arange(0, lcphase, 1)
@@ -79,17 +90,6 @@ class Source:
             return
         else:
             lc = pd.read_csv(config['GPLC_DIR'] + self.sourcedata['name'] + '.csv')
-            # if 'flam' not in lc.columns:
-            #     res = dp.generate_lc(self.sourcedata['name'], self.sourcedata['lcfilename'], plot=False)
-            #     if res['status'] == 0:
-            #         print(res['message'])
-            #         phaserange = np.arange(0, lcphase, 1)
-            #         self.lcr = np.zeros([lcphase, 2]).tolist()
-            #         self.lcg = np.zeros([lcphase, 2]).tolist()
-            #         self.lcrdmdt = dp.compute_dmdt(phaserange, np.repeat(20.5, len(phaserange)))[..., tf.newaxis].tolist()
-            #         self.lcgdmdt = dp.compute_dmdt(phaserange, np.repeat(20.5, len(phaserange)))[..., tf.newaxis].tolist()
-            #         return
-            # print(self.sourcedata['name'], ' light curve read')
             phaserange = np.arange(0, lcphase + 1, 1)
             lcr = lc[(lc['filter'] == 'r')]
             lcg = lc[(lc['filter'] == 'g')]
@@ -100,7 +100,7 @@ class Source:
             dfg.loc[pd.isnull(dfg['flam']), 'flam'] = 0
             dfg.loc[pd.isnull(dfg['eflam']), 'eflam'] = 0
 
-            flamarr = np.hstack([np.array(dfr['flam']), np.array(dfg['flam'])])
+            flamarr = np.hstack([np.array(dfr['flam']), np.array(dfg['flam'])])*1e16  ## IMPORTANT
             lcflux = MinMaxScaler().fit_transform(flamarr[..., tf.newaxis]).flatten()
             lcrflux = lcflux[0:lcphase]
             lcrflux_err = np.nan_to_num(
@@ -438,18 +438,19 @@ class Testing:
     def load_test(self, channels):
         self.channels = channels
         testdf = pd.read_json(open(imgpath + 'testdata.json', 'r'))
-        testdf = testdf[~pd.isna(testdf['label'])]
+        if len(testdf[pd.isna(testdf['type'])])!=len(testdf):
+            testdf = testdf[~pd.isna(testdf['label'])]
         testdf = testdf.sample(frac=1).reset_index(drop=True)
         print('Samples in testing set: ', len(testdf))
         return testdf
 
-    def get_trained_models(self, modelpath):
+    def get_trained_models(self, modelpaths):
         layermodels = {}
         for modelname in self.modelnames:
-            model = keras.models.load_model(f'{modelpath}RT_{modelname}', compile=True)
-            # optim = keras.optimizers.Adam(learning_rate=0.001)
-            # model.compile(optimizer=optim, loss=tf.keras.losses.BinaryCrossentropy(),
-            #               metrics=['accuracy', 'Precision'])
+            model = keras.models.load_model(modelpaths[modelname], compile=False)
+            optim = keras.optimizers.Adam(learning_rate=0.001)
+            model.compile(optimizer=optim, loss=tf.keras.losses.BinaryCrossentropy(),
+                          metrics=['accuracy', 'Precision'])
             layermodels[modelname] = model
         return layermodels
 
@@ -457,18 +458,24 @@ class Testing:
         df['ytest'] = list(testdf['label'])
         df['pred_class_names'] = np.repeat(None, len(df))
         df['pred_conf'] = np.repeat(None, len(df))
+        df['pred_std'] = np.repeat(None, len(df))
 
         for i in range(len(df)):
             row = df.loc[i][self.modelnames]
+            row_unc = df.loc[i][[x + '_std' for x in self.modelnames]]
             srow = row[np.argsort(-row)]
+            srow_unc = row_unc[np.argsort(-row)]
             fc = srow.index[0]
             ps = srow[0]
-            if (srow[0] - srow[1] < 0.05):
+            ps_unc = srow_unc[0]
+            if ((srow[0]-srow_unc[0]) - (srow[1]+srow_unc[1]) < 0.01):
                 fc = 'ambi'
                 ps = 0
+                ps_unc = 0
 
             df.loc[i, 'pred_class_names'] = fc
             df.loc[i, 'pred_conf'] = ps
+            df.loc[i, 'pred_std'] = ps_unc
         return df
 
     def plot_cm_and_hist(self, noshowplot):
@@ -481,26 +488,47 @@ class Testing:
                                noshowplot=noshowplot)
         return stats
 
-    def test(self, testdf, modelnames, modelpath=None, noshowplot=False):
+    # @tf.function
+    def mc_dropout_predict_batch(self, model, xtest, num_batches=10, batch_size=10):
+        predictions = []
+        for i in range(num_batches):
+            batch_predictions = [np.array(model(xtest, training=True)).flatten() for _ in range(batch_size)]
+            predictions.append(batch_predictions)
+            print(f'Batch done {i}')
+        return np.array(predictions)
+
+
+    def test(self, testdf, modelnames, modelpaths=None, noshowplot=False):
         self.modelnames = modelnames
 
         class_probabs = {}
-        if modelpath is None:
-            modelpath = imgpath
-        layermodels = self.get_trained_models(modelpath)
+        if modelpaths is None:
+            modelpaths = {}
+            for modelname in self.modelnames:
+                modelpaths[modelname] = f'{imgpath}RT_{modelname}'
+        layermodels = self.get_trained_models(modelpaths)
 
         for num, modelname in enumerate(self.modelnames):
             xtest = testdf[np.array(self.channels[modelname])].transpose().values
             xtest = dp.fix_shape_of_Xtrain(xtest)
             model = layermodels[self.modelnames[num]]
-            class_probabs[self.modelnames[num]] = model.predict(xtest).flatten()
+            ## Predict with MC dropout enabled
+            scores = self.mc_dropout_predict_batch(model, xtest, num_batches=10, batch_size=10).reshape(100, -1)
+            print(scores.shape)
+            predictions = np.mean(scores, axis=0)
+            # print(predictions.shape)
+            uncertainties = np.std(scores, axis=0)
+            # print(uncertainties.shape)
+            class_probabs[modelname] = predictions
+            class_probabs[modelname + '_std'] = uncertainties
 
         df = pd.DataFrame(class_probabs)
         df['id'] = testdf['id']
         df = self.decide_finalclass(df, testdf)
         self.result = df
-        self.stats = self.plot_cm_and_hist(noshowplot=noshowplot)
         self.result.to_csv(f'{imgpath}{taskname}_results.csv')
+        if len(testdf[pd.isna(testdf['type'])])!=len(testdf):
+            self.stats = self.plot_cm_and_hist(noshowplot=noshowplot)
 
 
 if __name__ == '__main__':
@@ -525,34 +553,53 @@ if __name__ == '__main__':
     # Copy config file to output directory
     os.system(f'cp {args.config} {imgpath}config_{taskname}')
 
-    print(f'Begin program, loading data')
-    trainobj = Training(config['TRAINTABLEPATH'], dered=config['DEREDSHIFT'], res=config['RESOLUTION'],
-                        lcphase=config['LCPHASE'], median_window=config['MEDIAN_WINDOW'],
-                        augtypes=config['TYPES_TO_AUGMENT'], auglimit=config['AUGLIMIT'],
-                        overwrite=config['OVERWRITE'])
-    testobj = Testing(config['TESTTABLEPATH'], dered=config['DEREDSHIFT'], res=config['RESOLUTION'],
-                      lcphase=config['LCPHASE'], median_window=config['MEDIAN_WINDOW'], overwrite=config['OVERWRITE'])
+    if config['MODE'] == 'tune' or config['MODE'] == 'train':
+        print(f'Begin program, loading data')
+        trainobj = Training(config['TRAINTABLEPATH'], dered=config['DEREDSHIFT'], res=config['RESOLUTION'],
+                            lcphase=config['LCPHASE'], median_window=config['MEDIAN_WINDOW'],
+                            augtypes=config['TYPES_TO_AUGMENT'], auglimit=config['AUGLIMIT'],
+                            overwrite=config['OVERWRITE'])
+        testobj = Testing(config['TESTTABLEPATH'], dered=config['DEREDSHIFT'], res=config['RESOLUTION'],
+                          lcphase=config['LCPHASE'], median_window=config['MEDIAN_WINDOW'],
+                          overwrite=config['OVERWRITE'])
 
-    print(f'Starting task {config["TASKNAME"]}')
-    traindf = trainobj.load_train(channels=config['CHANNELS'], augment=config['AUGMENT'],
-                                  augconstant=config['AUGMENT_CONSTANT'])
-    testdf = testobj.load_test(channels=config['CHANNELS'])
+        print(f'Starting task {config["TASKNAME"]}')
+        traindf = trainobj.load_train(channels=config['CHANNELS'], augment=config['AUGMENT'],
+                                      augconstant=config['AUGMENT_CONSTANT'])
+        testdf = testobj.load_test(channels=config['CHANNELS'])
 
-    if config['MODE']=='tune':
-        print(f'Tuning is selected, starting keras tuner')
-        trainobj.tune(traindf, patience=config['PATIENCE'], epochs=config['EPOCHS'], batchsize=config['BATCHSIZE'])
-        print(f'Finished tuning, exiting')
+        if config['MODE']=='tune':
+            print(f'Tuning is selected, starting keras tuner')
+            trainobj.tune(traindf, patience=config['PATIENCE'], epochs=config['EPOCHS'], batchsize=config['BATCHSIZE'])
+            print(f'Finished tuning, exiting')
 
-    elif config['MODE']=='train':
-        trainobj.train(traindf, config['MODELS'], loadmodel=config['LOAD_TUNED_MODELS'],
-                       withweights=config['LOAD_WEIGHTS'], lr=config['LEARNING_RATE'], patience=config['PATIENCE'],
-                       epochs=config['EPOCHS'], batchsize=config['BATCHSIZE'])
-        print(f'Finished training, now testing')
-        testobj.test(testdf, config['MODELS'], modelpath=imgpath, noshowplot=config['NOSHOWPLOT'])
-        print(f'Finished testing, exiting')
+        elif config['MODE']=='train':
+            trainobj.train(traindf, config['MODELS'], loadmodel=config['LOAD_TUNED_MODELS'],
+                           withweights=config['LOAD_WEIGHTS'], lr=config['LEARNING_RATE'], patience=config['PATIENCE'],
+                           epochs=config['EPOCHS'], batchsize=config['BATCHSIZE'])
+            print(f'Finished training, now testing')
+            testobj.test(testdf, config['MODELS'], modelpaths=None, noshowplot=config['NOSHOWPLOT'])
+            print(f'Finished testing, exiting')
 
-    elif config['MODE']=='test':
-        testobj.test(testdf, config['MODELS'], modelpath=imgpath, noshowplot=config['NOSHOWPLOT'])
+    elif config['MODE'] == 'test':
+        print(f'Begin program, loading data')
+        testobj = Testing(config['TESTTABLEPATH'], dered=config['DEREDSHIFT'], res=config['RESOLUTION'],
+                          lcphase=config['LCPHASE'], median_window=config['MEDIAN_WINDOW'],
+                          overwrite=config['OVERWRITE'])
+
+        print(f'Starting task {config["TASKNAME"]}')
+        testdf = testobj.load_test(channels=config['CHANNELS'])
+
+        if 'TRAINED_MODELPATH' in config.keys():
+            if config['TRAINED_MODELPATH'] is None:
+                print(f'No trained model path specified, will look for models in default place')
+                modelpaths = None
+            else:
+                print(f'Trained model path is different')
+                modelpaths = config['TRAINED_MODELPATH']
+        else:
+            modelpaths = None
+        testobj.test(testdf, config['MODELS'], modelpaths=modelpaths, noshowplot=config['NOSHOWPLOT'])
         print(f'Finished testing, exiting')
     else:
         print('Invalid mode')
