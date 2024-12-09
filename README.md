@@ -9,7 +9,7 @@ NOTE: The models provided in trained_models/ have been trained on a mixture of p
 
 The code allows user to set up any SN classification task and train a set of parallel binary classifiers for their desired categories (see example_config). The following instructions should be followed to prepare the dataset in correct format for CCSNscore.
 
-1. Metadata CSV: Create separate csv files for training and testing dataset in the format of sampletable.csv. The required columns that should be present in the csvs are - ['name', 'type' ,'z', 'specjd', 'maxjd', 'instrument', 'specfilename', 'lcfilename']. 'z' is for redshift, 'type' is for the transient classification type, 'specjd' is for JD date of spectrum observation, 'maxjd' is for JD date of lightcurve maximum, 'specfilename' is for full path of the spectral file ('data/spectra/filename.ascii'), 'lcfilename' is for full path of the raw lightcurve file ('data/lightcurves/filename.csv')
+1. Metadata CSV: Create separate csv files for training and testing dataset in the format of sampletable.csv. The minimum required columns that should be present in the csvs are - ['name' ,'z', 'specfilename']. 'z' is for redshift (entries can be None if unavailable), ['type'] is a required column if training and validating and should contain the transient classification type, 'specfilename' is for full path of the spectral file ('data/spectra/filename.ascii'), ['lcfilename'] column should be added if supplying lightcurves, it should contain the full path of the raw lightcurve file ('data/lightcurves/filename.csv')
 
 2. Spectra: The raw spectra files (from 'specfilename' column in metadata csv) should be in ascii format. Comments denoted using '#', the first column for wavelength and the second for flux, columns separated by space. If using trained_models/ wavelengths should be in Angstrom and in the range 3000-10000 \AA. The default directory to keep raw 1D spectra ascii files is data/spectra/ (change this path in config if it is different). 
 
@@ -17,9 +17,15 @@ The code allows user to set up any SN classification task and train a set of par
 
 
 ### Config file
+Paths to the raw spectra, lightcurves and path to save processed lightcurves are specified with `SPECTRA_DIR`, `LC_DIR`, and `GPLC_DIR` keys.
+The `TRAINTABLEPATH` and `TESTTABLEPATH` keys specify the path to the metadata csv files for training and testing datasets. The `OUTPUT_DIR` key specifies the directory where the trained models, logs, and results will be saved.
+The `TASKNAME` key is used to prefix the output figures. The `MODE` key specifies the mode to run the code (tune, train, test), train will also test the model on the specified test set.
 
-An example config is provided (example_config) to set up a 'Ia' vs. 'notIa' classification task. One binary classifier is trained per entry in the `MODEL` key. `LABELS` key is used to indicate which 'type (from metadata 'type' column) belongs to which output category. 
+An example config is provided (example_config) to set up a 'Ia' vs. 'notIa' classification task. One binary classifier is trained per entry in the `MODEL` key. `LABELS` key is used to indicate which type (in the metadata 'type' column, the exact column name can be indicated with `TYPE_COLUMN` key) belongs to which output category. 
 
+Each binary classifier model has channels for multiple inputs, `CHANNELS` key allows you to choose which inputs to use per classifier. 
+
+Below are parameters used in creating the datasets::
 - `DEREDSHIFT` specifies whether to change spectral range from observed to rest wavelengths. 
 - `RESOLUTION` specifies the number of data points per spectrum sampling), default is 256, increasing it only makes sense for openSN spectra. 
 - `LCPHASE` specifies the length of light curve in days to include. 
@@ -27,9 +33,21 @@ An example config is provided (example_config) to set up a 'Ia' vs. 'notIa' clas
 - `AUGLIMIT` specifies the number of fake samples to be generated per specified type
 - `AUGMENT` If true the fake samples are used in training
 - `AUGMENT_CONSTANT` If `AUGMENT` is true, the number of samples per specified type are equalized to this number by augmenting with fake samples. 
+- `OVERWRITE` If true, the traindata.json and testdata.json files are overwritten.
 
+For each label, one binary classifier model is trained. Below are the training parameters:
+- `EPOCHS` specifies the number of epochs to train the model
+- `BATCHSIZE` specifies the batch size for training
+- `LEARNING_RATE` specifies the learning rate for the optimizer
+- `PATIENCE` specifies the number of epochs to wait before early stopping
+- `NOSHOWPLOTS` If true, the plots are not shown after testing the model
 
-For each label there is one binary classifier model. The final predictions are decided based on the predictions of all the parallel binary classifiers. if any two classifier probabilities are too close to each other, the sample is labeled ambiguous. Each binary classifier model has channels for multiple inputs, `CHANNELS` key allows you to choose which inputs to use per classifier. 
+By default the trained models are saved in the `OUTPUT_DIR` with the format 'RT_{modelname}' where modelname is the name of the binary classifiers from `MODEL` key.
+
+If only running in test mode, the `TRAINED_MODELPATH` key can be used to specify the path to the trained models. If the key is not set or is set to None the code will look for default named models.
+
+The final predictions are decided based on the predictions of all the parallel binary classifiers.
+The models output a probability of sample being in that class, and a uncertainty on that probability (using MC dropout). If difference in any probabilities from top two classifiers are within the sum of their uncertainties, the sample is labeled ambiguous. 
 
 
 ```
@@ -43,17 +61,19 @@ For each label there is one binary classifier model. The final predictions are d
   "TESTTABLEPATH": "data/test.csv",     # Path to table from which test set will be created
   "OUTPUT_DIR": "workdirs/Binary_Ia/",  # Working directory where model, logs, and results will be saved
 
-  "TASKNAME": "binIa",                       # Prefix for output figures
-  "MODE": "train",                         # Mode to run the code (tune, train, test), train will also test the model
+  "TASKNAME": "binIa",                   # Prefix for output figures
+  "MODE": "train",                       # Mode to run the code (tune, train, test), train will also test the model on specified test set
 
   "MODELS": ["Ia", "notIa"],             # Parallel binary classifiers to train
-  "LOAD_TUNED_MODELS": false,            # Whether to use the tuned models or not (saved with BC_ prefix)
-  "LOAD_WEIGHTS": false,                 # False to just use the tuned architecture, True to load the weights
+  "LOAD_TUNED_MODELS": false,            # Whether to use the tuned models or not FOR TRAINING (saved with BC_ prefix)
+  "LOAD_WEIGHTS": false,                 # False to just use the tuned architecture, True to load the weights (FOR TRAINING ONLY)
 
+  "TYPE_COLUMN": "type",                 # Column name in the metadata csv that contains the transient type, delete this key or set it to "none" if type data is not available (real-time use). Use 'type' as default column name
   "LABELS": {
     "Ia": ["Ia", "Ia-91bg", "Ia-91T", "Ia-pec", "Ia-02cx", "Iax", "Ia-norm"],
-             "notIa": ["IIP", "IIL", "IIn", "II", "IIb", "Ib", "Ic", "Ic-BL", "SLSN-I", "SLSN-II", "AGN", "CV"]
+    "notIa": ["IIP", "IIL", "IIn", "II", "IIb", "Ib", "Ic", "Ic-BL", "SLSN-I", "SLSN-II", "AGN", "CV"]
             },                           # Transient classes that belong to the positive class of each binary classifier
+  
   "CHANNELS": {"Ia": ["spec", "lcr", "lcg", "lcrdmdt", "lcgdmdt"],
                "notIa": ["spec", "lcr", "lcg", "lcrdmdt", "lcgdmdt"]
               },                         # Channels to use for each binary classifier
@@ -71,7 +91,7 @@ For each label there is one binary classifier model. The final predictions are d
   "BATCHSIZE": 32,                       # Batch size for training
   "LEARNING_RATE": 0.001,                # Learning rate for the optimizer
   "PATIENCE": 7,                         # Number of epochs to wait before early stopping
-  "NOSHOWPLOTS": false,                  # Whether to show plots or not
+  "NOSHOWPLOTS": false,                  # Whether to show performance plots or not
 }
 
 
