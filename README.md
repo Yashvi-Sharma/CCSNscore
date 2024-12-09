@@ -1,6 +1,6 @@
 # CCSNscore
 
-A deep learning based program with parallel binary classifiers for classification of core collapse supernovae (SN) from ultra low resolution spectra (SEDM) and lightcurves. The trained models are used hierarchically (first set of models to classify SN as hydrogen rich or poor (layer 2), then one set of models to classify hydrogen-rich subtypes and other for hydrogen-poor subtypes (layers 3a and 3b)).
+A deep learning based program with parallel binary classifiers for classification of core collapse supernovae (SN) from ultra low resolution spectra (SEDM) and lightcurves. The trained models are used hierarchically (first set of models to classify SN as hydrogen rich or poor (layer 1), then one set of models to classify hydrogen-rich subtypes and other for hydrogen-poor subtypes (layers 2a and 2b)).
 
 NOTE: The models provided in trained_models/ have been trained on a mixture of public and private dataset (described in this paper) hence all the spectra and lightcurves are not made available here. But the csv files in data/ contain the metadata information for training and testing sets used for the trained_models/. The non-SEDM spectra can be queried from the Open SN Catalog. The public SEDM spectra can be obtained from the Transient Name Server. 
 
@@ -67,6 +67,10 @@ The models output a probability of sample being in that class, and a uncertainty
   "MODELS": ["Ia", "notIa"],             # Parallel binary classifiers to train
   "LOAD_TUNED_MODELS": false,            # Whether to use the tuned models or not FOR TRAINING (saved with BC_ prefix)
   "LOAD_WEIGHTS": false,                 # False to just use the tuned architecture, True to load the weights (FOR TRAINING ONLY)
+  "TRAINED_MODELPATH": {
+    "Ia": "trained_models/RT_Ia",     
+    "notIa": "trained_models/RT_notIa"
+  },                                     # Path to the trained models for testing, one for each entry in MODELS
 
   "TYPE_COLUMN": "type",                 # Column name in the metadata csv that contains the transient type, delete this key or set it to "none" if type data is not available (real-time use). Use 'type' as default column name
   "LABELS": {
