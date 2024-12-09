@@ -5,11 +5,13 @@
   "TRAINTABLEPATH": "data/sampletable.csv",
   "TESTTABLEPATH": "data/sampletable.csv",
   "OUTPUT_DIR": "workdirs/Binary_Ia/",
+  "TRAINED_MODELPATH": "workdirs/Binary_Ia/",
   "TASKNAME": "binIa",
   "MODE": "test",
   "MODELS": ["Ia", "notIa"],
   "LOAD_TUNED_MODELS": false,
   "LOAD_WEIGHTS": false,
+  "TYPE_COLUMN": "type",
   "LABELS": {
     "Ia": ["Ia", "Ia-91bg", "Ia-91T", "Ia-pec", "Ia-02cx", "Iax", "Ia-norm"],
     "notIa": ["IIP", "IIL", "IIn", "II", "IIb", "Ib", "Ic", "Ic-BL", "SLSN-I", "SLSN-II", "AGN", "CV"]
@@ -31,5 +33,5 @@
   "BATCHSIZE": 32,
   "LEARNING_RATE": 0.001,
   "PATIENCE": 7,
-  "NOSHOWPLOTS": true
+  "NOSHOWPLOT": true
 }

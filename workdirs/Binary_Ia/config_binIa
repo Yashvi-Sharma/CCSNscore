@@ -31,5 +31,5 @@
   "BATCHSIZE": 32,
   "LEARNING_RATE": 0.001,
   "PATIENCE": 7,
-  "NOSHOWPLOTS": true
+  "NOSHOWPLOT": true
 }
