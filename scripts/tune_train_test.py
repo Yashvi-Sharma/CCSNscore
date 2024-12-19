@@ -52,8 +52,13 @@ class Source:
 
     def get_spectrum(self, dered=True, res=256, median_window=3):
         self.wavelength = np.linspace(4200, 9200, num=res, endpoint=True)
-        spec = pd.read_csv(self.sourcedata['specfilename'], header=None, sep='\s+', comment='#')
-        if dered and self.sourcedata['z'] is not None:
+        try:
+            spec = pd.read_csv(self.sourcedata['specfilename'], header=None, sep='\s+', comment='#')
+        except:
+            print('Error reading spectrum for ', self.sourcedata['name'], ' in ', self.sourcetype)
+            return
+
+        if dered and (not pd.isna(self.sourcedata['z'])):
             wavelengths = np.array(spec[0]).astype('float') / (1 + self.sourcedata['z'])
         else:
             wavelengths = np.array(spec[0]).astype('float')
@@ -78,7 +83,8 @@ class Source:
             elif self.sourcedata['lcfilename'] is None:
                 print(f'No light curve file names exist for {self.sourcedata["name"]}, not using light curves')
             else:
-                res = dp.generate_lc(self.sourcedata['name'], self.sourcedata['lcfilename'], plot=False)
+                res = dp.generate_lc(self.sourcedata['name'], self.sourcedata['lcfilename'], config['GPLC_DIR'],
+                                     plot=False)
                 print(res['message'])
 
         if glob2.glob(config['GPLC_DIR'] + self.sourcedata['name'] + '.csv') == []:
@@ -440,7 +446,7 @@ class Testing:
         testdf = pd.read_json(open(imgpath + 'testdata.json', 'r'))
         if len(testdf[pd.isna(testdf['type'])])!=len(testdf):
             testdf = testdf[~pd.isna(testdf['label'])]
-        testdf = testdf.sample(frac=1).reset_index(drop=True)
+        testdf = testdf.reset_index(drop=True)
         print('Samples in testing set: ', len(testdf))
         return testdf
 
@@ -488,15 +494,9 @@ class Testing:
                                noshowplot=noshowplot)
         return stats
 
-    # @tf.function
-    def mc_dropout_predict_batch(self, model, xtest, num_batches=10, batch_size=10):
-        predictions = []
-        for i in range(num_batches):
-            batch_predictions = [np.array(model(xtest, training=True)).flatten() for _ in range(batch_size)]
-            predictions.append(batch_predictions)
-            print(f'Batch done {i}')
+    def mc_dropout_predict_batch(self, model, xtest, num_samples=100):
+        predictions = [model(xtest, training=True).numpy().flatten() for i in range(num_samples)]
         return np.array(predictions)
-
 
     def test(self, testdf, modelnames, modelpaths=None, noshowplot=False):
         self.modelnames = modelnames
@@ -513,7 +513,7 @@ class Testing:
             xtest = dp.fix_shape_of_Xtrain(xtest)
             model = layermodels[self.modelnames[num]]
             ## Predict with MC dropout enabled
-            scores = self.mc_dropout_predict_batch(model, xtest, num_batches=10, batch_size=10).reshape(100, -1)
+            scores = self.mc_dropout_predict_batch(model, xtest, num_samples=20)
             print(scores.shape)
             predictions = np.mean(scores, axis=0)
             # print(predictions.shape)
@@ -526,7 +526,7 @@ class Testing:
         df['id'] = testdf['id']
         df = self.decide_finalclass(df, testdf)
         self.result = df
-        self.result.to_csv(f'{imgpath}{taskname}_results.csv')
+        self.result.to_csv(f'{imgpath}{taskname}_results.csv', index=False)
         if len(testdf[pd.isna(testdf['type'])])!=len(testdf):
             self.stats = self.plot_cm_and_hist(noshowplot=noshowplot)
 

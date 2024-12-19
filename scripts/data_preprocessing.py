@@ -12,9 +12,6 @@ import tensorflow as tf
 
 warnings.filterwarnings('ignore')
 
-global gplc_path
-gplc_path = '../data/gp_lightcurves/'
-
 def pwd_for(a):
 	"""
 		Compute pairwise differences with for loops
@@ -125,10 +122,22 @@ def forecast_interpolation_multifilter(df,objname,plot=False):
 
 	xp = np.arange(min(df['phase']),max(df['phase'])+0.5,0.5)
 	xp, yp, ype, filts = sncls.gpcls.predict(xp,returnv=True)
-	ndf = pd.DataFrame({'phase':xp.flatten(),'mag':yp.flatten(),'emag':ype.flatten(),'filter':filts.flatten()})
-	ndf = ndf[(ndf['mag']/ndf['emag']>=5)].reset_index(drop=True)
+	fnu = yp.flatten()
+	efnu = ype.flatten()
+	mag = -2.5*np.log10(fnu)+23.9
+	emag = abs((np.log(10)*2.5/fnu)*efnu)
+	ndf = pd.DataFrame({'phase':xp.flatten(),'mag':mag,'emag':emag,'filter':filts.flatten(),'fnu':fnu,'efnu':efnu})
+	ndf = ndf[(ndf['fnu']/ndf['efnu']>=5)].reset_index(drop=True)
 	ndfg = ndf[(ndf['filter']=='g')]
 	ndfr = ndf[(ndf['filter']=='r')]
+
+	fluxg, efluxg = magtoflam(np.array(ndfg['mag']), np.array(ndfg['emag']), 4805.0)
+	fluxr, efluxr = magtoflam(np.array(ndfr['mag']), np.array(ndfr['emag']), 6390.0)
+	ndfg['flam'] = fluxg
+	ndfg['eflam'] = efluxg
+	ndfr['flam'] = fluxr
+	ndfr['eflam'] = efluxr
+	ndf = pd.concat([ndfg,ndfr]).sort_values(by='phase').reset_index(drop=True)
 
 	if plot:
 		plt.figure()
@@ -136,7 +145,7 @@ def forecast_interpolation_multifilter(df,objname,plot=False):
 		plt.errorbar(ndfg['phase'],ndfg['mag'],ndfg['emag'],color='darkgreen',marker='.',elinewidth=0.3,ls='')
 		plt.errorbar(ndfr['phase'],ndfr['mag'],ndfr['emag'],color='darkred',marker='.',elinewidth=0.3,ls='')
 		plt.title(objname)
-		plt.savefig(f'../data/interpolation_figures/{objname}.png',dpi=200)
+		# plt.savefig(f'../data/interpolation_figures/{objname}.png',dpi=200)
 		plt.close()
 	return ndf
 
@@ -158,7 +167,7 @@ def plot_lc(interpdf, rawdf, objname, save=False):
 		plt.savefig(f'../data/interpolation_figures/{objname}.png',dpi=200)
 	plt.show()
 
-def generate_lc(objname, lcpath, plot=False):
+def generate_lc(objname, lcpath, gplc_dir, plot=False):
 	## Load lightcurve
 	if not os.path.exists(lcpath):
 		print('COULD NOT GET LC!!! ',objname)
@@ -179,19 +188,19 @@ def generate_lc(objname, lcpath, plot=False):
 				minmjd = min(df['mjd'])
 				df['phase'] = df['mjd'] - minmjd
 			## Setting up datafrane for GP forecast
-			dfg = df[(df['filter']=='g') | (df['filter']=='G') | (df['filter']=="g'") | (df['filter']=='V')]
-			dfr = df[(df['filter'] == 'r') | (df['filter'] == "r'") | (df['filter'] == 'R') | (df['filter'] == 'w')]
+			dfg = df[(df['filter']=='g') | (df['filter']=="ztfg") | (df['filter']=='sdssg')]
+			dfr = df[(df['filter'] == 'r') | (df['filter'] == "ztfr") | (df['filter'] == 'sdssr')]
 
 			dfg['filter'] = 'g'
 			dfr['filter'] = 'r'
 
 			dfsave = pd.concat([dfg,dfr]).sort_values(by='phase').reset_index(drop=True)
 			dfsave = dfsave[['phase','mag','emag','filter']]
-			dfsave.to_csv(f'../data/semiprocessed_lightcurves/{objname}.csv',index=False)
+			# dfsave.to_csv(f'../data/semiprocessed_lightcurves/{objname}.csv',index=False)
 
 			try:
 				ndf = forecast_interpolation_multifilter(dfsave, objname, plot=plot)
-				ndf.to_csv(f'../data/gp_lightcurves/{objname}.csv',index=False)
+				ndf.to_csv(f'{gplc_dir}{objname}.csv',index=False)
 				return {'status': 1, 'name': objname, 'message': 'Successfully saved processed LC'}
 			except:
 				return {'status': 0, 'name': objname, 'message': 'Failed at interpolation'}
