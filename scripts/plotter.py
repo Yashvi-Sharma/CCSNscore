@@ -247,11 +247,11 @@ def plot_reports(testtable, results, outpath, testmeta=None):
 			quality = metarow['quality']
 			numsnid = metarow['numsnid']
 			ax3.text(0.1, 0.55, f"Quality: {quality}, # SNID matches: {numsnid}", fontsize=12)
-			snid = json.loads(snid.replace("'",'"'))
-			ax3.text(0.1, 0.5, f"SNID: {snid['match']}, z={snid['redshift']}, age={snid['age']}, rlap={snid['rlap']}",
+			snid2 = json.loads(snid.replace("'",'"'))
+			ax3.text(0.1, 0.5, f"SNID: {snid2['match']}, z={snid2['redshift']}, age={snid2['age']}, rlap={snid2['rlap']}",
 					 fontsize=12)
-			sniascore = json.loads(sniascore.replace("'", '"'))
-			ax3.text(0.1, 0.45, f"SNIascore: {sniascore['SNIascore']}, Unc={sniascore['SNIascore_err']}",
+			sniascore2 = json.loads(sniascore.replace("'", '"'))
+			ax3.text(0.1, 0.45, f"SNIascore: {sniascore2['SNIascore']}, Unc={sniascore2['SNIascore_err']}",
 						 fontsize=12)
 		plt.savefig(f'{outpath}{os.path.basename(row["specfilename"]).split(".")[0]}.png', dpi=200)
 		plt.close()

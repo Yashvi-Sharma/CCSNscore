@@ -92,22 +92,25 @@ def forecast_interpolation(df,fluxcol='mag',scale=1e16):
 	# ## if dataframe length is more than 300, take only 300 points
 	# if len(df)>300:
 	# 	df = df.iloc[0:300]
+	ndf = pd.DataFrame()
+	for filt in df['filter'].unique():
+		df_filt = df[df['filter']==filt]
+		x = np.array(df_filt['phase']).reshape(-1,1)
+		y = np.array(df_filt[fluxcol]).reshape(-1,1)*scale
+		yerr = np.array(df_filt[f'e{fluxcol}']).reshape(-1,1)*scale
+		kernel =  (1*gp.kernels.RBF(length_scale=100,length_scale_bounds=(20,150)) +
+				   gp.kernels.WhiteKernel(noise_level=1e-4, noise_level_bounds=(1e-10,1e-1)))
+		gplc = gp.GaussianProcessRegressor(kernel=kernel,n_restarts_optimizer=10)
+		gplc.fit(x,y)
+		# Print kernel length scale
+		# print(gplc.kernel_)
+		xp = np.arange(x.min(),x.max()+0.5,0.5).reshape(-1,1)
+		yp,yerrp = gplc.predict(xp,return_std=True)
 
-	x = np.array(df['phase']).reshape(-1,1)
-	y = np.array(df[fluxcol]).reshape(-1,1)*scale
-	yerr = np.array(df[f'e{fluxcol}']).reshape(-1,1)*scale
-	kernel =  (1*gp.kernels.RBF(length_scale=100,length_scale_bounds=(50,150)) +
-			   gp.kernels.WhiteKernel(noise_level=1e-4, noise_level_bounds=(1e-10,1e-1)))
-	gplc = gp.GaussianProcessRegressor(kernel=kernel,n_restarts_optimizer=10)
-	gplc.fit(x,y)
-	# Print kernel length scale
-	print(gplc.kernel_)
+		ndf_filt = pd.DataFrame({'phase':xp.flatten(),fluxcol:yp.flatten()/scale,f'e{fluxcol}':yerrp.flatten()/scale,
+							'filter':filt})
+		ndf = pd.concat([ndf,ndf_filt]).sort_values(by='phase').reset_index(drop=True)
 
-	xp = np.arange(x.min(),x.max()+0.5,0.5).reshape(-1,1)
-	yp,yerrp = gplc.predict(xp,return_std=True)
-
-	ndf = pd.DataFrame({'phase':xp.flatten(),fluxcol:yp.flatten()/scale,f'e{fluxcol}':yerrp.flatten()/scale,
-						'filter':df['filter'].iloc[0]})
 	ndf = ndf[(ndf[fluxcol]>np.min(df[fluxcol])-1) & (ndf[fluxcol]<np.max(df[fluxcol])+1)].reset_index(drop=True)
 
 	return ndf
@@ -130,14 +133,6 @@ def forecast_interpolation_multifilter(df,objname,plot=False):
 	ndf = ndf[(ndf['fnu']/ndf['efnu']>=5)].reset_index(drop=True)
 	ndfg = ndf[(ndf['filter']=='g')]
 	ndfr = ndf[(ndf['filter']=='r')]
-
-	fluxg, efluxg = magtoflam(np.array(ndfg['mag']), np.array(ndfg['emag']), 4805.0)
-	fluxr, efluxr = magtoflam(np.array(ndfr['mag']), np.array(ndfr['emag']), 6390.0)
-	ndfg['flam'] = fluxg
-	ndfg['eflam'] = efluxg
-	ndfr['flam'] = fluxr
-	ndfr['eflam'] = efluxr
-	ndf = pd.concat([ndfg,ndfr]).sort_values(by='phase').reset_index(drop=True)
 
 	if plot:
 		plt.figure()
@@ -199,7 +194,19 @@ def generate_lc(objname, lcpath, gplc_dir, plot=False):
 			# dfsave.to_csv(f'../data/semiprocessed_lightcurves/{objname}.csv',index=False)
 
 			try:
-				ndf = forecast_interpolation_multifilter(dfsave, objname, plot=plot)
+				ndf = forecast_interpolation(dfsave, fluxcol='mag', scale=1e16)
+				# ndf = forecast_interpolation_multifilter(dfsave, objname, plot=plot)
+				ndfg = ndf[(ndf['filter'] == 'g')]
+				ndfr = ndf[(ndf['filter'] == 'r')]
+
+				fluxg, efluxg = magtoflam(np.array(ndfg['mag']), np.array(ndfg['emag']), 4805.0)
+				fluxr, efluxr = magtoflam(np.array(ndfr['mag']), np.array(ndfr['emag']), 6390.0)
+				ndfg['flam'] = fluxg
+				ndfg['eflam'] = efluxg
+				ndfr['flam'] = fluxr
+				ndfr['eflam'] = efluxr
+				ndf = pd.concat([ndfg, ndfr]).sort_values(by='phase').reset_index(drop=True)
+
 				ndf.to_csv(f'{gplc_dir}{objname}.csv',index=False)
 				return {'status': 1, 'name': objname, 'message': 'Successfully saved processed LC'}
 			except:

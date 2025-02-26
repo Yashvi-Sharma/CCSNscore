@@ -40,6 +40,23 @@ def create_config(args, basepath, outpath):
             config['CHANNELS'] = {'Hrich': ['spec', 'lcr', 'lcg'], 'Hpoor': ['spec', 'lcr', 'lcg']}
             json.dump(config, open(f"{outpath}config_{config['TASKNAME']}", 'w'), indent=4)
 
+    ## Layer Ia config
+    if 'layerIa' in args.layers:
+        config['OVERWRITE'] = False
+        config['MODELS'] = ["Ia", "notIa"]
+        if 'onlyspec' in args.channels:
+            config['TASKNAME'] = args.taskname + '_layerIa_onlyspec'
+            config['TRAINED_MODELPATH'] = {"Ia": f"{basepath}trained_models/onlyspec/RT_Ia",
+                                           "notIa": f"{basepath}trained_models/onlyspec/RT_notIa"}
+            config['CHANNELS'] = {"Ia": ['spec'], "notIa": ['spec']}
+            json.dump(config, open(f"{outpath}config_{config['TASKNAME']}", 'w'), indent=4)
+        elif 'onlyspeclcs' in args.channels:
+            config['TASKNAME'] = args.taskname + '_layerIa_onlyspeclcs'
+            config['TRAINED_MODELPATH'] = {"Ia": f"{basepath}trained_models/onlyspeclcs/RT_Ia",
+                                           "notIa": f"{basepath}trained_models/onlyspeclcs/RT_notIa"}
+            config['CHANNELS'] = {"Ia": ['spec', 'lcr'], "notIa": ['spec', 'lcr']}
+            json.dump(config, open(f"{outpath}config_{config['TASKNAME']}", 'w'), indent=4)
+
     ## Layer 2a config
     if 'layer2a' in args.layers:
         config['OVERWRITE'] = False
@@ -94,7 +111,7 @@ def main():
     parser.add_argument("--layers", help="Which hierarchical tasks to predict, layer1 - (Hrich vs Hpoor),"
                                          " layer2a - (II vs IIb-H vs IIn), layer2b - (Ib vs Ic vs Ic-BL), "
                                          "can choose multiple layers",
-                        choices=['layer1', 'layer2a', 'layer2b'], default='layer1',nargs='+')
+                        choices=['layer1', 'layer2a', 'layer2b', 'layerIa'], default='layer1',nargs='+')
     parser.add_argument("--channels", help="Which input channel configuration to use for prediction, "
                                            "onlyspec - (spectra only), onlyspeclcs - (spectra and light curves),"
                                            "can choose both", choices=['onlyspec', 'onlyspeclcs'],

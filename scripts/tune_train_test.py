@@ -80,9 +80,12 @@ class Source:
             print('Processed light curve missing, trying to generate')
             if 'lcfilename' not in self.sourcedata.keys():
                 print('No light curve file names exist, not using light curves')
-            elif self.sourcedata['lcfilename'] is None:
+            elif pd.isna(self.sourcedata['lcfilename']):
                 print(f'No light curve file names exist for {self.sourcedata["name"]}, not using light curves')
+            elif 'ZTF' not in self.sourcedata['name']:
+                print(f'Light curve file names exist for {self.sourcedata["name"]}, but not ZTF, not using light curves')
             else:
+                print(self.sourcedata['lcfilename'])
                 res = dp.generate_lc(self.sourcedata['name'], self.sourcedata['lcfilename'], config['GPLC_DIR'],
                                      plot=False)
                 print(res['message'])
@@ -96,6 +99,11 @@ class Source:
             return
         else:
             lc = pd.read_csv(config['GPLC_DIR'] + self.sourcedata['name'] + '.csv')
+            if 'flam' not in lc.columns:
+                res = dp.generate_lc(self.sourcedata['name'], self.sourcedata['lcfilename'], config['GPLC_DIR'],
+                                     plot=False)
+                print(res['message'])
+                lc = pd.read_csv(config['GPLC_DIR'] + self.sourcedata['name'] + '.csv')
             phaserange = np.arange(0, lcphase + 1, 1)
             lcr = lc[(lc['filter'] == 'r')]
             lcg = lc[(lc['filter'] == 'g')]
